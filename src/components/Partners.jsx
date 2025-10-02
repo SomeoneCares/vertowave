@@ -133,14 +133,14 @@ const Partners = () => {
               {corePartners.map((partner, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-lg p-6 flex flex-col items-center justify-center hover:shadow-lg transition-shadow group min-h-[140px]"
+                  className="bg-white rounded-lg p-6 flex flex-col items-center justify-center hover:shadow-lg transition-shadow group min-h-[160px]"
                 >
                   <div className="text-center">
-                    <div className="h-14 mx-auto mb-3 flex items-center justify-center group-hover:scale-105 transition-transform">
+                    <div className="h-20 mx-auto mb-3 flex items-center justify-center group-hover:scale-105 transition-transform">
                       <img 
                         src={partner.logo} 
                         alt={`${partner.name} logo`}
-                        className="max-h-10 max-w-[120px] object-contain"
+                        className="max-h-14 max-w-[160px] object-contain"
                       />
                     </div>
                     <p className="font-display font-semibold text-sm text-gray-700 mb-1 group-hover:text-verto-blue transition-colors">

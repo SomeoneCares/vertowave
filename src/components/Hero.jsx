@@ -13,15 +13,15 @@ const Hero = () => {
         <div className="grid lg:grid-cols-5 gap-12 items-center">
           {/* Left Content - 60% */}
           <div className="lg:col-span-3">
-            <h1 className="font-display font-bold text-5xl lg:text-6xl xl:text-7xl text-verto-dark-gray leading-tight mb-6">
+            <h1 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-verto-dark-gray leading-tight mb-6">
               YOUR IT TRANSFORMATION PARTNER
             </h1>
             
-            <p className="font-display text-3xl lg:text-4xl text-verto-blue mb-6">
+            <p className="font-display text-xl sm:text-2xl md:text-3xl lg:text-4xl text-verto-blue mb-6">
               IT Transformation Done Right.
             </p>
             
-            <p className="text-lg lg:text-xl text-gray-600 mb-8 max-w-2xl leading-relaxed">
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-8 max-w-2xl leading-relaxed">
               We help organizations modernize their IT infrastructure, enhance security, and accelerate digital transformation with comprehensive solutions tailored to your unique needs.
             </p>
             
