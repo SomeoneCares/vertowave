@@ -1,23 +1,26 @@
-import { Server, AlertTriangle, Cloud, ArrowRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
+import challengeLegacy from '../assets/challenge-legacy.png'
+import challengeSecurity from '../assets/challenge-security.png'
+import challengeCloud from '../assets/challenge-cloud-migration.png'
 
 const Challenges = () => {
   const challenges = [
     {
-      icon: Server,
+      image: challengeLegacy,
       title: 'Legacy Systems Holding You Back?',
       description: 'Outdated infrastructure hindering growth and innovation. Maintenance costs skyrocketing while performance declines.',
       link: 'Configuration Management Solutions',
       color: 'text-blue-600'
     },
     {
-      icon: AlertTriangle,
+      image: challengeSecurity,
       title: 'Security Threats Keeping You Up?',
       description: 'Increasing cyber risks and compliance requirements. Data breaches and vulnerabilities threatening your business.',
       link: 'Security Solutions',
       color: 'text-red-600'
     },
     {
-      icon: Cloud,
+      image: challengeCloud,
       title: 'Cloud Migration Feels Overwhelming?',
       description: 'Complex cloud transformation with unclear ROI. Managing multi-cloud environments and optimizing costs.',
       link: 'Cloud Solutions',
@@ -43,8 +46,12 @@ const Challenges = () => {
               key={index}
               className="bg-white rounded-xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 group"
             >
-              <div className={`w-16 h-16 rounded-lg bg-gradient-to-br from-verto-blue/10 to-verto-blue/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
-                <challenge.icon className={`h-8 w-8 ${challenge.color}`} />
+              <div className="w-32 h-32 mx-auto mb-6 group-hover:scale-110 transition-transform">
+                <img 
+                  src={challenge.image} 
+                  alt={challenge.title} 
+                  className="w-full h-full object-contain"
+                />
               </div>
               
               <h3 className="font-display font-semibold text-2xl text-verto-dark-gray mb-4">

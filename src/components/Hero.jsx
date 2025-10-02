@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { ArrowRight, CheckCircle2 } from 'lucide-react'
+import heroBackground from '../assets/hero-background.png'
 
 const Hero = () => {
   return (
@@ -61,20 +62,13 @@ const Hero = () => {
           {/* Right Image - 40% */}
           <div className="lg:col-span-2">
             <div className="relative">
-              {/* Placeholder for professional business image */}
-              <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-verto-blue/20 to-verto-blue/5">
-                <div className="w-full h-full flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-verto-blue/10 flex items-center justify-center">
-                      <svg className="w-16 h-16 text-verto-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                      </svg>
-                    </div>
-                    <p className="font-display text-xl text-verto-dark-gray">
-                      Professional Business Partnership
-                    </p>
-                  </div>
-                </div>
+              {/* AI-Generated Hero Background Image */}
+              <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src={heroBackground} 
+                  alt="Modern IT operations center with team collaborating on digital transformation" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               
               {/* Decorative Wave Element */}

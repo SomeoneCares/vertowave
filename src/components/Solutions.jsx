@@ -1,12 +1,17 @@
 import { useState } from 'react'
-import { Server, Shield, Zap, Cloud, BarChart3, ChevronDown, ArrowRight } from 'lucide-react'
+import { ChevronDown, ArrowRight } from 'lucide-react'
+import solutionInfrastructure from '../assets/solution-infrastructure.png'
+import solutionSecurity from '../assets/solution-security.png'
+import solutionAutomation from '../assets/solution-automation.png'
+import solutionCloud from '../assets/solution-cloud.png'
+import solutionInsights from '../assets/solution-insights.png'
 
 const Solutions = () => {
   const [expandedCategory, setExpandedCategory] = useState(null)
 
   const categories = [
     {
-      icon: Server,
+      image: solutionInfrastructure,
       name: 'Infrastructure & Operations Management',
       count: 4,
       description: 'Modernize and optimize your IT infrastructure for peak performance and reliability.',
@@ -19,7 +24,7 @@ const Solutions = () => {
       color: 'from-blue-500 to-blue-600'
     },
     {
-      icon: Shield,
+      image: solutionSecurity,
       name: 'Security & Compliance',
       count: 5,
       description: 'Protect your organization with comprehensive security and compliance solutions.',
@@ -33,7 +38,7 @@ const Solutions = () => {
       color: 'from-red-500 to-red-600'
     },
     {
-      icon: Zap,
+      image: solutionAutomation,
       name: 'Service Delivery & Automation',
       count: 3,
       description: 'Accelerate service delivery and automate workflows for maximum efficiency.',
@@ -45,7 +50,7 @@ const Solutions = () => {
       color: 'from-yellow-500 to-yellow-600'
     },
     {
-      icon: Cloud,
+      image: solutionCloud,
       name: 'Cloud & Modernization',
       count: 2,
       description: 'Transform your IT with cloud-native solutions and modern architectures.',
@@ -56,7 +61,7 @@ const Solutions = () => {
       color: 'from-purple-500 to-purple-600'
     },
     {
-      icon: BarChart3,
+      image: solutionInsights,
       name: 'Insights & Intelligence',
       count: 3,
       description: 'Gain actionable insights with advanced analytics and AI-powered intelligence.',
@@ -92,8 +97,12 @@ const Solutions = () => {
               <div className="p-8">
                 {/* Icon and Badge */}
                 <div className="flex items-start justify-between mb-6">
-                  <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${category.color} flex items-center justify-center group-hover:scale-110 transition-transform`}>
-                    <category.icon className="h-8 w-8 text-white" />
+                  <div className="w-20 h-20 rounded-xl bg-white shadow-sm flex items-center justify-center group-hover:scale-110 transition-transform p-2">
+                    <img 
+                      src={category.image} 
+                      alt={category.name} 
+                      className="w-full h-full object-contain"
+                    />
                   </div>
                   <div className="bg-verto-blue/10 text-verto-blue px-3 py-1 rounded-full text-sm font-display font-semibold">
                     {category.count} Solutions
