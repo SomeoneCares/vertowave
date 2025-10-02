@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Trust Frameworks - Verto Wave</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'verto-blue': '#1DB4D8',
+                    },
+                    fontFamily: {
+                        'display': ['Familjen Grotesk', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+        }
+        .font-display {
+            font-family: 'Familjen Grotesk', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <a href="../index.html" class="inline-flex items-center text-gray-600 hover:text-verto-blue transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back to Solutions
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-block px-4 py-2 bg-verto-blue/20 rounded-full text-verto-blue text-sm font-medium mb-6">
+                        Security & Compliance
+                    </div>
+                    <h1 class="text-5xl font-bold mb-6 font-display">
+                        Zero Trust Frameworks
+                    </h1>
+                    <p class="text-xl text-gray-300 mb-8">
+                        Implement zero trust security architecture with continuous verification, least privilege access, and micro-segmentation.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <button class="px-8 py-3 bg-verto-blue text-white rounded-lg font-medium hover:bg-verto-blue/90 transition-colors">
+                            Request Demo
+                        </button>
+                        <button class="px-8 py-3 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors">
+                            Download Datasheet
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-verto-blue/20 to-purple-500/20 rounded-lg p-8 backdrop-blur-sm border border-white/10">
+                        <div class="text-center">
+                            <svg class="w-48 h-48 mx-auto text-verto-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Overview -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6 font-display">Solution Overview</h2>
+            <div class="prose prose-lg max-w-none text-gray-600 space-y-4">
+                <p>Verto Wave's Zero Trust Frameworks solution provides a modern and comprehensive approach to cybersecurity, shifting from a traditional perimeter-based defense to a proactive, identity-centric model. The core principle of Zero Trust is "never trust, always verify," meaning no user or device is trusted by default, whether inside or outside the network. Our solution helps you design and implement a Zero Trust architecture that protects your data, applications, and infrastructure by continuously verifying every access request. We help you reduce your attack surface, contain breaches, and achieve a more resilient security posture in today's complex and evolving threat landscape.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">Key Features</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Feature</h3>
+                    <p class="text-gray-600">Description</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Micro-segmentation</h3>
+                    <p class="text-gray-600">Divide your network into small, isolated segments to prevent the lateral movement of attackers. This contains breaches and limits the impact of a security incident.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Strong Identity and Access Management (IAM)</h3>
+                    <p class="text-gray-600">Implement robust identity verification and access controls, including Multi-Factor Authentication (MFA) and Single Sign-On (SSO), to ensure that only authorized users can access resources.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Endpoint Security</h3>
+                    <p class="text-gray-600">Secure all endpoints, including desktops, laptops, mobile devices, and IoT devices, with advanced threat detection and response capabilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quantified Benefits -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">Quantified Benefits</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-verto-blue mb-3">Reduce the Risk of Data Breaches by over 50%</div>
+                    <p class="text-gray-600">By eliminating implicit trust and continuously verifying every access request, you can significantly reduce the likelihood and impact of a data breach.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-verto-blue mb-3">Improve Security Posture and Resilience</div>
+                    <p class="text-gray-600">A Zero Trust architecture makes your organization more resilient to cyberattacks by limiting the blast radius of a security incident.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-verto-blue mb-3">Enable Secure Remote Work</div>
+                    <p class="text-gray-600">Zero Trust provides a secure and seamless experience for your remote and hybrid workforce, allowing them to access the resources they need from anywhere, on any device.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-verto-blue mb-3">Accelerate Cloud Adoption</div>
+                    <p class="text-gray-600">A Zero Trust model provides the security foundation you need to confidently migrate your applications and data to the cloud.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies & Vendors -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">Technologies & Vendors Used</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Category</h3>
+                    <ul class="space-y-2">
+                        
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Technologies & Vendors
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Zero Trust Network Access (ZTNA)</h3>
+                    <ul class="space-y-2">
+                        
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Zscaler
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Palo Alto Networks Prisma Access
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Netskope
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Cloudflare
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Appgate
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Identity and Access Management (IAM)</h3>
+                    <ul class="space-y-2">
+                        
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Okta
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Microsoft Entra ID
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Ping Identity
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            CyberArk
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Endpoint Detection and Response (EDR)</h3>
+                    <ul class="space-y-2">
+                        
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            CrowdStrike
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            SentinelOne
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Microsoft Defender for Endpoint
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Carbon Black
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Micro-segmentation</h3>
+                    <ul class="space-y-2">
+                        
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Illumio
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Guardicore (Akamai)
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            VMware NSX
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration with Other Solutions -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">
+                Integration with Verto Wave Portfolio
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Security Governance</h3>
+                    <p class="text-gray-600">Our Zero Trust implementation is guided by your security governance framework, ensuring that your security policies are enforced consistently across your organization.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Identity & Access Management (IAM)</h3>
+                    <p class="text-gray-600">IAM is a core pillar of our Zero Trust solution, providing the identity verification and access controls needed to secure your environment.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Resilience & Backup</h3>
+                    <p class="text-gray-600">A Zero Trust architecture enhances your resilience by limiting the impact of a security incident, complementing our Resilience & Backup solutions.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Cloud Migration & Optimization</h3>
+                    <p class="text-gray-600">We help you implement a Zero Trust model as part of your cloud migration strategy, ensuring that your cloud environment is secure from the start.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-verto-blue to-cyan-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6 font-display">Ready to Transform Your Zero Trust Frameworks?</h2>
+            <p class="text-xl mb-8 text-white/90">
+                Let's discuss how our Zero Trust Frameworks solution can help you achieve your business goals.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <button class="px-8 py-3 bg-white text-verto-blue rounded-lg font-medium hover:bg-gray-100 transition-colors inline-flex items-center">
+                    Schedule Consultation
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </button>
+                <button class="px-8 py-3 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors">
+                    View Case Studies
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Verto Wave. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

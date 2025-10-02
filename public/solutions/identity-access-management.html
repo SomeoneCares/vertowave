@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identity & Access Management - Verto Wave</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'verto-blue': '#1DB4D8',
+                    },
+                    fontFamily: {
+                        'display': ['Familjen Grotesk', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+        }
+        .font-display {
+            font-family: 'Familjen Grotesk', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <a href="../index.html" class="inline-flex items-center text-gray-600 hover:text-verto-blue transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back to Solutions
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-block px-4 py-2 bg-verto-blue/20 rounded-full text-verto-blue text-sm font-medium mb-6">
+                        Security & Compliance
+                    </div>
+                    <h1 class="text-5xl font-bold mb-6 font-display">
+                        Identity & Access Management
+                    </h1>
+                    <p class="text-xl text-gray-300 mb-8">
+                        Secure identity governance and access control with single sign-on, multi-factor authentication, and privileged access management.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <button class="px-8 py-3 bg-verto-blue text-white rounded-lg font-medium hover:bg-verto-blue/90 transition-colors">
+                            Request Demo
+                        </button>
+                        <button class="px-8 py-3 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors">
+                            Download Datasheet
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-verto-blue/20 to-purple-500/20 rounded-lg p-8 backdrop-blur-sm border border-white/10">
+                        <div class="text-center">
+                            <svg class="w-48 h-48 mx-auto text-verto-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Overview -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6 font-display">Solution Overview</h2>
+            <div class="prose prose-lg max-w-none text-gray-600 space-y-4">
+                <p>Verto Wave's Identity & Access Management (IAM) solution provides a secure and seamless experience for your users while protecting your critical assets. In today's distributed and hybrid IT environments, managing user identities and controlling access to resources is more complex than ever. Our IAM solution helps you enforce security policies, streamline user access, and ensure compliance with regulatory requirements. We provide a comprehensive framework to manage the entire identity lifecycle, from onboarding to offboarding, and deliver a frictionless user experience with features like Single Sign-On (SSO) and Multi-Factor Authentication (MFA). With our IAM solution, you can strengthen your security posture, improve operational efficiency, and enable your business to grow securely.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">Key Features</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Feature</h3>
+                    <p class="text-gray-600">Description</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Single Sign-On (SSO)</h3>
+                    <p class="text-gray-600">Provide users with seamless access to all their applications with a single set of credentials, improving user experience and reducing password fatigue.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Multi-Factor Authentication (MFA)</h3>
+                    <p class="text-gray-600">Add an extra layer of security to your applications and data with MFA, protecting against unauthorized access even if passwords are compromised.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Identity Governance & Administration (IGA)</h3>
+                    <p class="text-gray-600">Automate the process of managing user identities and access rights, ensuring that users have the right access to the right resources at the right time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quantified Benefits -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">Quantified Benefits</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-verto-blue mb-3">Reduce the Risk of Data Breaches by up to 50%</div>
+                    <p class="text-gray-600">By implementing strong authentication and access controls, we help you protect your organization from costly data breaches.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-verto-blue mb-3">Improve User Productivity by 20%</div>
+                    <p class="text-gray-600">SSO and streamlined access requests help your users get access to the resources they need quickly and easily.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-verto-blue mb-3">Reduce IT Help Desk Costs by 30%</div>
+                    <p class="text-gray-600">Self-service password reset and automated user provisioning reduce the burden on your IT help desk.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-verto-blue mb-3">Achieve and Maintain Compliance</div>
+                    <p class="text-gray-600">Our solution helps you meet regulatory requirements like GDPR, HIPAA, and SOX, avoiding costly fines and penalties.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies & Vendors -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">Technologies & Vendors Used</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Category</h3>
+                    <ul class="space-y-2">
+                        
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Technologies & Vendors
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Access Management</h3>
+                    <ul class="space-y-2">
+                        
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Okta
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Ping Identity
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Microsoft Entra ID (Azure AD)
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            CyberArk
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            OneLogin
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Identity Governance & Administration (IGA)</h3>
+                    <ul class="space-y-2">
+                        
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            SailPoint
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Saviynt
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Oracle Identity Management
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            IBM Security Verify
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Privileged Access Management (PAM)</h3>
+                    <ul class="space-y-2">
+                        
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            CyberArk
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Delinea
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            BeyondTrust
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            HashiCorp Vault
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Directory Services</h3>
+                    <ul class="space-y-2">
+                        
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Microsoft Active Directory
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            OpenLDAP
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Apache Directory Server
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration with Other Solutions -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">
+                Integration with Verto Wave Portfolio
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Security & Resilience</h3>
+                    <p class="text-gray-600">IAM is a foundational component of our Security & Resilience solutions, providing the identity and access controls needed to protect your organization.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Zero Trust Frameworks</h3>
+                    <p class="text-gray-600">Our IAM solution is a key enabler of a Zero Trust security model, ensuring that every user and device is authenticated and authorized before accessing resources.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Cloud Migration & Optimization</h3>
+                    <p class="text-gray-600">We help you securely migrate your applications and data to the cloud by providing a unified IAM solution that works across your hybrid and multi-cloud environments.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Business Insights</h3>
+                    <p class="text-gray-600">Our IAM solution provides the data needed to power our Business Insights solutions, giving you visibility into user access patterns and potential security risks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-verto-blue to-cyan-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6 font-display">Ready to Transform Your Identity & Access Management?</h2>
+            <p class="text-xl mb-8 text-white/90">
+                Let's discuss how our Identity & Access Management solution can help you achieve your business goals.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <button class="px-8 py-3 bg-white text-verto-blue rounded-lg font-medium hover:bg-gray-100 transition-colors inline-flex items-center">
+                    Schedule Consultation
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </button>
+                <button class="px-8 py-3 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors">
+                    View Case Studies
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Verto Wave. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

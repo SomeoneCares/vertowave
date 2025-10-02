@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observability & Dashboarding - Verto Wave</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'verto-blue': '#1DB4D8',
+                    },
+                    fontFamily: {
+                        'display': ['Familjen Grotesk', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+        }
+        .font-display {
+            font-family: 'Familjen Grotesk', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <a href="../index.html" class="inline-flex items-center text-gray-600 hover:text-verto-blue transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back to Solutions
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-block px-4 py-2 bg-verto-blue/20 rounded-full text-verto-blue text-sm font-medium mb-6">
+                        Insights & Intelligence
+                    </div>
+                    <h1 class="text-5xl font-bold mb-6 font-display">
+                        Observability & Dashboarding
+                    </h1>
+                    <p class="text-xl text-gray-300 mb-8">
+                        Real-time visibility into your IT operations with comprehensive monitoring, logging, tracing, and custom dashboards.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <button class="px-8 py-3 bg-verto-blue text-white rounded-lg font-medium hover:bg-verto-blue/90 transition-colors">
+                            Request Demo
+                        </button>
+                        <button class="px-8 py-3 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors">
+                            Download Datasheet
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-verto-blue/20 to-purple-500/20 rounded-lg p-8 backdrop-blur-sm border border-white/10">
+                        <div class="text-center">
+                            <svg class="w-48 h-48 mx-auto text-verto-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Overview -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6 font-display">Solution Overview</h2>
+            <div class="prose prose-lg max-w-none text-gray-600 space-y-4">
+                <p>Verto Wave's Observability & Dashboarding solution provides deep insights into the health and performance of your complex IT environments. In the age of distributed systems and microservices, traditional monitoring is no longer enough. Observability goes beyond monitoring by providing the context you need to understand *why* issues are occurring. Our solution helps you collect, correlate, and analyze telemetry data (metrics, traces, and logs) from across your entire stack, from your infrastructure to your applications. We provide intuitive and customizable dashboards that give you a real-time, unified view of your systems, enabling you to proactively identify and resolve issues, optimize performance, and deliver a superior customer experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">Key Features</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Feature</h3>
+                    <p class="text-gray-600">Description</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Unified Telemetry Collection</h3>
+                    <p class="text-gray-600">Collect and correlate metrics, traces, and logs from all your systems, applications, and infrastructure in a single platform.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">AI-Powered Analytics (AIOps)</h3>
+                    <p class="text-gray-600">Use artificial intelligence and machine learning to automatically detect anomalies, identify root causes, and predict future issues.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Distributed Tracing</h3>
+                    <p class="text-gray-600">Trace requests as they flow through your distributed systems, enabling you to identify bottlenecks and troubleshoot performance issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quantified Benefits -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">Quantified Benefits</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-verto-blue mb-3">Reduce Mean Time to Resolution (MTTR) by up to 60%</div>
+                    <p class="text-gray-600">By providing deep insights into your systems, we help you quickly identify and resolve the root cause of issues.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-verto-blue mb-3">Improve Developer Productivity by 30%</div>
+                    <p class="text-gray-600">Our solution helps developers understand how their code is performing in production, enabling them to ship features faster and with higher quality.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-verto-blue mb-3">Reduce Downtime and Improve Reliability</div>
+                    <p class="text-gray-600">Proactive monitoring and anomaly detection help you identify and resolve issues before they impact your users, improving the reliability of your services.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-verto-blue mb-3">Enhance Customer Experience</div>
+                    <p class="text-gray-600">By ensuring the performance and availability of your applications, we help you deliver a superior customer experience and increase customer satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies & Vendors -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">Technologies & Vendors Used</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Category</h3>
+                    <ul class="space-y-2">
+                        
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Technologies & Vendors
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Observability Platforms</h3>
+                    <ul class="space-y-2">
+                        
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Datadog
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Dynatrace
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            New Relic
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Splunk
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Elastic
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Grafana
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Honeycomb
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Data Visualization & Dashboarding</h3>
+                    <ul class="space-y-2">
+                        
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Tableau
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Microsoft Power BI
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Grafana
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Kibana (Elastic)
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Open Source & Open Standards</h3>
+                    <ul class="space-y-2">
+                        
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            OpenTelemetry
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Prometheus
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Jaeger
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Fluentd
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">Cloud Platforms</h3>
+                    <ul class="space-y-2">
+                        
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Amazon CloudWatch
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Azure Monitor
+                        </li>
+
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Google Cloud's operations suite
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration with Other Solutions -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">
+                Integration with Verto Wave Portfolio
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Business Service Mapping</h3>
+                    <p class="text-gray-600">Correlate observability data with your business services to understand the business impact of performance issues.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">DevOps & CI/CD</h3>
+                    <p class="text-gray-600">Provide developers with the feedback they need to build and operate high-performing applications.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Security & Resilience</h3>
+                    <p class="text-gray-600">Detect and respond to security threats in real-time by analyzing security-related logs and events.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Cloud Migration & Optimization</h3>
+                    <p class="text-gray-600">Monitor the performance and cost of your cloud applications, enabling you to optimize your cloud environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-verto-blue to-cyan-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6 font-display">Ready to Transform Your Observability & Dashboarding?</h2>
+            <p class="text-xl mb-8 text-white/90">
+                Let's discuss how our Observability & Dashboarding solution can help you achieve your business goals.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <button class="px-8 py-3 bg-white text-verto-blue rounded-lg font-medium hover:bg-gray-100 transition-colors inline-flex items-center">
+                    Schedule Consultation
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </button>
+                <button class="px-8 py-3 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors">
+                    View Case Studies
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Verto Wave. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

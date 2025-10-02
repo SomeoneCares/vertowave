@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import logo from '../assets/verto_wave_logo.png'
+import { getSolutionUrl } from '../utils/solutionLinks'
 
 const Navigation = ({ isScrolled }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -75,8 +76,8 @@ const Navigation = ({ isScrolled }) => {
                           {category.solutions.map((solution, sIdx) => (
                             <li key={sIdx}>
                               <a
-                                href={`#${solution.toLowerCase().replace(/\s+/g, '-')}`}
-                                className="text-sm text-gray-600 hover:text-verto-blue transition-colors"
+                                href={getSolutionUrl(solution)}
+                                className="text-sm text-gray-600 hover:text-verto-blue transition-colors block"
                               >
                                 {solution}
                               </a>
