@@ -63,7 +63,8 @@ const Navigation = ({ isScrolled }) => {
               </button>
               
               {solutionsOpen && (
-                <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-screen max-w-5xl bg-white shadow-xl rounded-lg p-8 border border-gray-100">
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 pt-2 w-screen max-w-5xl">
+                  <div className="bg-white shadow-xl rounded-lg p-8 border border-gray-100">
                   <div className="grid grid-cols-5 gap-6">
                     {solutionCategories.map((category, idx) => (
                       <div key={idx}>
@@ -89,6 +90,7 @@ const Navigation = ({ isScrolled }) => {
                     <a href="#all-solutions" className="text-verto-blue hover:underline font-display font-medium">
                       View All Solutions →
                     </a>
+                  </div>
                   </div>
                 </div>
               )}
