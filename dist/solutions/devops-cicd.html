@@ -3,398 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps & CI/CD - Verto Wave</title>
+    <title>DevOps & CI/CD - Verto Wave Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         'verto-blue': '#1DB4D8',
+                        'verto-blue-dark': '#1890B0',
+                        'verto-dark-gray': '#4A4A4A',
+                        'verto-light-gray': '#F8F9FA'
                     },
                     fontFamily: {
-                        'display': ['Familjen Grotesk', 'sans-serif'],
+                        'display': ['"Familjen Grotesk"', 'sans-serif'],
                     }
                 }
             }
         }
     </script>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-        }
-        .font-display {
-            font-family: 'Familjen Grotesk', sans-serif;
-        }
-    </style>
 </head>
-<body class="bg-gray-50">
+<body class="font-display bg-white text-verto-dark-gray">
     <!-- Navigation -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <a href="../index.html" class="inline-flex items-center text-gray-600 hover:text-verto-blue transition-colors">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                </svg>
-                Back to Solutions
-            </a>
+    <nav class="sticky top-0 bg-white border-b border-gray-200 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="/" class="text-verto-blue hover:text-verto-blue-dark transition-colors font-semibold">
+                    ← Back to Solutions
+                </a>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <div class="inline-block px-4 py-2 bg-verto-blue/20 rounded-full text-verto-blue text-sm font-medium mb-6">
-                        Service Delivery & Automation
-                    </div>
-                    <h1 class="text-5xl font-bold mb-6 font-display">
-                        DevOps & CI/CD
-                    </h1>
-                    <p class="text-xl text-gray-300 mb-8">
-                        Accelerate software delivery with continuous integration, continuous deployment, and DevOps best practices.
-                    </p>
-                    <div class="flex flex-wrap gap-4">
-                        <button class="px-8 py-3 bg-verto-blue text-white rounded-lg font-medium hover:bg-verto-blue/90 transition-colors">
-                            Request Demo
-                        </button>
-                        <button class="px-8 py-3 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors">
-                            Download Datasheet
-                        </button>
-                    </div>
-                </div>
-                <div class="relative">
-                    <div class="bg-gradient-to-br from-verto-blue/20 to-purple-500/20 rounded-lg p-8 backdrop-blur-sm border border-white/10">
-                        <div class="text-center">
-                            <svg class="w-48 h-48 mx-auto text-verto-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                            </svg>
-                        </div>
-                    </div>
+    <section class="relative bg-gradient-to-br from-verto-blue/10 to-white py-20 overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-verto-blue rounded-full filter blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-verto-blue-dark rounded-full filter blur-3xl"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-8">
+                <span class="inline-block px-4 py-2 bg-verto-blue/10 text-verto-blue rounded-full text-sm font-semibold mb-4">
+                    Service Delivery & Automation
+                </span>
+                <h1 class="font-display font-bold text-5xl lg:text-6xl text-verto-dark-gray mb-6">
+                    DevOps & CI/CD
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                    Accelerate software delivery with modern DevOps practices
+                </p>
+                <div class="flex gap-4 justify-center">
+                    <a href="#contact" class="px-8 py-3 bg-verto-blue text-white rounded-lg font-semibold hover:bg-verto-blue-dark transition-colors shadow-lg">
+                        Request Demo
+                    </a>
+                    <a href="#overview" class="px-8 py-3 bg-white text-verto-blue border-2 border-verto-blue rounded-lg font-semibold hover:bg-verto-blue/5 transition-colors">
+                        Learn More
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Solution Overview -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-gray-900 mb-6 font-display">Solution Overview</h2>
-            <div class="prose prose-lg max-w-none text-gray-600 space-y-4">
-                <p>Verto Wave's DevOps & CI/CD solution helps you accelerate your software development lifecycle, improve code quality, and deliver value to your customers faster. In today's competitive market, the ability to release high-quality software quickly is a key differentiator. Our solution helps you break down the silos between your development and operations teams, fostering a culture of collaboration and shared responsibility. We help you automate your entire software delivery pipeline, from code commit to production deployment, enabling you to release software on demand. With our DevOps & CI/CD solution, you can increase your development velocity, reduce your time to market, and drive business innovation.</p>
+    <section id="overview" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-display font-bold text-3xl text-verto-dark-gray mb-6">Solution Overview</h2>
+            <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                <p>Verto Wave's DevOps & CI/CD solution enables organizations to accelerate software delivery through modern development practices, continuous integration, and continuous deployment pipelines. We implement GitOps workflows, automated testing, security scanning, and deployment automation across multi-cloud and hybrid environments. The solution integrates with leading DevOps tools and provides comprehensive pipeline orchestration, artifact management, and deployment strategies (blue-green, canary, rolling). By leveraging cloud-native technologies and infrastructure-as-code principles, we help organizations achieve faster time-to-market, improved quality, and greater operational efficiency.</p>
             </div>
         </div>
     </section>
 
-    <!-- Key Features -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">Key Features</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                
-                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Feature</h3>
-                    <p class="text-gray-600">Description</p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Continuous Integration (CI)</h3>
-                    <p class="text-gray-600">Automatically build, test, and integrate code changes into a shared repository, enabling you to detect and fix bugs early in the development cycle.</p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Continuous Delivery/Deployment (CD)</h3>
-                    <p class="text-gray-600">Automatically release your software to production or a production-like environment, enabling you to deliver value to your customers faster.</p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Infrastructure as Code (IaC)</h3>
-                    <p class="text-gray-600">Manage and provision your infrastructure through code, enabling you to create consistent and repeatable environments.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quantified Benefits -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">Quantified Benefits</h2>
-            <div class="grid md:grid-cols-4 gap-8">
-                
-                <div class="text-center">
-                    <div class="text-5xl font-bold text-verto-blue mb-3">Increase Deployment Frequency by up to 100x</div>
-                    <p class="text-gray-600">By automating your software delivery pipeline, we help you release software more frequently and respond to market changes faster.</p>
-                </div>
-                <div class="text-center">
-                    <div class="text-5xl font-bold text-verto-blue mb-3">Reduce Lead Time for Changes by up to 50%</div>
-                    <p class="text-gray-600">Our solution helps you reduce the time it takes to get code from commit to production, enabling you to deliver value to your customers faster.</p>
-                </div>
-                <div class="text-center">
-                    <div class="text-5xl font-bold text-verto-blue mb-3">Reduce Change Failure Rate by up to 60%</div>
-                    <p class="text-gray-600">By automating your testing and deployment processes, we help you reduce the number of failed deployments and improve the quality of your software.</p>
-                </div>
-                <div class="text-center">
-                    <div class="text-5xl font-bold text-verto-blue mb-3">Improve Time to Recover from Incidents by up to 90%</div>
-                    <p class="text-gray-600">Our solution helps you quickly identify and resolve issues, minimizing the impact on your customers and your business.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Technologies & Vendors -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">Technologies & Vendors Used</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">Category</h3>
-                    <ul class="space-y-2">
-                        
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Technologies & Vendors
-                        </li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">CI/CD & DevOps Platforms</h3>
-                    <ul class="space-y-2">
-                        
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            GitLab
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            GitHub Actions
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Jenkins
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            CircleCI
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Azure DevOps
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Atlassian Bitbucket
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Spacelift
-                        </li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">Containerization & Orchestration</h3>
-                    <ul class="space-y-2">
-                        
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Docker
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Kubernetes
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Red Hat OpenShift
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Amazon EKS
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Google GKE
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Azure AKS
-                        </li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">Infrastructure as Code (IaC)</h3>
-                    <ul class="space-y-2">
-                        
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            HashiCorp Terraform
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Red Hat Ansible
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Puppet
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Chef
-                        </li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">Cloud Platforms</h3>
-                    <ul class="space-y-2">
-                        
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            AWS
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Azure
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Google Cloud
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Integration with Other Solutions -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">
-                Integration with Verto Wave Portfolio
+    <!-- Technologies & Partners -->
+    <section class="py-20 bg-verto-light-gray">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-display font-bold text-3xl text-verto-dark-gray mb-8 text-center">
+                Technologies & Partners
             </h2>
-            <div class="grid md:grid-cols-2 gap-6">
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                We leverage industry-leading technologies and strategic partnerships to deliver exceptional solutions
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 
-                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Automation & Orchestration</h3>
-                    <p class="text-gray-600">We leverage our Automation & Orchestration capabilities to automate your entire software delivery pipeline.</p>
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            Microsoft
+                        </p>
+                    </div>
                 </div>
-                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Cloud Migration & Optimization</h3>
-                    <p class="text-gray-600">We help you adopt a DevOps culture and CI/CD practices as part of your cloud migration strategy, enabling you to take full advantage of the cloud.</p>
+
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            AWS
+                        </p>
+                    </div>
                 </div>
-                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Security & Resilience</h3>
-                    <p class="text-gray-600">We integrate security into every stage of your software development lifecycle, ensuring that your applications are secure and resilient.</p>
+
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            Broadcom
+                        </p>
+                    </div>
                 </div>
-                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Business Insights</h3>
-                    <p class="text-gray-600">Our DevOps & CI/CD solution provides the data needed to power our Business Insights solutions, giving you visibility into your development velocity and software quality.</p>
+
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            VMware
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            Elastic
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            SAS
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20 bg-gradient-to-br from-verto-blue to-cyan-600 text-white">
+    <section class="py-20 bg-gradient-to-br from-verto-blue to-verto-blue-dark text-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-4xl font-bold mb-6 font-display">Ready to Transform Your DevOps & CI/CD?</h2>
-            <p class="text-xl mb-8 text-white/90">
-                Let's discuss how our DevOps & CI/CD solution can help you achieve your business goals.
+            <h2 class="font-display font-bold text-4xl mb-6">
+                Ready to Transform Your IT Operations?
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+                Let's discuss how DevOps & CI/CD can drive value for your organization
             </p>
-            <div class="flex flex-wrap gap-4 justify-center">
-                <button class="px-8 py-3 bg-white text-verto-blue rounded-lg font-medium hover:bg-gray-100 transition-colors inline-flex items-center">
+            <div class="flex gap-4 justify-center">
+                <a href="#contact" class="px-8 py-3 bg-white text-verto-blue rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">
                     Schedule Consultation
-                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                    </svg>
-                </button>
-                <button class="px-8 py-3 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors">
-                    View Case Studies
-                </button>
+                </a>
+                <a href="/" class="px-8 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-colors">
+                    View All Solutions
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-12">
+    <footer class="bg-verto-dark-gray text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p>&copy; 2025 Verto Wave. All rights reserved.</p>
+            <p>&copy; 2024 Verto Wave. All rights reserved.</p>
         </div>
     </footer>
 </body>

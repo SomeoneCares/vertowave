@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { ArrowRight, CheckCircle2 } from 'lucide-react'
-import heroBackground from '../assets/hero-background.png'
+import heroBackground from '../assets/hero-background.webp'
+import heroBackgroundPng from '../assets/hero-background.webp'
 
 const Hero = () => {
   return (

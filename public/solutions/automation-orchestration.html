@@ -3,370 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Automation & Orchestration - Verto Wave</title>
+    <title>Automation & Orchestration - Verto Wave Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         'verto-blue': '#1DB4D8',
+                        'verto-blue-dark': '#1890B0',
+                        'verto-dark-gray': '#4A4A4A',
+                        'verto-light-gray': '#F8F9FA'
                     },
                     fontFamily: {
-                        'display': ['Familjen Grotesk', 'sans-serif'],
+                        'display': ['"Familjen Grotesk"', 'sans-serif'],
                     }
                 }
             }
         }
     </script>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-        }
-        .font-display {
-            font-family: 'Familjen Grotesk', sans-serif;
-        }
-    </style>
 </head>
-<body class="bg-gray-50">
+<body class="font-display bg-white text-verto-dark-gray">
     <!-- Navigation -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <a href="../index.html" class="inline-flex items-center text-gray-600 hover:text-verto-blue transition-colors">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                </svg>
-                Back to Solutions
-            </a>
+    <nav class="sticky top-0 bg-white border-b border-gray-200 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="/" class="text-verto-blue hover:text-verto-blue-dark transition-colors font-semibold">
+                    ← Back to Solutions
+                </a>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <div class="inline-block px-4 py-2 bg-verto-blue/20 rounded-full text-verto-blue text-sm font-medium mb-6">
-                        Service Delivery & Automation
-                    </div>
-                    <h1 class="text-5xl font-bold mb-6 font-display">
-                        Automation & Orchestration
-                    </h1>
-                    <p class="text-xl text-gray-300 mb-8">
-                        Intelligent automation and workflow orchestration to eliminate manual tasks and accelerate IT operations.
-                    </p>
-                    <div class="flex flex-wrap gap-4">
-                        <button class="px-8 py-3 bg-verto-blue text-white rounded-lg font-medium hover:bg-verto-blue/90 transition-colors">
-                            Request Demo
-                        </button>
-                        <button class="px-8 py-3 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors">
-                            Download Datasheet
-                        </button>
-                    </div>
-                </div>
-                <div class="relative">
-                    <div class="bg-gradient-to-br from-verto-blue/20 to-purple-500/20 rounded-lg p-8 backdrop-blur-sm border border-white/10">
-                        <div class="text-center">
-                            <svg class="w-48 h-48 mx-auto text-verto-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                        </div>
-                    </div>
+    <section class="relative bg-gradient-to-br from-verto-blue/10 to-white py-20 overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-verto-blue rounded-full filter blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-verto-blue-dark rounded-full filter blur-3xl"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-8">
+                <span class="inline-block px-4 py-2 bg-verto-blue/10 text-verto-blue rounded-full text-sm font-semibold mb-4">
+                    Service Delivery & Automation
+                </span>
+                <h1 class="font-display font-bold text-5xl lg:text-6xl text-verto-dark-gray mb-6">
+                    Automation & Orchestration
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                    Intelligent workflow automation and cross-platform orchestration
+                </p>
+                <div class="flex gap-4 justify-center">
+                    <a href="#contact" class="px-8 py-3 bg-verto-blue text-white rounded-lg font-semibold hover:bg-verto-blue-dark transition-colors shadow-lg">
+                        Request Demo
+                    </a>
+                    <a href="#overview" class="px-8 py-3 bg-white text-verto-blue border-2 border-verto-blue rounded-lg font-semibold hover:bg-verto-blue/5 transition-colors">
+                        Learn More
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Solution Overview -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-gray-900 mb-6 font-display">Solution Overview</h2>
-            <div class="prose prose-lg max-w-none text-gray-600 space-y-4">
-                <p>Verto Wave's Automation & Orchestration solution empowers your organization to streamline IT and business processes, reduce manual effort, and accelerate service delivery. In a world where speed and efficiency are paramount, automating repetitive tasks and orchestrating complex workflows is no longer a luxury—it's a necessity. Our solution provides a unified platform to automate everything from simple IT tasks to end-to-end business processes. We help you connect disparate systems, eliminate silos, and create a more agile and responsive organization. With our Automation & Orchestration solution, you can drive operational excellence, foster innovation, and gain a significant competitive advantage.</p>
+    <section id="overview" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-display font-bold text-3xl text-verto-dark-gray mb-6">Solution Overview</h2>
+            <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                <p>Our Automation & Orchestration solution enables organizations to automate repetitive tasks, orchestrate complex workflows, and integrate disparate systems seamlessly. We provide no-code/low-code automation capabilities, robotic process automation (RPA), and intelligent workflow orchestration across your entire IT landscape. Leveraging **StackX's** workflow automation and **DeviceX's** zero-touch provisioning, we deliver end-to-end automation that spans from infrastructure provisioning to business process automation. The solution includes pre-built integrations, intelligent decision-making, error handling, and comprehensive audit trails that reduce manual effort, eliminate errors, and accelerate service delivery.</p>
             </div>
         </div>
     </section>
 
-    <!-- Key Features -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">Key Features</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                
-                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Feature</h3>
-                    <p class="text-gray-600">Description</p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Workflow Automation</h3>
-                    <p class="text-gray-600">Design and automate complex workflows that span multiple applications, systems, and teams.</p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">IT Process Automation (ITPA)</h3>
-                    <p class="text-gray-600">Automate routine IT tasks, such as server provisioning, software deployment, and patch management.</p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Runbook Automation</h3>
-                    <p class="text-gray-600">Digitize and automate your IT operational procedures (runbooks) to ensure consistent and error-free execution.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quantified Benefits -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">Quantified Benefits</h2>
-            <div class="grid md:grid-cols-4 gap-8">
-                
-                <div class="text-center">
-                    <div class="text-5xl font-bold text-verto-blue mb-3">Increase Productivity by up to 50%</div>
-                    <p class="text-gray-600">By automating repetitive tasks, we free up your employees to focus on more strategic and value-added activities.</p>
-                </div>
-                <div class="text-center">
-                    <div class="text-5xl font-bold text-verto-blue mb-3">Reduce Operational Costs by up to 40%</div>
-                    <p class="text-gray-600">Automation reduces the need for manual intervention, leading to significant cost savings in IT and business operations.</p>
-                </div>
-                <div class="text-center">
-                    <div class="text-5xl font-bold text-verto-blue mb-3">Accelerate Service Delivery by up to 75%</div>
-                    <p class="text-gray-600">By automating and orchestrating your service delivery processes, we help you deliver services to your customers and employees faster.</p>
-                </div>
-                <div class="text-center">
-                    <div class="text-5xl font-bold text-verto-blue mb-3">Reduce Errors and Improve Quality</div>
-                    <p class="text-gray-600">Automation eliminates the risk of human error, leading to higher quality and more consistent outcomes.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Technologies & Vendors -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">Technologies & Vendors Used</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">Category</h3>
-                    <ul class="space-y-2">
-                        
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Technologies & Vendors
-                        </li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">Service Orchestration & Automation Platforms (SOAP)</h3>
-                    <ul class="space-y-2">
-                        
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Red Hat Ansible Automation Platform
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            ServiceNow
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            VMware Aria Automation (vRealize)
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Broadcom (Automic)
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Stonebranch
-                        </li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">Workflow Automation & iPaaS</h3>
-                    <ul class="space-y-2">
-                        
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Workato
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Zapier
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Make
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            UiPath
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            MuleSoft
-                        </li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">Cloud-Native Orchestration</h3>
-                    <ul class="space-y-2">
-                        
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Kubernetes
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Argo Workflows
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Apache Airflow
-                        </li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">Robotic Process Automation (RPA)</h3>
-                    <ul class="space-y-2">
-                        
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            UiPath
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Automation Anywhere
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Blue Prism
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Integration with Other Solutions -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">
-                Integration with Verto Wave Portfolio
+    <!-- Technologies & Partners -->
+    <section class="py-20 bg-verto-light-gray">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-display font-bold text-3xl text-verto-dark-gray mb-8 text-center">
+                Technologies & Partners
             </h2>
-            <div class="grid md:grid-cols-2 gap-6">
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                We leverage industry-leading technologies and strategic partnerships to deliver exceptional solutions
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 
-                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">IT Service Management (ITSM)</h3>
-                    <p class="text-gray-600">Automate incident response, problem resolution, and change management processes to improve the efficiency of your service desk.</p>
+                <div class="relative bg-gradient-to-br from-verto-blue/20 to-verto-blue/10 border-2 border-verto-blue rounded-lg p-6 hover:shadow-lg transition-all group">
+                    <span class="absolute top-2 right-2 text-xs bg-verto-blue text-white px-2 py-1 rounded-full font-semibold">Strategic</span>
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            StackX
+                        </p>
+                    </div>
                 </div>
-                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Configuration Management</h3>
-                    <p class="text-gray-600">Automate the deployment and remediation of configurations to ensure that your systems are always in a desired state.</p>
+
+                <div class="relative bg-gradient-to-br from-verto-blue/20 to-verto-blue/10 border-2 border-verto-blue rounded-lg p-6 hover:shadow-lg transition-all group">
+                    <span class="absolute top-2 right-2 text-xs bg-verto-blue text-white px-2 py-1 rounded-full font-semibold">Strategic</span>
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            DeviceX
+                        </p>
+                    </div>
                 </div>
-                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">DevOps & CI/CD</h3>
-                    <p class="text-gray-600">Orchestrate your entire software development and delivery pipeline, from code commit to production deployment.</p>
+
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            Microsoft
+                        </p>
+                    </div>
                 </div>
-                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Cloud Migration & Optimization</h3>
-                    <p class="text-gray-600">Automate the provisioning, scaling, and management of your cloud resources to optimize performance and cost.</p>
+
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            AWS
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            Broadcom
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            VMware
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            Elastic
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            SAS
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20 bg-gradient-to-br from-verto-blue to-cyan-600 text-white">
+    <section class="py-20 bg-gradient-to-br from-verto-blue to-verto-blue-dark text-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-4xl font-bold mb-6 font-display">Ready to Transform Your Automation & Orchestration?</h2>
-            <p class="text-xl mb-8 text-white/90">
-                Let's discuss how our Automation & Orchestration solution can help you achieve your business goals.
+            <h2 class="font-display font-bold text-4xl mb-6">
+                Ready to Transform Your IT Operations?
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+                Let's discuss how Automation & Orchestration can drive value for your organization
             </p>
-            <div class="flex flex-wrap gap-4 justify-center">
-                <button class="px-8 py-3 bg-white text-verto-blue rounded-lg font-medium hover:bg-gray-100 transition-colors inline-flex items-center">
+            <div class="flex gap-4 justify-center">
+                <a href="#contact" class="px-8 py-3 bg-white text-verto-blue rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">
                     Schedule Consultation
-                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                    </svg>
-                </button>
-                <button class="px-8 py-3 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors">
-                    View Case Studies
-                </button>
+                </a>
+                <a href="/" class="px-8 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-colors">
+                    View All Solutions
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-12">
+    <footer class="bg-verto-dark-gray text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p>&copy; 2025 Verto Wave. All rights reserved.</p>
+            <p>&copy; 2024 Verto Wave. All rights reserved.</p>
         </div>
     </footer>
 </body>

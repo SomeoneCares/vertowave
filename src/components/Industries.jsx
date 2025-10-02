@@ -1,9 +1,9 @@
-import industryFinancial from '../assets/industry-financial.png'
-import industryHealthcare from '../assets/industry-healthcare.png'
-import industryManufacturing from '../assets/industry-manufacturing.png'
-import industryRetail from '../assets/industry-retail.png'
-import industryOilGas from '../assets/industry-oil-gas.png'
-import industryGovernment from '../assets/industry-government.png'
+import industryFinancial from '../assets/industry-financial.webp'
+import industryHealthcare from '../assets/industry-healthcare.webp'
+import industryManufacturing from '../assets/industry-manufacturing.webp'
+import industryRetail from '../assets/industry-retail.webp'
+import industryOilGas from '../assets/industry-oil-gas.webp'
+import industryGovernment from '../assets/industry-government.webp'
 
 const Industries = () => {
   const industries = [

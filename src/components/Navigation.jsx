@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import logo from '../assets/verto_wave_logo.png'
+import logo from '../assets/verto_wave_logo.webp'
 import { getSolutionUrl } from '../utils/solutionLinks'
 
 const Navigation = ({ isScrolled }) => {

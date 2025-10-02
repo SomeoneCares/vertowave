@@ -3,370 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Configuration Management - Verto Wave</title>
+    <title>Configuration Management - Verto Wave Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         'verto-blue': '#1DB4D8',
+                        'verto-blue-dark': '#1890B0',
+                        'verto-dark-gray': '#4A4A4A',
+                        'verto-light-gray': '#F8F9FA'
                     },
                     fontFamily: {
-                        'display': ['Familjen Grotesk', 'sans-serif'],
+                        'display': ['"Familjen Grotesk"', 'sans-serif'],
                     }
                 }
             }
         }
     </script>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-        }
-        .font-display {
-            font-family: 'Familjen Grotesk', sans-serif;
-        }
-    </style>
 </head>
-<body class="bg-gray-50">
+<body class="font-display bg-white text-verto-dark-gray">
     <!-- Navigation -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <a href="../index.html" class="inline-flex items-center text-gray-600 hover:text-verto-blue transition-colors">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                </svg>
-                Back to Solutions
-            </a>
+    <nav class="sticky top-0 bg-white border-b border-gray-200 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="/" class="text-verto-blue hover:text-verto-blue-dark transition-colors font-semibold">
+                    ← Back to Solutions
+                </a>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <div class="inline-block px-4 py-2 bg-verto-blue/20 rounded-full text-verto-blue text-sm font-medium mb-6">
-                        Infrastructure & Operations
-                    </div>
-                    <h1 class="text-5xl font-bold mb-6 font-display">
-                        Configuration Management
-                    </h1>
-                    <p class="text-xl text-gray-300 mb-8">
-                        Automate and standardize configuration across your entire infrastructure with real-time compliance monitoring and drift detection.
-                    </p>
-                    <div class="flex flex-wrap gap-4">
-                        <button class="px-8 py-3 bg-verto-blue text-white rounded-lg font-medium hover:bg-verto-blue/90 transition-colors">
-                            Request Demo
-                        </button>
-                        <button class="px-8 py-3 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors">
-                            Download Datasheet
-                        </button>
-                    </div>
-                </div>
-                <div class="relative">
-                    <div class="bg-gradient-to-br from-verto-blue/20 to-purple-500/20 rounded-lg p-8 backdrop-blur-sm border border-white/10">
-                        <div class="text-center">
-                            <svg class="w-48 h-48 mx-auto text-verto-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
-                            </svg>
-                        </div>
-                    </div>
+    <section class="relative bg-gradient-to-br from-verto-blue/10 to-white py-20 overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-verto-blue rounded-full filter blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-verto-blue-dark rounded-full filter blur-3xl"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-8">
+                <span class="inline-block px-4 py-2 bg-verto-blue/10 text-verto-blue rounded-full text-sm font-semibold mb-4">
+                    Infrastructure & Operations
+                </span>
+                <h1 class="font-display font-bold text-5xl lg:text-6xl text-verto-dark-gray mb-6">
+                    Configuration Management
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                    Automate configuration deployment and ensure compliance across your infrastructure
+                </p>
+                <div class="flex gap-4 justify-center">
+                    <a href="#contact" class="px-8 py-3 bg-verto-blue text-white rounded-lg font-semibold hover:bg-verto-blue-dark transition-colors shadow-lg">
+                        Request Demo
+                    </a>
+                    <a href="#overview" class="px-8 py-3 bg-white text-verto-blue border-2 border-verto-blue rounded-lg font-semibold hover:bg-verto-blue/5 transition-colors">
+                        Learn More
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Solution Overview -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-gray-900 mb-6 font-display">Solution Overview</h2>
-            <div class="prose prose-lg max-w-none text-gray-600 space-y-4">
-                <p>Configuration Management from Verto Wave provides a comprehensive framework to unlock the full potential of your IT systems. In today’s fast-paced digital world, maintaining a stable, secure, and high-performing IT infrastructure is more critical than ever. Our Configuration Management solution ensures that your systems, software, and network resources are always in perfect alignment with your business objectives. By implementing our solution, you can effortlessly track, control, and optimize configurations across your entire environment, guaranteeing peak performance, robust security, and consistent compliance. We streamline change management and automate updates to deliver consistent, error-free configurations, which saves valuable time, reduces operational risk, and keeps your IT operations running at full speed.</p>
+    <section id="overview" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-display font-bold text-3xl text-verto-dark-gray mb-6">Solution Overview</h2>
+            <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                <p>Verto Wave's Configuration Management solution provides comprehensive infrastructure automation and compliance management. Using Infrastructure as Code (IaC) principles, we help organizations automate configuration deployment, ensure consistency, and maintain compliance across complex IT environments. Our solution integrates with leading configuration management tools and provides real-time drift detection, automated remediation, and comprehensive audit trails. By partnering with **StackX** for unified operations and **DeviceX** for edge deployment automation, we deliver enterprise-grade configuration management that scales from core data centers to distributed edge locations.</p>
             </div>
         </div>
     </section>
 
-    <!-- Key Features -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">Key Features</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                
-                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Feature</h3>
-                    <p class="text-gray-600">Description</p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Version Control</h3>
-                    <p class="text-gray-600">Manage and track every change to configuration files, software versions, and system settings. This provides a complete audit trail and allows for easy rollback to previous known-good states.</p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Automation</h3>
-                    <p class="text-gray-600">Streamline the deployment of configurations and updates across multiple systems. Our automation capabilities ensure consistency and reduce the manual effort required to manage large and complex environments.</p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Centralized Repository (CMDB)</h3>
-                    <p class="text-gray-600">Store all configuration data in a single, centralized location. This Configuration Management Database (CMDB) provides a single source of truth for all IT assets and their relationships, facilitating easy access, auditing, and recovery.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quantified Benefits -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">Quantified Benefits</h2>
-            <div class="grid md:grid-cols-4 gap-8">
-                
-                <div class="text-center">
-                    <div class="text-5xl font-bold text-verto-blue mb-3">Reduce Downtime by up to 40%</div>
-                    <p class="text-gray-600">By minimizing configuration errors and enabling faster recovery from incidents, our solution significantly improves system availability [1].</p>
-                </div>
-                <div class="text-center">
-                    <div class="text-5xl font-bold text-verto-blue mb-3">Improve Operational Efficiency by 20%</div>
-                    <p class="text-gray-600">Automation of routine tasks and streamlined workflows free up your IT staff to focus on strategic initiatives [2].</p>
-                </div>
-                <div class="text-center">
-                    <div class="text-5xl font-bold text-verto-blue mb-3">Cut Incident Resolution Time by up to 60%</div>
-                    <p class="text-gray-600">A centralized CMDB and detailed audit trails enable your team to quickly identify the root cause of incidents and resolve them faster [1].</p>
-                </div>
-                <div class="text-center">
-                    <div class="text-5xl font-bold text-verto-blue mb-3">Achieve up to 277% ROI over 3 Years</div>
-                    <p class="text-gray-600">Our solution delivers a strong return on investment through cost savings in IT operations, reduced downtime, and improved productivity [3].</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Technologies & Vendors -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">Technologies & Vendors Used</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">Category</h3>
-                    <ul class="space-y-2">
-                        
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Technologies & Vendors
-                        </li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">Infrastructure as Code (IaC)</h3>
-                    <ul class="space-y-2">
-                        
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Red Hat Ansible
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Puppet
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            HashiCorp Terraform
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Chef
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            SaltStack
-                        </li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">CMDB & IT Asset Management</h3>
-                    <ul class="space-y-2">
-                        
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            ServiceNow
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            BMC Helix
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Device42
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            SolarWinds
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Freshservice
-                        </li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">Automation Platforms</h3>
-                    <ul class="space-y-2">
-                        
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Red Hat Ansible Automation Platform
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Puppet Enterprise
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            VMware Aria Automation
-                        </li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">Cloud Platforms</h3>
-                    <ul class="space-y-2">
-                        
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Amazon Web Services (AWS)
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Microsoft Azure
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Google Cloud Platform (GCP)
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Integration with Other Solutions -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">
-                Integration with Verto Wave Portfolio
+    <!-- Technologies & Partners -->
+    <section class="py-20 bg-verto-light-gray">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-display font-bold text-3xl text-verto-dark-gray mb-8 text-center">
+                Technologies & Partners
             </h2>
-            <div class="grid md:grid-cols-2 gap-6">
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                We leverage industry-leading technologies and strategic partnerships to deliver exceptional solutions
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 
-                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">IT Service Management (ITSM)</h3>
-                    <p class="text-gray-600">Integration with our ITSM solution provides a closed-loop change and incident management process. Changes are automatically validated against the CMDB, and incidents are enriched with configuration data to accelerate resolution.</p>
+                <div class="relative bg-gradient-to-br from-verto-blue/20 to-verto-blue/10 border-2 border-verto-blue rounded-lg p-6 hover:shadow-lg transition-all group">
+                    <span class="absolute top-2 right-2 text-xs bg-verto-blue text-white px-2 py-1 rounded-full font-semibold">Strategic</span>
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            StackX
+                        </p>
+                    </div>
                 </div>
-                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Asset Management</h3>
-                    <p class="text-gray-600">By integrating with Asset Management, you gain a complete lifecycle view of your IT assets, from procurement to disposal. This enables better financial planning and cost optimization.</p>
+
+                <div class="relative bg-gradient-to-br from-verto-blue/20 to-verto-blue/10 border-2 border-verto-blue rounded-lg p-6 hover:shadow-lg transition-all group">
+                    <span class="absolute top-2 right-2 text-xs bg-verto-blue text-white px-2 py-1 rounded-full font-semibold">Strategic</span>
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            DeviceX
+                        </p>
+                    </div>
                 </div>
-                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Security & Resilience</h3>
-                    <p class="text-gray-600">Configuration Management is a core component of our Security & Resilience solutions. It ensures that all systems are configured securely and provides the foundation for our Zero Trust and Disaster Recovery offerings.</p>
+
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            Microsoft
+                        </p>
+                    </div>
                 </div>
-                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Business Service Mapping</h3>
-                    <p class="text-gray-600">When integrated with Business Service Mapping, you can visualize the relationships between your technical CIs and the business services they support. This provides a clear line of sight from IT infrastructure to business outcomes.</p>
+
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            AWS
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            VMware
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            Broadcom
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            Elastic
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            OpenText
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20 bg-gradient-to-br from-verto-blue to-cyan-600 text-white">
+    <section class="py-20 bg-gradient-to-br from-verto-blue to-verto-blue-dark text-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-4xl font-bold mb-6 font-display">Ready to Transform Your Configuration Management?</h2>
-            <p class="text-xl mb-8 text-white/90">
-                Let's discuss how our Configuration Management solution can help you achieve your business goals.
+            <h2 class="font-display font-bold text-4xl mb-6">
+                Ready to Transform Your IT Operations?
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+                Let's discuss how Configuration Management can drive value for your organization
             </p>
-            <div class="flex flex-wrap gap-4 justify-center">
-                <button class="px-8 py-3 bg-white text-verto-blue rounded-lg font-medium hover:bg-gray-100 transition-colors inline-flex items-center">
+            <div class="flex gap-4 justify-center">
+                <a href="#contact" class="px-8 py-3 bg-white text-verto-blue rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">
                     Schedule Consultation
-                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                    </svg>
-                </button>
-                <button class="px-8 py-3 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors">
-                    View Case Studies
-                </button>
+                </a>
+                <a href="/" class="px-8 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-colors">
+                    View All Solutions
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-12">
+    <footer class="bg-verto-dark-gray text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p>&copy; 2025 Verto Wave. All rights reserved.</p>
+            <p>&copy; 2024 Verto Wave. All rights reserved.</p>
         </div>
     </footer>
 </body>

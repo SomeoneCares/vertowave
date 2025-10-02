@@ -1,7 +1,7 @@
 import { ArrowRight } from 'lucide-react'
-import challengeLegacy from '../assets/challenge-legacy.png'
-import challengeSecurity from '../assets/challenge-security.png'
-import challengeCloud from '../assets/challenge-cloud-migration.png'
+import challengeLegacy from '../assets/challenge-legacy.webp'
+import challengeSecurity from '../assets/challenge-security.webp'
+import challengeCloud from '../assets/challenge-cloud-migration.webp'
 
 const Challenges = () => {
   const challenges = [

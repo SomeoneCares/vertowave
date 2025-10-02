@@ -3,384 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Protection & Privacy - Verto Wave</title>
+    <title>Data Protection & Privacy - Verto Wave Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         'verto-blue': '#1DB4D8',
+                        'verto-blue-dark': '#1890B0',
+                        'verto-dark-gray': '#4A4A4A',
+                        'verto-light-gray': '#F8F9FA'
                     },
                     fontFamily: {
-                        'display': ['Familjen Grotesk', 'sans-serif'],
+                        'display': ['"Familjen Grotesk"', 'sans-serif'],
                     }
                 }
             }
         }
     </script>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-        }
-        .font-display {
-            font-family: 'Familjen Grotesk', sans-serif;
-        }
-    </style>
 </head>
-<body class="bg-gray-50">
+<body class="font-display bg-white text-verto-dark-gray">
     <!-- Navigation -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <a href="../index.html" class="inline-flex items-center text-gray-600 hover:text-verto-blue transition-colors">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                </svg>
-                Back to Solutions
-            </a>
+    <nav class="sticky top-0 bg-white border-b border-gray-200 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="/" class="text-verto-blue hover:text-verto-blue-dark transition-colors font-semibold">
+                    ← Back to Solutions
+                </a>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <div class="inline-block px-4 py-2 bg-verto-blue/20 rounded-full text-verto-blue text-sm font-medium mb-6">
-                        Security & Compliance
-                    </div>
-                    <h1 class="text-5xl font-bold mb-6 font-display">
-                        Data Protection & Privacy
-                    </h1>
-                    <p class="text-xl text-gray-300 mb-8">
-                        Comprehensive data protection, DLP, encryption, and privacy compliance for GDPR, CCPA, and other regulations.
-                    </p>
-                    <div class="flex flex-wrap gap-4">
-                        <button class="px-8 py-3 bg-verto-blue text-white rounded-lg font-medium hover:bg-verto-blue/90 transition-colors">
-                            Request Demo
-                        </button>
-                        <button class="px-8 py-3 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors">
-                            Download Datasheet
-                        </button>
-                    </div>
-                </div>
-                <div class="relative">
-                    <div class="bg-gradient-to-br from-verto-blue/20 to-purple-500/20 rounded-lg p-8 backdrop-blur-sm border border-white/10">
-                        <div class="text-center">
-                            <svg class="w-48 h-48 mx-auto text-verto-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                            </svg>
-                        </div>
-                    </div>
+    <section class="relative bg-gradient-to-br from-verto-blue/10 to-white py-20 overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-verto-blue rounded-full filter blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-verto-blue-dark rounded-full filter blur-3xl"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-8">
+                <span class="inline-block px-4 py-2 bg-verto-blue/10 text-verto-blue rounded-full text-sm font-semibold mb-4">
+                    Security & Compliance
+                </span>
+                <h1 class="font-display font-bold text-5xl lg:text-6xl text-verto-dark-gray mb-6">
+                    Data Protection & Privacy
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                    Comprehensive data security and privacy compliance management
+                </p>
+                <div class="flex gap-4 justify-center">
+                    <a href="#contact" class="px-8 py-3 bg-verto-blue text-white rounded-lg font-semibold hover:bg-verto-blue-dark transition-colors shadow-lg">
+                        Request Demo
+                    </a>
+                    <a href="#overview" class="px-8 py-3 bg-white text-verto-blue border-2 border-verto-blue rounded-lg font-semibold hover:bg-verto-blue/5 transition-colors">
+                        Learn More
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Solution Overview -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-gray-900 mb-6 font-display">Solution Overview</h2>
-            <div class="prose prose-lg max-w-none text-gray-600 space-y-4">
-                <p>Verto Wave's Data Protection & Privacy solution helps you safeguard your most valuable asset—your data—while navigating the complex landscape of privacy regulations. In an era of increasing data breaches and stringent compliance requirements, a robust data protection and privacy program is essential for building trust with your customers and avoiding costly penalties. Our solution provides a comprehensive framework to discover, classify, protect, and govern your sensitive data, wherever it resides. We help you implement a defense-in-depth strategy that combines data loss prevention (DLP), encryption, and privacy-enhancing technologies (PETs) to protect your data from both internal and external threats. With our Data Protection & Privacy solution, you can build a culture of data stewardship, ensure compliance with regulations like GDPR and CCPA, and unlock the value of your data while respecting individual privacy.</p>
+    <section id="overview" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-display font-bold text-3xl text-verto-dark-gray mb-6">Solution Overview</h2>
+            <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                <p>Our Data Protection & Privacy solution provides end-to-end data security, privacy compliance, and data loss prevention (DLP) capabilities. We help organizations discover, classify, protect, and govern sensitive data across all environments while ensuring compliance with global privacy regulations (GDPR, CCPA, HIPAA). The solution includes data discovery and classification, encryption, tokenization, DLP policies, and privacy rights management. By integrating with **StackX's** compliance framework and leading security platforms, we deliver comprehensive data protection that balances security requirements with business needs while maintaining regulatory compliance.</p>
             </div>
         </div>
     </section>
 
-    <!-- Key Features -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">Key Features</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                
-                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Feature</h3>
-                    <p class="text-gray-600">Description</p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Data Discovery & Classification</h3>
-                    <p class="text-gray-600">Automatically discover and classify sensitive data across your on-premises, cloud, and endpoint environments.</p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Data Loss Prevention (DLP)</h3>
-                    <p class="text-gray-600">Prevent the unauthorized exfiltration of sensitive data through email, web, cloud, and endpoint channels.</p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center text-verto-blue mb-4">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Encryption & Key Management</h3>
-                    <p class="text-gray-600">Encrypt your sensitive data at rest, in motion, and in use, and manage your encryption keys with our centralized key management solution.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quantified Benefits -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">Quantified Benefits</h2>
-            <div class="grid md:grid-cols-4 gap-8">
-                
-                <div class="text-center">
-                    <div class="text-5xl font-bold text-verto-blue mb-3">Reduce the Risk of Data Breaches</div>
-                    <p class="text-gray-600">By implementing a multi-layered data protection strategy, we help you reduce the risk of a costly data breach.</p>
-                </div>
-                <div class="text-center">
-                    <div class="text-5xl font-bold text-verto-blue mb-3">Ensure Compliance with Privacy Regulations</div>
-                    <p class="text-gray-600">Our solution helps you meet the requirements of GDPR, CCPA, and other privacy regulations, avoiding fines and penalties.</p>
-                </div>
-                <div class="text-center">
-                    <div class="text-5xl font-bold text-verto-blue mb-3">Build Customer Trust</div>
-                    <p class="text-gray-600">By demonstrating your commitment to data privacy, you can build trust with your customers and enhance your brand reputation.</p>
-                </div>
-                <div class="text-center">
-                    <div class="text-5xl font-bold text-verto-blue mb-3">Enable Data-Driven Innovation</div>
-                    <p class="text-gray-600">Our solution enables you to unlock the value of your data for analytics and AI while respecting individual privacy.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Technologies & Vendors -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">Technologies & Vendors Used</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">Category</h3>
-                    <ul class="space-y-2">
-                        
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Technologies & Vendors
-                        </li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">Data Privacy Management</h3>
-                    <ul class="space-y-2">
-                        
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            OneTrust
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            TrustArc
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            BigID
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Securiti.ai
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Captain Compliance
-                        </li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">Data Loss Prevention (DLP)</h3>
-                    <ul class="space-y-2">
-                        
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Microsoft Purview
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Broadcom (Symantec)
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Trellix
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Forcepoint
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Proofpoint
-                        </li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">Data Discovery & Classification</h3>
-                    <ul class="space-y-2">
-                        
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            BigID
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Varonis
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Spirion
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Microsoft Purview Information Protection
-                        </li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4">Privacy-Enhancing Technologies (PETs)</h3>
-                    <ul class="space-y-2">
-                        
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Enveil
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Duality Technologies
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            IBM Security
-                        </li>
-
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-4 h-4 text-verto-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Google
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Integration with Other Solutions -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-gray-900 mb-12 font-display text-center">
-                Integration with Verto Wave Portfolio
+    <!-- Technologies & Partners -->
+    <section class="py-20 bg-verto-light-gray">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-display font-bold text-3xl text-verto-dark-gray mb-8 text-center">
+                Technologies & Partners
             </h2>
-            <div class="grid md:grid-cols-2 gap-6">
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                We leverage industry-leading technologies and strategic partnerships to deliver exceptional solutions
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 
-                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Security Governance</h3>
-                    <p class="text-gray-600">Our solution is a key component of our Security Governance framework, providing the technical controls needed to enforce your data protection policies.</p>
+                <div class="relative bg-gradient-to-br from-verto-blue/20 to-verto-blue/10 border-2 border-verto-blue rounded-lg p-6 hover:shadow-lg transition-all group">
+                    <span class="absolute top-2 right-2 text-xs bg-verto-blue text-white px-2 py-1 rounded-full font-semibold">Strategic</span>
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            StackX
+                        </p>
+                    </div>
                 </div>
-                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Identity & Access Management (IAM)</h3>
-                    <p class="text-gray-600">We integrate with your IAM solution to ensure that only authorized users have access to sensitive data.</p>
+
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            Palo Alto Networks
+                        </p>
+                    </div>
                 </div>
-                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Cloud Migration & Optimization</h3>
-                    <p class="text-gray-600">We help you protect your data as you migrate to the cloud, ensuring that your cloud environment is secure and compliant.</p>
+
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            Microsoft
+                        </p>
+                    </div>
                 </div>
-                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-verto-blue">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Business Insights</h3>
-                    <p class="text-gray-600">Our solution enables you to leverage your data for business insights while respecting individual privacy.</p>
+
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            Broadcom
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            AWS
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            OpenText
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all group">
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-verto-blue/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <div class="w-6 h-6 rounded bg-verto-blue/40"></div>
+                        </div>
+                        <p class="font-display font-bold text-sm text-gray-800 group-hover:text-verto-blue transition-colors">
+                            Elastic
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20 bg-gradient-to-br from-verto-blue to-cyan-600 text-white">
+    <section class="py-20 bg-gradient-to-br from-verto-blue to-verto-blue-dark text-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-4xl font-bold mb-6 font-display">Ready to Transform Your Data Protection & Privacy?</h2>
-            <p class="text-xl mb-8 text-white/90">
-                Let's discuss how our Data Protection & Privacy solution can help you achieve your business goals.
+            <h2 class="font-display font-bold text-4xl mb-6">
+                Ready to Transform Your IT Operations?
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+                Let's discuss how Data Protection & Privacy can drive value for your organization
             </p>
-            <div class="flex flex-wrap gap-4 justify-center">
-                <button class="px-8 py-3 bg-white text-verto-blue rounded-lg font-medium hover:bg-gray-100 transition-colors inline-flex items-center">
+            <div class="flex gap-4 justify-center">
+                <a href="#contact" class="px-8 py-3 bg-white text-verto-blue rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">
                     Schedule Consultation
-                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                    </svg>
-                </button>
-                <button class="px-8 py-3 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors">
-                    View Case Studies
-                </button>
+                </a>
+                <a href="/" class="px-8 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition-colors">
+                    View All Solutions
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-12">
+    <footer class="bg-verto-dark-gray text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p>&copy; 2025 Verto Wave. All rights reserved.</p>
+            <p>&copy; 2024 Verto Wave. All rights reserved.</p>
         </div>
     </footer>
 </body>

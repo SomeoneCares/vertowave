@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { ChevronDown, ArrowRight } from 'lucide-react'
-import solutionInfrastructure from '../assets/solution-infrastructure.png'
-import solutionSecurity from '../assets/solution-security.png'
-import solutionAutomation from '../assets/solution-automation.png'
-import solutionCloud from '../assets/solution-cloud.png'
-import solutionInsights from '../assets/solution-insights.png'
+import solutionInfrastructure from '../assets/solution-infrastructure.webp'
+import solutionSecurity from '../assets/solution-security.webp'
+import solutionAutomation from '../assets/solution-automation.webp'
+import solutionCloud from '../assets/solution-cloud.webp'
+import solutionInsights from '../assets/solution-insights.webp'
 
 const Solutions = () => {
   const [expandedCategory, setExpandedCategory] = useState(null)
