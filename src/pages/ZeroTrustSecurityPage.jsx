@@ -1,5 +1,5 @@
 import { ArrowLeft, ShieldCheck, Lock, Network, Monitor, Database, ArrowRight, CheckCircle } from 'lucide-react'
-import solutionZeroTrust from 'https://files.manuscdn.com/user_upload_by_module/session_file/108452336/wBxsmxeqdhQdrIJW.png'
+import solutionZeroTrust from '../assets/solution-zero-trust.png'
 
 const ZeroTrustSecurityPage = () => {
   const keyFeatures = [
