@@ -168,10 +168,10 @@ const ChallengeModal = ({ challenge, onClose }) => {
 
           {/* CTA */}
           <div className="mt-6 sm:mt-8 bg-gradient-to-r from-verto-blue to-verto-teal p-4 sm:p-6 rounded-xl text-center">
-            <h4 className="font-display font-bold text-lg sm:text-xl mb-2 text-white">
+            <h4 className="font-display font-bold text-lg sm:text-xl mb-2" style={{ color: 'white' }}>
               Ready to solve this challenge?
             </h4>
-            <p className="mb-3 sm:mb-4 text-white text-sm sm:text-base break-words">
+            <p className="mb-3 sm:mb-4 text-sm sm:text-base break-words" style={{ color: 'white' }}>
               Let's discuss how Verto Wave can help transform your IT operations
             </p>
             <button className="bg-white text-verto-blue px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-display font-semibold hover:shadow-lg transition-all text-sm sm:text-base">
