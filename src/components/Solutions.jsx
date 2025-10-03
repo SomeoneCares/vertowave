@@ -60,7 +60,7 @@ const Solutions = () => {
         { metric: '90%', description: 'Compliance adherence rate' },
         { metric: '60%', description: 'Reduction in security vulnerabilities' }
       ],
-      technologies: ['StackX', 'Microsoft', 'VMware', 'Broadcom'],
+      technologies: ['StackX', 'Microsoft', 'OpenText', 'Elastic'],
       integrations: ['Systems Management', 'IT Service Management', 'Security Governance']
     },
     'Systems Management': {
@@ -79,7 +79,7 @@ const Solutions = () => {
         { metric: '95%', description: 'System uptime' },
         { metric: '40%', description: 'Reduction in security incidents' }
       ],
-      technologies: ['StackX', 'Microsoft', 'VMware', 'Dell EMC'],
+      technologies: ['StackX', 'Microsoft', 'OpenText', 'Elastic'],
       integrations: ['Configuration Management', 'Network Management', 'AIOps Platform']
     },
     'Network Management': {
@@ -98,7 +98,7 @@ const Solutions = () => {
         { metric: '50%', description: 'Improvement in network performance' },
         { metric: '45%', description: 'Reduction in bandwidth costs' }
       ],
-      technologies: ['StackX', 'Juniper Networks', 'VMware', 'Microsoft'],
+      technologies: ['StackX', 'Juniper Networks', 'VMware', 'OpenText'],
       integrations: ['Systems Management', 'IT Service Intelligence', 'AIOps Platform']
     },
     'IT Asset Management': {
@@ -117,7 +117,7 @@ const Solutions = () => {
         { metric: '50%', description: 'Faster asset procurement' },
         { metric: '60%', description: 'Reduction in unused licenses' }
       ],
-      technologies: ['StackX', 'OpenText', 'Microsoft', 'Broadcom'],
+      technologies: ['StackX', 'OpenText', 'Microsoft', 'Elastic'],
       integrations: ['Configuration Management', 'Systems Management', 'IT Service Management']
     },
     'Identity & Access Management': {
@@ -193,7 +193,7 @@ const Solutions = () => {
         { metric: '60%', description: 'Reduction in attack surface' },
         { metric: '85%', description: 'Improved security posture' }
       ],
-      technologies: ['StackX', 'Palo Alto Networks', 'Juniper Networks', 'Microsoft'],
+      technologies: ['StackX', 'Palo Alto Networks', 'Juniper Networks', 'Microsoft', 'DeviceX'],
       integrations: ['Identity & Access Management', 'Security Governance', 'Network Management']
     },
     'Data Protection & Privacy': {
@@ -231,7 +231,7 @@ const Solutions = () => {
         { metric: '70%', description: 'Improved user satisfaction' },
         { metric: '45%', description: 'Reduction in support costs' }
       ],
-      technologies: ['StackX', 'OpenText', 'Microsoft', 'Broadcom'],
+      technologies: ['StackX', 'OpenText', 'Microsoft'],
       integrations: ['Workflow Automation', 'IT Service Intelligence', 'Configuration Management']
     },
     'Automation & Orchestration': {
@@ -250,7 +250,7 @@ const Solutions = () => {
         { metric: '90%', description: 'Reduction in human errors' },
         { metric: '55%', description: 'Improvement in productivity' }
       ],
-      technologies: ['StackX', 'Microsoft', 'OpenText', 'Broadcom'],
+      technologies: ['StackX', 'Microsoft', 'OpenText'],
       integrations: ['IT Service Management', 'DevOps & CI/CD', 'AIOps Platform']
     },
     'DevOps & CI/CD': {
@@ -307,7 +307,7 @@ const Solutions = () => {
         { metric: '80%', description: 'Improved change planning' },
         { metric: '55%', description: 'Faster problem resolution' }
       ],
-      technologies: ['StackX', 'OpenText', 'Broadcom', 'Microsoft'],
+      technologies: ['StackX', 'OpenText', 'Elastic', 'Microsoft'],
       integrations: ['IT Service Intelligence', 'Configuration Management', 'AIOps Platform']
     },
     'Observability & Dashboarding': {
@@ -364,7 +364,7 @@ const Solutions = () => {
         { metric: '80%', description: 'Faster root cause analysis' },
         { metric: '50%', description: 'Reduction in incidents' }
       ],
-      technologies: ['StackX', 'Elastic', 'SAS', 'DeviceX'],
+      technologies: ['StackX', 'Elastic', 'OpenText', 'DeviceX'],
       integrations: ['Observability & Dashboarding', 'IT Service Intelligence', 'Automation & Orchestration']
     }
   }
