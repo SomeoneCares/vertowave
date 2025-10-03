@@ -575,9 +575,9 @@ const Solutions = () => {
               </div>
 
               {/* CTA */}
-              <div className="bg-gradient-to-r from-verto-blue to-verto-teal text-white p-6 rounded-xl text-center">
-                <h3 className="text-2xl font-bold mb-2">Ready to Transform Your IT?</h3>
-                <p className="mb-4">Let's discuss how {selectedSolution} can help your organization</p>
+              <div className="bg-gradient-to-r from-verto-blue to-verto-teal p-6 rounded-xl text-center">
+                <h3 className="text-2xl font-bold mb-2 text-white">Ready to Transform Your IT?</h3>
+                <p className="mb-4 text-white">Let's discuss how {selectedSolution} can help your organization</p>
                 <button className="bg-white text-verto-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                   Schedule a Consultation
                 </button>
