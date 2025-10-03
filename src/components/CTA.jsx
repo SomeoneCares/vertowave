@@ -5,8 +5,10 @@ const CTA = () => {
   return (
     <section className="relative py-20 lg:py-28 overflow-hidden">
       {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-r from-verto-blue via-verto-blue to-verto-blue-dark"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900"></div>
       <div className="absolute inset-0 wave-pattern opacity-10"></div>
+      {/* Accent overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-verto-blue/20 via-verto-teal/20 to-verto-blue/20"></div>
       
       <div className="container-custom relative z-10">
         <div className="max-w-4xl mx-auto text-center">
