@@ -167,14 +167,19 @@ const ChallengeModal = ({ challenge, onClose }) => {
           </div>
 
           {/* CTA */}
-          <div className="mt-6 sm:mt-8 bg-gray-900 p-4 sm:p-6 rounded-xl text-center">
+          <div 
+            className="mt-6 sm:mt-8 p-4 sm:p-6 rounded-xl text-center"
+            style={{
+              background: 'linear-gradient(to right, #1DB4D8, #17A2B8)'
+            }}
+          >
             <h4 className="font-display font-bold text-lg sm:text-xl mb-2" style={{ color: 'white' }}>
               Ready to solve this challenge?
             </h4>
             <p className="mb-3 sm:mb-4 text-sm sm:text-base break-words" style={{ color: 'white' }}>
               Let's discuss how Verto Wave can help transform your IT operations
             </p>
-            <button className="bg-white text-gray-900 px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-display font-semibold hover:bg-gray-100 transition-all text-sm sm:text-base">
+            <button className="bg-white text-verto-blue px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-display font-semibold hover:bg-gray-100 transition-all text-sm sm:text-base">
               Schedule a Consultation
             </button>
           </div>
