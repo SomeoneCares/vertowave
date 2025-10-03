@@ -9,6 +9,27 @@ import solutionInsights from '../assets/solution-insights.webp'
 const Solutions = () => {
   const [expandedCategory, setExpandedCategory] = useState(null)
 
+  // Mapping of solution names to their URL slugs
+  const solutionLinks = {
+    'Configuration Management': '/solutions/configuration-management',
+    'Systems Management': '/solutions/systems-management',
+    'Network Management': '/solutions/network-management',
+    'IT Asset Management': '/solutions/it-asset-management',
+    'Identity & Access Management': '/solutions/identity-access-management',
+    'Security Governance': '/solutions/security-governance',
+    'Resilience & Backup': '/solutions/resilience-backup',
+    'Zero Trust Frameworks': '/solutions/zero-trust-frameworks',
+    'Data Protection & Privacy': '/solutions/data-protection-privacy',
+    'IT Service Management': '/solutions/it-service-management',
+    'Automation & Orchestration': '/solutions/automation-orchestration',
+    'DevOps & CI/CD': '/solutions/devops-cicd',
+    'Cloud Migration & Optimization': '/solutions/cloud-migration-optimization',
+    'Business Service Mapping': '/solutions/business-service-mapping',
+    'Observability & Dashboarding': '/solutions/observability-dashboarding',
+    'Productivity Analytics': '/solutions/productivity-analytics',
+    'AIOps Platform': '/solutions/aiops-platform'
+  }
+
   const categories = [
     {
       image: solutionInfrastructure,
@@ -126,9 +147,14 @@ const Solutions = () => {
                   <div className="border-t border-gray-100 pt-4 mb-4">
                     <ul className="space-y-2">
                       {category.solutions.map((solution, sIdx) => (
-                        <li key={sIdx} className="flex items-center text-sm text-gray-700">
-                          <div className="w-1.5 h-1.5 rounded-full bg-verto-blue mr-2"></div>
-                          {solution}
+                        <li key={sIdx} className="flex items-center text-sm">
+                          <div className="w-1.5 h-1.5 rounded-full bg-verto-blue mr-2 flex-shrink-0"></div>
+                          <a 
+                            href={solutionLinks[solution]} 
+                            className="text-gray-700 hover:text-verto-blue hover:underline transition-colors"
+                          >
+                            {solution}
+                          </a>
                         </li>
                       ))}
                     </ul>
