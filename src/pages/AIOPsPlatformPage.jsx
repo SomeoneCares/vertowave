@@ -33,10 +33,10 @@ const AIOpsPlatformPage = () => {
   ]
 
   const technologies = [
-    { category: "Data Ingestion & Processing", tools: ["Apache Kafka", "Elasticsearch", "Splunk"] },
-    { category: "Machine Learning Frameworks", tools: ["TensorFlow", "PyTorch", "Scikit-learn"] },
-    { category: "Monitoring & Observability", tools: ["Prometheus", "Grafana", "Datadog", "Dynatrace"] },
-    { category: "Automation & Orchestration", tools: ["Ansible", "Kubernetes", "ServiceNow"] }
+    { category: "Data Ingestion & Processing", tools: ["StackX", "Elastic", "SAS", "Microsoft"] },
+    { category: "Machine Learning Frameworks", tools: ["StackX", "SAS", "Microsoft", "Elastic"] },
+    { category: "Monitoring & Observability", tools: ["StackX", "Elastic", "SAS", "DeviceX"] },
+    { category: "Automation & Orchestration", tools: ["StackX", "Microsoft", "VMware", "OpenText"] }
   ]
 
   const integrations = [

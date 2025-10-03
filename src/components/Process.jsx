@@ -780,7 +780,7 @@ const Process = () => {
         >
           <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
             {/* Header */}
-            <div className="bg-gradient-to-br from-verto-blue to-verto-teal p-8 text-white relative">
+            <div className="bg-gradient-to-br from-verto-blue-dark to-verto-teal-dark p-8 text-white relative">
               <button
                 onClick={() => setSelectedCapability(null)}
                 className="absolute top-4 right-4 p-2 hover:bg-white/20 rounded-full transition-colors"
@@ -879,7 +879,7 @@ const Process = () => {
               <div className="text-center pt-4">
                 <a
                   href="#contact"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-verto-blue to-verto-teal hover:from-verto-blue-dark hover:to-verto-teal text-white font-display font-semibold px-6 py-3 rounded-lg transition-all"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-verto-blue-dark to-verto-teal-dark hover:from-verto-blue-darker hover:to-verto-teal-darker text-white font-display font-semibold px-6 py-3 rounded-lg transition-all"
                   onClick={() => setSelectedCapability(null)}
                 >
                   Assess Your {selectedCapability.title}

@@ -56,7 +56,7 @@ export const challengesData = [
     solution: 'Verto Wave specializes in modernizing legacy infrastructure through strategic configuration management and automation. We help organizations transition from manual, error-prone processes to automated, standardized configurations that improve reliability while reducing costs.',
     approach: [
       'Infrastructure assessment and modernization roadmap',
-      'Automated configuration management with Ansible/Puppet',
+      'Automated configuration management with Microsoft/VMware',
       'Standardized configuration templates and policies',
       'Continuous compliance monitoring and remediation'
     ],
@@ -209,7 +209,7 @@ export const challengesData = [
       'High IT support costs',
       'Difficulty measuring and improving service quality'
     ],
-    solution: 'Verto Wave implements modern IT Service Management (ITSM) solutions that transform IT support from reactive to proactive. We deploy ServiceNow and other leading ITSM platforms with best-practice workflows, self-service capabilities, and automation.',
+    solution: 'Verto Wave implements modern IT Service Management (ITSM) solutions that transform IT support from reactive to proactive. We deploy Microsoft and other leading ITSM platforms with best-practice workflows, self-service capabilities, and automation.',
     approach: [
       'ITSM platform implementation and optimization',
       'Self-service portal and knowledge base',

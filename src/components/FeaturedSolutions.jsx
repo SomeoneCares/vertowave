@@ -1,8 +1,40 @@
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react'
 import { useState } from 'react'
 
+// Import partner logos
+import stackxLogo from '../assets/partners/stackx.webp'
+import devicexLogo from '../assets/partners/devicex.webp'
+import paloaltoLogo from '../assets/partners/paloalto.webp'
+import opentextLogo from '../assets/partners/opentext.webp'
+import elasticLogo from '../assets/partners/elastic.webp'
+import sasLogo from '../assets/partners/sas.webp'
+import broadcomLogo from '../assets/partners/broadcom.webp'
+import commvaultLogo from '../assets/partners/commvault.webp'
+import microsoftLogo from '../assets/partners/microsoft.webp'
+import vmwareLogo from '../assets/partners/vmware.webp'
+import dellEmcLogo from '../assets/partners/dell-emc.webp'
+import juniperLogo from '../assets/partners/juniper.webp'
+import awsLogo from '../assets/partners/aws.webp'
+
 const FeaturedSolutions = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
+
+  // Partner logo mapping
+  const partnerLogos = {
+    'StackX': stackxLogo,
+    'DeviceX': devicexLogo,
+    'Palo Alto Networks': paloaltoLogo,
+    'OpenText': opentextLogo,
+    'Elastic': elasticLogo,
+    'SAS': sasLogo,
+    'Broadcom': broadcomLogo,
+    'Commvault': commvaultLogo,
+    'Microsoft': microsoftLogo,
+    'VMware': vmwareLogo,
+    'Dell EMC': dellEmcLogo,
+    'Juniper Networks': juniperLogo,
+    'AWS': awsLogo
+  }
 
   const solutions = [
     {
@@ -10,7 +42,7 @@ const FeaturedSolutions = () => {
       category: 'Infrastructure & Operations',
       benefit: 'Reduce configuration errors by 70%',
       description: 'Automate and standardize configuration across your entire infrastructure with real-time compliance monitoring.',
-      technologies: ['ServiceNow', 'Ansible', 'Puppet', 'Chef'],
+      technologies: ['StackX', 'Microsoft', 'OpenText', 'Elastic'],
       categoryColor: 'bg-blue-100 text-blue-700'
     },
     {
@@ -18,7 +50,7 @@ const FeaturedSolutions = () => {
       category: 'Security & Compliance',
       benefit: 'Reduce data breach risk by 50%',
       description: 'Implement zero-trust security with comprehensive identity governance and access controls.',
-      technologies: ['Okta', 'Azure AD', 'CyberArk', 'Ping Identity'],
+      technologies: ['StackX', 'Microsoft', 'Palo Alto Networks', 'Broadcom'],
       categoryColor: 'bg-red-100 text-red-700'
     },
     {
@@ -26,7 +58,7 @@ const FeaturedSolutions = () => {
       category: 'Cloud & Modernization',
       benefit: 'Reduce IT costs by 40%',
       description: 'Seamlessly migrate to the cloud and optimize your multi-cloud environment for cost and performance.',
-      technologies: ['AWS', 'Azure', 'Google Cloud', 'VMware'],
+      technologies: ['StackX', 'AWS', 'Microsoft', 'VMware'],
       categoryColor: 'bg-purple-100 text-purple-700'
     },
     {
@@ -34,7 +66,7 @@ const FeaturedSolutions = () => {
       category: 'Insights & Intelligence',
       benefit: 'Reduce MTTR by 60%',
       description: 'Leverage AI-powered insights to predict and prevent IT issues before they impact your business.',
-      technologies: ['Datadog', 'Dynatrace', 'Splunk', 'New Relic'],
+      technologies: ['StackX', 'Elastic', 'OpenText', 'DeviceX'],
       categoryColor: 'bg-green-100 text-green-700'
     }
   ]
@@ -109,11 +141,13 @@ const FeaturedSolutions = () => {
                             {solution.technologies.map((tech, tIdx) => (
                               <div
                                 key={tIdx}
-                                className="bg-white rounded-lg p-4 text-center shadow-sm hover:shadow-md transition-shadow"
+                                className="bg-white rounded-lg p-4 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow min-h-[80px]"
                               >
-                                <p className="font-display font-medium text-gray-700">
-                                  {tech}
-                                </p>
+                                <img 
+                                  src={partnerLogos[tech]} 
+                                  alt={`${tech} logo`}
+                                  className="max-h-10 max-w-[100px] object-contain"
+                                />
                               </div>
                             ))}
                           </div>

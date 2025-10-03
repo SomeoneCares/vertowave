@@ -33,10 +33,10 @@ const ConfigurationManagementPage = () => {
   ]
 
   const technologies = [
-    { category: "Orchestration", tools: ["ServiceNow", "Ansible", "Puppet", "Chef"] },
-    { category: "Cloud Platforms", tools: ["AWS Config", "Azure Policy", "Google Cloud Config"] },
-    { category: "Monitoring", tools: ["Datadog", "Splunk", "New Relic"] },
-    { category: "Security", tools: ["CyberArk", "HashiCorp Vault"] }
+    { category: "Enterprise Platforms", tools: ["StackX", "Microsoft", "VMware", "Broadcom"] },
+    { category: "Cloud Platforms", tools: ["StackX", "AWS", "Microsoft", "VMware"] },
+    { category: "Analytics & Intelligence", tools: ["StackX", "Elastic", "SAS", "Microsoft"] },
+    { category: "Security", tools: ["StackX", "Palo Alto Networks", "Microsoft", "Broadcom"] }
   ]
 
   const integrations = [

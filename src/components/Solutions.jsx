@@ -6,9 +6,41 @@ import solutionAutomation from '../assets/solution-automation.webp'
 import solutionCloud from '../assets/solution-cloud.webp'
 import solutionInsights from '../assets/solution-insights.webp'
 
+// Import partner logos
+import stackxLogo from '../assets/partners/stackx.webp'
+import devicexLogo from '../assets/partners/devicex.webp'
+import paloaltoLogo from '../assets/partners/paloalto.webp'
+import opentextLogo from '../assets/partners/opentext.webp'
+import elasticLogo from '../assets/partners/elastic.webp'
+import sasLogo from '../assets/partners/sas.webp'
+import broadcomLogo from '../assets/partners/broadcom.webp'
+import commvaultLogo from '../assets/partners/commvault.webp'
+import microsoftLogo from '../assets/partners/microsoft.webp'
+import vmwareLogo from '../assets/partners/vmware.webp'
+import dellEmcLogo from '../assets/partners/dell-emc.webp'
+import juniperLogo from '../assets/partners/juniper.webp'
+import awsLogo from '../assets/partners/aws.webp'
+
 const Solutions = () => {
   const [expandedCategory, setExpandedCategory] = useState(null)
   const [selectedSolution, setSelectedSolution] = useState(null)
+
+  // Partner logo mapping
+  const partnerLogos = {
+    'StackX': stackxLogo,
+    'DeviceX': devicexLogo,
+    'Palo Alto Networks': paloaltoLogo,
+    'OpenText': opentextLogo,
+    'Elastic': elasticLogo,
+    'SAS': sasLogo,
+    'Broadcom': broadcomLogo,
+    'Commvault': commvaultLogo,
+    'Microsoft': microsoftLogo,
+    'VMware': vmwareLogo,
+    'Dell EMC': dellEmcLogo,
+    'Juniper Networks': juniperLogo,
+    'AWS': awsLogo
+  }
 
   // Comprehensive solution data
   const solutionData = {
@@ -28,7 +60,7 @@ const Solutions = () => {
         { metric: '90%', description: 'Compliance adherence rate' },
         { metric: '60%', description: 'Reduction in security vulnerabilities' }
       ],
-      technologies: ['ServiceNow', 'Ansible', 'Puppet', 'Chef'],
+      technologies: ['StackX', 'Microsoft', 'VMware', 'Broadcom'],
       integrations: ['Systems Management', 'IT Service Management', 'Security Governance']
     },
     'Systems Management': {
@@ -47,7 +79,7 @@ const Solutions = () => {
         { metric: '95%', description: 'System uptime' },
         { metric: '40%', description: 'Reduction in security incidents' }
       ],
-      technologies: ['Microsoft SCCM', 'VMware', 'Red Hat Satellite', 'SolarWinds'],
+      technologies: ['StackX', 'Microsoft', 'VMware', 'Dell EMC'],
       integrations: ['Configuration Management', 'Network Management', 'AIOps Platform']
     },
     'Network Management': {
@@ -66,7 +98,7 @@ const Solutions = () => {
         { metric: '50%', description: 'Improvement in network performance' },
         { metric: '45%', description: 'Reduction in bandwidth costs' }
       ],
-      technologies: ['Cisco', 'SolarWinds', 'PRTG', 'Wireshark'],
+      technologies: ['StackX', 'Juniper Networks', 'VMware', 'Microsoft'],
       integrations: ['Systems Management', 'IT Service Intelligence', 'AIOps Platform']
     },
     'IT Asset Management': {
@@ -85,7 +117,7 @@ const Solutions = () => {
         { metric: '50%', description: 'Faster asset procurement' },
         { metric: '60%', description: 'Reduction in unused licenses' }
       ],
-      technologies: ['ServiceNow', 'Snow Software', 'Flexera', 'BMC'],
+      technologies: ['StackX', 'OpenText', 'Microsoft', 'Broadcom'],
       integrations: ['Configuration Management', 'Systems Management', 'IT Service Management']
     },
     'Identity & Access Management': {
@@ -104,7 +136,7 @@ const Solutions = () => {
         { metric: '85%', description: 'Compliance adherence' },
         { metric: '60%', description: 'Reduction in helpdesk tickets' }
       ],
-      technologies: ['Okta', 'Azure AD', 'CyberArk', 'Ping Identity'],
+      technologies: ['StackX', 'Microsoft', 'Palo Alto Networks', 'Broadcom'],
       integrations: ['Security Governance', 'Zero Trust Security', 'IT Service Management']
     },
     'Security Governance': {
@@ -123,7 +155,7 @@ const Solutions = () => {
         { metric: '55%', description: 'Reduction in vulnerabilities' },
         { metric: '90%', description: 'Policy compliance rate' }
       ],
-      technologies: ['ServiceNow', 'Qualys', 'Tenable', 'Rapid7'],
+      technologies: ['StackX', 'Palo Alto Networks', 'Microsoft', 'Broadcom'],
       integrations: ['Identity & Access Management', 'Compliance Management', 'Zero Trust Security']
     },
     'Resilience & Backup': {
@@ -142,7 +174,7 @@ const Solutions = () => {
         { metric: '60%', description: 'Reduction in storage costs' },
         { metric: '99.9%', description: 'Data availability' }
       ],
-      technologies: ['Veeam', 'Commvault', 'Rubrik', 'Zerto'],
+      technologies: ['StackX', 'Commvault', 'Dell EMC', 'Microsoft'],
       integrations: ['Systems Management', 'Cloud Migration & Optimization', 'Security Governance']
     },
     'Zero Trust Frameworks': {
@@ -161,7 +193,7 @@ const Solutions = () => {
         { metric: '60%', description: 'Reduction in attack surface' },
         { metric: '85%', description: 'Improved security posture' }
       ],
-      technologies: ['Palo Alto', 'Zscaler', 'Cisco', 'Illumio'],
+      technologies: ['StackX', 'Palo Alto Networks', 'Juniper Networks', 'Microsoft'],
       integrations: ['Identity & Access Management', 'Security Governance', 'Network Management']
     },
     'Data Protection & Privacy': {
@@ -180,7 +212,7 @@ const Solutions = () => {
         { metric: '85%', description: 'Data privacy compliance' },
         { metric: '60%', description: 'Reduction in compliance costs' }
       ],
-      technologies: ['Symantec', 'McAfee', 'Varonis', 'OneTrust'],
+      technologies: ['StackX', 'Broadcom', 'Microsoft', 'OpenText'],
       integrations: ['Security Governance', 'Compliance Management', 'Identity & Access Management']
     },
     'IT Service Management': {
@@ -199,7 +231,7 @@ const Solutions = () => {
         { metric: '70%', description: 'Improved user satisfaction' },
         { metric: '45%', description: 'Reduction in support costs' }
       ],
-      technologies: ['ServiceNow', 'BMC Remedy', 'Jira Service Management', 'Ivanti'],
+      technologies: ['StackX', 'OpenText', 'Microsoft', 'Broadcom'],
       integrations: ['Workflow Automation', 'IT Service Intelligence', 'Configuration Management']
     },
     'Automation & Orchestration': {
@@ -218,7 +250,7 @@ const Solutions = () => {
         { metric: '90%', description: 'Reduction in human errors' },
         { metric: '55%', description: 'Improvement in productivity' }
       ],
-      technologies: ['ServiceNow', 'UiPath', 'Automation Anywhere', 'Ansible'],
+      technologies: ['StackX', 'Microsoft', 'OpenText', 'Broadcom'],
       integrations: ['IT Service Management', 'DevOps & CI/CD', 'AIOps Platform']
     },
     'DevOps & CI/CD': {
@@ -237,7 +269,7 @@ const Solutions = () => {
         { metric: '70%', description: 'Faster mean time to recovery' },
         { metric: '50%', description: 'Improvement in code quality' }
       ],
-      technologies: ['Jenkins', 'GitLab', 'Azure DevOps', 'GitHub Actions'],
+      technologies: ['StackX', 'Microsoft', 'AWS', 'VMware'],
       integrations: ['Automation & Orchestration', 'Cloud Migration & Optimization', 'AIOps Platform']
     },
     'Cloud Migration & Optimization': {
@@ -256,7 +288,7 @@ const Solutions = () => {
         { metric: '50%', description: 'Improvement in scalability' },
         { metric: '35%', description: 'Reduction in cloud waste' }
       ],
-      technologies: ['AWS', 'Azure', 'Google Cloud', 'VMware'],
+      technologies: ['StackX', 'AWS', 'Microsoft', 'VMware'],
       integrations: ['Application Modernization', 'DevOps & CI/CD', 'Resilience & Backup']
     },
     'Business Service Mapping': {
@@ -275,7 +307,7 @@ const Solutions = () => {
         { metric: '80%', description: 'Improved change planning' },
         { metric: '55%', description: 'Faster problem resolution' }
       ],
-      technologies: ['ServiceNow', 'BMC', 'Device42', 'Dynatrace'],
+      technologies: ['StackX', 'OpenText', 'Broadcom', 'Microsoft'],
       integrations: ['IT Service Intelligence', 'Configuration Management', 'AIOps Platform']
     },
     'Observability & Dashboarding': {
@@ -294,7 +326,7 @@ const Solutions = () => {
         { metric: '85%', description: 'Improvement in visibility' },
         { metric: '50%', description: 'Reduction in alert fatigue' }
       ],
-      technologies: ['Datadog', 'Splunk', 'Grafana', 'ELK Stack'],
+      technologies: ['StackX', 'Elastic', 'SAS', 'Microsoft'],
       integrations: ['AIOps Platform', 'IT Service Intelligence', 'Systems Management']
     },
     'Productivity Analytics': {
@@ -313,7 +345,7 @@ const Solutions = () => {
         { metric: '70%', description: 'Better resource allocation' },
         { metric: '60%', description: 'Improved user satisfaction' }
       ],
-      technologies: ['Microsoft Viva', 'Nexthink', 'ControlUp', 'Lakeside Software'],
+      technologies: ['StackX', 'Microsoft', 'SAS', 'Elastic'],
       integrations: ['Digital Employee Experience', 'IT Service Intelligence', 'AIOps Platform']
     },
     'AIOps Platform': {
@@ -332,7 +364,7 @@ const Solutions = () => {
         { metric: '80%', description: 'Faster root cause analysis' },
         { metric: '50%', description: 'Reduction in incidents' }
       ],
-      technologies: ['Datadog', 'Dynatrace', 'Splunk', 'New Relic'],
+      technologies: ['StackX', 'Elastic', 'SAS', 'DeviceX'],
       integrations: ['Observability & Dashboarding', 'IT Service Intelligence', 'Automation & Orchestration']
     }
   }
@@ -340,7 +372,7 @@ const Solutions = () => {
   const categories = [
     {
       image: solutionInfrastructure,
-      name: 'Infrastructure & Operations Management',
+      name: 'Infrastructure & Operations',
       count: 4,
       description: 'Modernize and optimize your IT infrastructure for peak performance and reliability.',
       solutions: [
@@ -359,9 +391,9 @@ const Solutions = () => {
       solutions: [
         'Identity & Access Management',
         'Security Governance',
-        'Backup & Disaster Recovery',
-        'Zero Trust Security',
-        'Compliance Management'
+        'Resilience & Backup',
+        'Zero Trust Frameworks',
+        'Data Protection & Privacy'
       ],
       color: 'from-red-500 to-red-600'
     },
@@ -372,7 +404,7 @@ const Solutions = () => {
       description: 'Accelerate service delivery and automate workflows for maximum efficiency.',
       solutions: [
         'IT Service Management',
-        'Workflow Automation',
+        'Automation & Orchestration',
         'DevOps & CI/CD'
       ],
       color: 'from-green-500 to-green-600'
@@ -384,7 +416,7 @@ const Solutions = () => {
       description: 'Transform your IT with cloud-native solutions and modern architectures.',
       solutions: [
         'Cloud Migration & Optimization',
-        'Application Modernization'
+        'Business Service Mapping'
       ],
       color: 'from-purple-500 to-purple-600'
     },
@@ -394,9 +426,9 @@ const Solutions = () => {
       count: 3,
       description: 'Gain actionable insights with advanced analytics and AI-powered intelligence.',
       solutions: [
-        'AIOps Platform',
-        'IT Service Intelligence',
-        'Digital Employee Experience'
+        'Observability & Dashboarding',
+        'Productivity Analytics',
+        'AIOps Platform'
       ],
       color: 'from-cyan-500 to-cyan-600'
     }
@@ -414,6 +446,24 @@ const Solutions = () => {
 
   const solution = selectedSolution ? solutionData[selectedSolution] : null
   const SolutionIcon = solution?.icon
+
+  // Function to find which category a solution belongs to
+  const getSolutionCategory = (solutionName) => {
+    return categories.find(category => 
+      category.solutions.includes(solutionName)
+    )
+  }
+
+  // Function to extract base color from gradient for buttons
+  const getCategoryBaseColor = (category) => {
+    if (!category?.color) return 'blue'
+    // Extract color from gradient like "from-blue-500 to-blue-600"
+    const match = category.color.match(/from-(\w+)-(\d+)/)
+    return match ? match[1] : 'blue'
+  }
+
+  const solutionCategory = selectedSolution ? getSolutionCategory(selectedSolution) : null
+  const categoryBaseColor = solutionCategory ? getCategoryBaseColor(solutionCategory) : 'blue'
 
   return (
     <section id="solutions" className="py-20 bg-gradient-to-b from-white to-gray-50">
@@ -485,7 +535,7 @@ const Solutions = () => {
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 backdrop-blur-sm" onClick={closeModal}>
           <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
             {/* Modal Header */}
-            <div className="sticky top-0 bg-gradient-to-r from-verto-blue to-verto-blue-dark text-white p-6 rounded-t-2xl z-10">
+            <div className={`sticky top-0 bg-gradient-to-r ${solutionCategory?.color || 'from-verto-blue to-verto-blue-dark'} text-white p-6 rounded-t-2xl z-10`}>
               <button
                 onClick={closeModal}
                 className="absolute top-4 right-4 text-white hover:bg-white hover:bg-opacity-20 rounded-full p-2 transition-colors"
@@ -494,9 +544,7 @@ const Solutions = () => {
               </button>
               <div className="flex items-center gap-4">
                 {SolutionIcon && (
-                  <div className="bg-white bg-opacity-20 p-3 rounded-lg">
-                    <SolutionIcon className="w-8 h-8" />
-                  </div>
+                  <SolutionIcon className="w-8 h-8 text-white" />
                 )}
                 <div>
                   <h2 className="text-3xl font-bold mb-2">{selectedSolution}</h2>
@@ -536,7 +584,7 @@ const Solutions = () => {
                 <h3 className="text-2xl font-bold mb-4 text-gray-800">Quantified Benefits</h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   {solution.benefits.map((benefit, idx) => (
-                    <div key={idx} className="bg-gradient-to-br from-verto-blue to-verto-blue-dark text-white p-4 rounded-lg text-center">
+                    <div key={idx} className={`bg-gradient-to-br ${solutionCategory?.color || 'from-verto-blue to-verto-blue-dark'} text-white p-4 rounded-lg text-center`}>
                       <div className="text-3xl font-bold mb-2">{benefit.metric}</div>
                       <div className="text-sm">{benefit.description}</div>
                     </div>
@@ -547,18 +595,22 @@ const Solutions = () => {
               {/* Technologies */}
               <div className="mb-8">
                 <h3 className="text-2xl font-bold mb-4 text-gray-800">Technologies & Partners</h3>
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap gap-4">
                   {solution.technologies.map((tech, idx) => (
-                    <span key={idx} className="bg-gray-100 px-4 py-2 rounded-full text-gray-700 font-medium">
-                      {tech}
-                    </span>
+                    <div key={idx} className="bg-white border border-gray-200 rounded-lg p-4 flex items-center justify-center hover:shadow-md transition-shadow min-w-[120px] h-20">
+                      <img 
+                        src={partnerLogos[tech]} 
+                        alt={`${tech} logo`}
+                        className="max-h-12 max-w-[100px] object-contain"
+                      />
+                    </div>
                   ))}
                 </div>
               </div>
 
               {/* Integrations */}
-              <div className="mb-8">
-                <h3 className="text-2xl font-bold mb-4 text-gray-800">Integrates With</h3>
+              <div className={`bg-gradient-to-r ${solutionCategory?.color || 'from-verto-blue to-verto-teal'} p-6 rounded-xl mb-8`}>
+                <h3 className="text-2xl font-bold mb-4 text-white">Integrates With</h3>
                 <div className="flex flex-wrap gap-3">
                   {solution.integrations.map((integration, idx) => (
                     <button
@@ -566,7 +618,7 @@ const Solutions = () => {
                       onClick={() => {
                         setSelectedSolution(integration)
                       }}
-                      className="bg-verto-blue bg-opacity-10 text-verto-blue px-4 py-2 rounded-full font-medium hover:bg-opacity-20 transition-colors"
+                      className="bg-black bg-opacity-20 text-white hover:bg-opacity-30 px-4 py-2 rounded-full font-medium transition-colors border border-white border-opacity-50"
                     >
                       {integration}
                     </button>
@@ -575,10 +627,10 @@ const Solutions = () => {
               </div>
 
               {/* CTA */}
-              <div className="bg-gradient-to-r from-verto-blue to-verto-teal p-6 rounded-xl text-center">
+              <div className={`bg-gradient-to-r ${solutionCategory?.color || 'from-verto-blue to-verto-teal'} p-6 rounded-xl text-center`}>
                 <h3 className="text-2xl font-bold mb-2" style={{ color: 'white' }}>Ready to Transform Your IT?</h3>
                 <p className="mb-4" style={{ color: 'white' }}>Let's discuss how {selectedSolution} can help your organization</p>
-                <button className="bg-white text-verto-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                <button className={`bg-white text-${categoryBaseColor}-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors`}>
                   Schedule a Consultation
                 </button>
               </div>

@@ -274,7 +274,7 @@ const Industries = () => {
 
               {/* CTA */}
               <div className="pt-6 border-t border-gray-200">
-                <div className="bg-gradient-to-r from-verto-blue to-verto-teal rounded-xl p-6 text-white text-center">
+                <div className="bg-gradient-to-r from-verto-blue-dark to-verto-teal-dark rounded-xl p-6 text-white text-center">
                   <h4 className="font-display font-bold text-xl mb-2">
                     Ready to Transform Your {selectedIndustry.name} IT?
                   </h4>

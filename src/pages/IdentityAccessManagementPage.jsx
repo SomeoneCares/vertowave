@@ -33,10 +33,10 @@ const IdentityAccessManagementPage = () => {
   ]
 
   const technologies = [
-    { category: "Identity Providers", tools: ["Okta", "Azure AD", "Ping Identity", "Auth0"] },
-    { category: "Access Management", tools: ["CyberArk", "SailPoint", "ForgeRock"] },
-    { category: "Privileged Access Management", tools: ["BeyondTrust", "Thycotic"] },
-    { category: "Directory Services", tools: ["Active Directory", "LDAP"] }
+    { category: "Identity Providers", tools: ["StackX", "Microsoft", "Palo Alto Networks", "Broadcom"] },
+    { category: "Access Management", tools: ["StackX", "Microsoft", "Palo Alto Networks", "Broadcom"] },
+    { category: "Privileged Access Management", tools: ["StackX", "Microsoft", "Palo Alto Networks", "Broadcom"] },
+    { category: "Directory Services", tools: ["StackX", "Microsoft", "VMware", "Broadcom"] }
   ]
 
   const integrations = [

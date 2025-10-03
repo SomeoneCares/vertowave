@@ -49,6 +49,7 @@
   --verto-blue-dark: #1899B8;
   --verto-blue-accessible: #0D7A94; /* Darker blue for better contrast with white text */
   --verto-teal: #17A2B8;
+  --verto-teal-dark: #138496;
   --verto-dark-gray: #4A4A4A;
   --verto-light-gray: #F5F5F5;
   
@@ -185,6 +186,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .to-verto-teal {
   --tw-gradient-to: var(--verto-teal);
+}
+
+.from-verto-blue-dark {
+  --tw-gradient-from: var(--verto-blue-dark);
+  --tw-gradient-to: rgb(24 153 184 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-verto-teal-dark {
+  --tw-gradient-to: var(--verto-teal-dark);
+}
+
+.hover\:from-verto-blue-darker:hover {
+  --tw-gradient-from: var(--verto-blue-accessible);
+  --tw-gradient-to: rgb(13 122 148 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.hover\:to-verto-teal-darker:hover {
+  --tw-gradient-to: var(--verto-blue-accessible);
 }
 
 .bg-verto-light-gray {
