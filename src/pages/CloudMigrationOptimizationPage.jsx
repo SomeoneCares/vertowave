@@ -1,59 +1,59 @@
-import { ArrowLeft, CheckCircle, TrendingUp, Shield, Zap, Users, ArrowRight } from 'lucide-react'
-import solutionInfrastructure from '../assets/solution-infrastructure.png'
+import { ArrowLeft, Cloud, Zap, BarChart2, Shield, CheckCircle, ArrowRight } from 'lucide-react'
+import solutionCloudMigration from '../assets/solution-infrastructure.png'
 
-const ConfigurationManagementPage = () => {
+const CloudMigrationOptimizationPage = () => {
   const keyFeatures = [
     {
+      icon: <Cloud className="w-6 h-6" />,
+      title: "Strategic Migration Planning",
+      description: "Develop a tailored migration roadmap, including workload assessment, dependency mapping, and risk analysis."
+    },
+    {
       icon: <Zap className="w-6 h-6" />,
-      title: "Automated Configuration",
-      description: "Automatically deploy and maintain consistent configurations across all infrastructure"
+      title: "Automated Migration Execution",
+      description: "Utilize advanced tools and automation to accelerate data and application migration with minimal downtime."
+    },
+    {
+      icon: <BarChart2 className="w-6 h-6" />,
+      title: "Cost & Performance Optimization",
+      description: "Implement FinOps strategies and continuous monitoring to optimize cloud spend and resource performance."
     },
     {
       icon: <Shield className="w-6 h-6" />,
-      title: "Compliance Monitoring",
-      description: "Real-time compliance checking against industry standards and internal policies"
-    },
-    {
-      icon: <TrendingUp className="w-6 h-6" />,
-      title: "Drift Detection",
-      description: "Identify and remediate configuration drift before it causes issues"
-    },
-    {
-      icon: <Users className="w-6 h-6" />,
-      title: "Version Control",
-      description: "Track all configuration changes with full audit trails and rollback capabilities"
+      title: "Cloud Security & Compliance",
+      description: "Ensure robust security posture and compliance with industry regulations throughout your cloud journey."
     }
   ]
 
   const benefits = [
-    { metric: "70%", description: "Reduction in configuration errors" },
-    { metric: "80%", description: "Improvement in compliance rates" },
-    { metric: "60%", description: "Faster deployment times" },
-    { metric: "50%", description: "Decrease in security incidents" }
+    { metric: "40%", description: "Reduction in cloud operational costs" },
+    { metric: "60%", description: "Faster time-to-market for new applications" },
+    { metric: "99.9%", description: "Improved application availability and resilience" },
+    { metric: "75%", description: "Enhanced security posture and compliance adherence" }
   ]
 
   const technologies = [
-    { category: "Orchestration", tools: ["ServiceNow", "Ansible", "Puppet", "Chef"] },
-    { category: "Cloud Platforms", tools: ["AWS Config", "Azure Policy", "Google Cloud Config"] },
-    { category: "Monitoring", tools: ["Datadog", "Splunk", "New Relic"] },
-    { category: "Security", tools: ["CyberArk", "HashiCorp Vault"] }
+    { category: "Cloud Platforms", tools: ["AWS", "Azure", "Google Cloud Platform"] },
+    { category: "Migration Tools", tools: ["AWS Migration Hub", "Azure Migrate", "Google Cloud Migrate for Compute Engine"] },
+    { category: "Optimization & FinOps", tools: ["CloudHealth by VMware", "Apptio Cloudability", "Azure Cost Management"] },
+    { category: "Containerization", tools: ["Docker", "Kubernetes", "OpenShift"] }
   ]
 
   const integrations = [
-    { solution: "Systems Management", benefit: "Unified infrastructure visibility" },
-    { solution: "Security Governance", benefit: "Automated security policy enforcement" },
-    { solution: "IT Service Management", benefit: "Change management integration" },
-    { solution: "Observability & Dashboarding", benefit: "Real-time configuration monitoring" }
+    { solution: "DevOps & Automation", benefit: "Streamlined CI/CD pipelines for cloud-native deployments" },
+    { solution: "Data Analytics & AI", benefit: "Scalable data processing and machine learning in the cloud" },
+    { solution: "Cybersecurity & Risk Management", benefit: "Integrated cloud security controls and threat detection" },
+    { solution: "Managed Services", benefit: "24/7 expert support for your cloud infrastructure" }
   ]
 
   const deliverables = [
-    "Configuration management strategy and roadmap",
-    "Automated configuration deployment pipelines",
-    "Compliance monitoring dashboards",
-    "Configuration drift detection and remediation",
-    "Version control and audit trail system",
-    "Documentation and runbooks",
-    "Team training and knowledge transfer"
+    "Cloud readiness assessment and migration strategy",
+    "Detailed migration plan and execution roadmap",
+    "Optimized cloud architecture and resource configurations",
+    "Cost management and FinOps framework implementation",
+    "Cloud security and compliance blueprints",
+    "Post-migration support and continuous optimization services",
+    "Knowledge transfer and training for your team"
   ]
 
   return (
@@ -74,13 +74,13 @@ const ConfigurationManagementPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block px-4 py-2 bg-[#1DB4D8]/20 rounded-full text-[#1DB4D8] text-sm font-medium mb-6">
-                Infrastructure & Operations
+                Cloud & Infrastructure
               </div>
               <h1 className="text-5xl font-bold mb-6 font-display">
-                Configuration Management
+                Cloud Migration & Optimization
               </h1>
               <p className="text-xl text-gray-300 mb-8">
-                Automate and standardize configuration across your entire infrastructure with real-time compliance monitoring and drift detection.
+                Seamlessly transition your applications and data to the cloud, and continuously optimize your cloud resources for performance, cost, and security.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button className="px-8 py-3 bg-[#1DB4D8] text-white rounded-lg font-medium hover:bg-[#1DB4D8]/90 transition-colors">
@@ -93,8 +93,8 @@ const ConfigurationManagementPage = () => {
             </div>
             <div className="relative">
               <img 
-                src={solutionInfrastructure} 
-                alt="Configuration Management" 
+                src={solutionCloudMigration} 
+                alt="Cloud Migration & Optimization" 
                 className="rounded-lg shadow-2xl"
               />
             </div>
@@ -108,13 +108,13 @@ const ConfigurationManagementPage = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-6 font-display">Solution Overview</h2>
           <div className="prose prose-lg max-w-none text-gray-600">
             <p>
-              Verto Wave's Configuration Management solution provides comprehensive automation and governance for your IT infrastructure configuration. Our platform enables organizations to maintain consistent, compliant, and secure configurations across on-premises, cloud, and hybrid environments.
+              Verto Wave's Cloud Migration & Optimization solution empowers organizations to confidently move their IT infrastructure to leading cloud platforms while ensuring maximum efficiency and cost-effectiveness. We provide end-to-end support, from initial assessment and planning to execution and post-migration optimization.
             </p>
             <p>
-              By implementing infrastructure as code (IaC) principles and automated compliance checking, we help you eliminate configuration drift, reduce human error, and accelerate deployment cycles while maintaining security and compliance standards.
+              Our approach minimizes disruption, mitigates risks, and accelerates time-to-value, allowing you to leverage the full potential of cloud computing. We focus on right-sizing resources, implementing FinOps best practices, and automating operations to drive continuous improvement.
             </p>
             <p>
-              Our solution integrates seamlessly with your existing tools and workflows, providing a unified platform for configuration management across your entire technology stack.
+              Whether you're looking for a lift-and-shift, re-platforming, or re-architecting strategy, our experts guide you through every step, ensuring a secure, scalable, and resilient cloud environment.
             </p>
           </div>
         </div>
@@ -212,9 +212,9 @@ const ConfigurationManagementPage = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-[#1DB4D8] to-[#1DB4D8]/80 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6 font-display">Ready to Transform Your Configuration Management?</h2>
+          <h2 className="text-4xl font-bold mb-6 font-display">Ready to Accelerate Your Cloud Journey?</h2>
           <p className="text-xl mb-8 text-white/90">
-            Let's discuss how our Configuration Management solution can help you achieve your infrastructure goals.
+            Partner with Verto Wave to achieve a successful and optimized cloud transformation.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button className="px-8 py-3 bg-white text-[#1DB4D8] rounded-lg font-medium hover:bg-gray-100 transition-colors inline-flex items-center">
@@ -238,4 +238,5 @@ const ConfigurationManagementPage = () => {
   )
 }
 
-export default ConfigurationManagementPage
+export default CloudMigrationOptimizationPage
+

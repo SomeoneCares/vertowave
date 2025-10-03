@@ -1,59 +1,59 @@
-import { ArrowLeft, CheckCircle, TrendingUp, Shield, Zap, Users, ArrowRight } from 'lucide-react'
-import solutionInfrastructure from '../assets/solution-infrastructure.png'
+import { ArrowLeft, ShieldCheck, Lock, Network, Monitor, Database, ArrowRight, CheckCircle } from 'lucide-react'
+import solutionZeroTrust from 'https://files.manuscdn.com/user_upload_by_module/session_file/108452336/wBxsmxeqdhQdrIJW.png'
 
-const ConfigurationManagementPage = () => {
+const ZeroTrustSecurityPage = () => {
   const keyFeatures = [
     {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Automated Configuration",
-      description: "Automatically deploy and maintain consistent configurations across all infrastructure"
+      icon: <ShieldCheck className="w-6 h-6" />,
+      title: "Strong Identity Verification",
+      description: "Verify every user and device with multi-factor authentication and adaptive access policies."
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Compliance Monitoring",
-      description: "Real-time compliance checking against industry standards and internal policies"
+      icon: <Lock className="w-6 h-6" />,
+      title: "Least Privilege Access",
+      description: "Grant users and devices only the minimum access required to perform their tasks."
     },
     {
-      icon: <TrendingUp className="w-6 h-6" />,
-      title: "Drift Detection",
-      description: "Identify and remediate configuration drift before it causes issues"
+      icon: <Network className="w-6 h-6" />,
+      title: "Micro-segmentation",
+      description: "Isolate workloads and applications to limit lateral movement of threats within the network."
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Version Control",
-      description: "Track all configuration changes with full audit trails and rollback capabilities"
+      icon: <Monitor className="w-6 h-6" />,
+      title: "Continuous Monitoring & Analytics",
+      description: "Monitor all access attempts and network activity in real-time for anomalies and threats."
     }
   ]
 
   const benefits = [
-    { metric: "70%", description: "Reduction in configuration errors" },
-    { metric: "80%", description: "Improvement in compliance rates" },
-    { metric: "60%", description: "Faster deployment times" },
-    { metric: "50%", description: "Decrease in security incidents" }
+    { metric: "90%", description: "Reduction in unauthorized access attempts" },
+    { metric: "75%", description: "Faster detection and response to breaches" },
+    { metric: "60%", description: "Improvement in regulatory compliance posture" },
+    { metric: "50%", description: "Decrease in data exfiltration risks" }
   ]
 
   const technologies = [
-    { category: "Orchestration", tools: ["ServiceNow", "Ansible", "Puppet", "Chef"] },
-    { category: "Cloud Platforms", tools: ["AWS Config", "Azure Policy", "Google Cloud Config"] },
-    { category: "Monitoring", tools: ["Datadog", "Splunk", "New Relic"] },
-    { category: "Security", tools: ["CyberArk", "HashiCorp Vault"] }
+    { category: "Identity & Access Management", tools: ["Okta", "Azure AD", "Ping Identity"] },
+    { category: "Network Security", tools: ["Palo Alto Networks", "Cisco Secure", "Zscaler"] },
+    { category: "Endpoint Security", tools: ["CrowdStrike", "SentinelOne", "Microsoft Defender"] },
+    { category: "Data Security", tools: ["Varonis", "Forcepoint", "Netskope"] }
   ]
 
   const integrations = [
-    { solution: "Systems Management", benefit: "Unified infrastructure visibility" },
-    { solution: "Security Governance", benefit: "Automated security policy enforcement" },
-    { solution: "IT Service Management", benefit: "Change management integration" },
-    { solution: "Observability & Dashboarding", benefit: "Real-time configuration monitoring" }
+    { solution: "Security Operations Center (SOC)", benefit: "Enhanced threat intelligence and incident response" },
+    { solution: "Cloud Security Posture Management (CSPM)", benefit: "Consistent security policies across cloud environments" },
+    { solution: "Data Loss Prevention (DLP)", benefit: "Prevent sensitive data exfiltration with granular controls" },
+    { solution: "Managed Detection and Response (MDR)", benefit: "24/7 expert monitoring and proactive threat hunting" }
   ]
 
   const deliverables = [
-    "Configuration management strategy and roadmap",
-    "Automated configuration deployment pipelines",
-    "Compliance monitoring dashboards",
-    "Configuration drift detection and remediation",
-    "Version control and audit trail system",
-    "Documentation and runbooks",
-    "Team training and knowledge transfer"
+    "Zero Trust architecture design and implementation roadmap",
+    "Identity and access management (IAM) integration",
+    "Micro-segmentation strategy and deployment",
+    "Continuous monitoring and analytics dashboards",
+    "Policy enforcement and automation workflows",
+    "Security awareness training for employees",
+    "Documentation and operational runbooks"
   ]
 
   return (
@@ -74,27 +74,27 @@ const ConfigurationManagementPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block px-4 py-2 bg-[#1DB4D8]/20 rounded-full text-[#1DB4D8] text-sm font-medium mb-6">
-                Infrastructure & Operations
+                Cybersecurity & Compliance
               </div>
               <h1 className="text-5xl font-bold mb-6 font-display">
-                Configuration Management
+                Zero Trust Security
               </h1>
               <p className="text-xl text-gray-300 mb-8">
-                Automate and standardize configuration across your entire infrastructure with real-time compliance monitoring and drift detection.
+                Implement a robust Zero Trust framework to secure your enterprise, ensuring every access request is verified, regardless of origin.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button className="px-8 py-3 bg-[#1DB4D8] text-white rounded-lg font-medium hover:bg-[#1DB4D8]/90 transition-colors">
                   Request Demo
                 </button>
                 <button className="px-8 py-3 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors">
-                  Download Datasheet
+                  Download Whitepaper
                 </button>
               </div>
             </div>
             <div className="relative">
               <img 
-                src={solutionInfrastructure} 
-                alt="Configuration Management" 
+                src={solutionZeroTrust} 
+                alt="Zero Trust Security" 
                 className="rounded-lg shadow-2xl"
               />
             </div>
@@ -108,13 +108,13 @@ const ConfigurationManagementPage = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-6 font-display">Solution Overview</h2>
           <div className="prose prose-lg max-w-none text-gray-600">
             <p>
-              Verto Wave's Configuration Management solution provides comprehensive automation and governance for your IT infrastructure configuration. Our platform enables organizations to maintain consistent, compliant, and secure configurations across on-premises, cloud, and hybrid environments.
+              Verto Wave's Zero Trust Security solution redefines enterprise security by eliminating implicit trust and continuously validating every stage of digital interaction. In today's complex threat landscape, traditional perimeter-based security is no longer sufficient. Our framework ensures that no user, device, or application is trusted by default, regardless of whether they are inside or outside the network.
             </p>
             <p>
-              By implementing infrastructure as code (IaC) principles and automated compliance checking, we help you eliminate configuration drift, reduce human error, and accelerate deployment cycles while maintaining security and compliance standards.
+              We help organizations implement a comprehensive Zero Trust model that encompasses identity verification, device posture assessment, least privilege access, micro-segmentation, and continuous monitoring. This proactive approach minimizes the attack surface, prevents unauthorized access, and limits the impact of potential breaches.
             </p>
             <p>
-              Our solution integrates seamlessly with your existing tools and workflows, providing a unified platform for configuration management across your entire technology stack.
+              By integrating advanced security technologies and intelligent analytics, Verto Wave empowers your business to operate securely in any environment, from on-premises data centers to multi-cloud infrastructures, without compromising agility or user experience.
             </p>
           </div>
         </div>
@@ -212,9 +212,9 @@ const ConfigurationManagementPage = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-[#1DB4D8] to-[#1DB4D8]/80 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6 font-display">Ready to Transform Your Configuration Management?</h2>
+          <h2 className="text-4xl font-bold mb-6 font-display">Ready to Fortify Your Defenses with Zero Trust?</h2>
           <p className="text-xl mb-8 text-white/90">
-            Let's discuss how our Configuration Management solution can help you achieve your infrastructure goals.
+            Contact us today to learn how Verto Wave can help you implement a robust Zero Trust Security framework.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button className="px-8 py-3 bg-white text-[#1DB4D8] rounded-lg font-medium hover:bg-gray-100 transition-colors inline-flex items-center">
@@ -222,7 +222,7 @@ const ConfigurationManagementPage = () => {
               <ArrowRight className="w-5 h-5 ml-2" />
             </button>
             <button className="px-8 py-3 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors">
-              View Case Studies
+              Explore Use Cases
             </button>
           </div>
         </div>
@@ -238,4 +238,5 @@ const ConfigurationManagementPage = () => {
   )
 }
 
-export default ConfigurationManagementPage
+export default ZeroTrustSecurityPage
+

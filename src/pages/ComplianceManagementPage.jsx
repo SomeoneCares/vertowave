@@ -1,59 +1,59 @@
-import { ArrowLeft, CheckCircle, TrendingUp, Shield, Zap, Users, ArrowRight } from 'lucide-react'
-import solutionInfrastructure from '../assets/solution-infrastructure.png'
+import { ArrowLeft, CheckCircle, Shield, FileText, BarChart, Lightbulb, ArrowRight } from 'lucide-react'
+import solutionCompliance from '../assets/solution-infrastructure.png' // Placeholder image, assuming it will be created/available
 
-const ConfigurationManagementPage = () => {
+const ComplianceManagementPage = () => {
   const keyFeatures = [
     {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Automated Configuration",
-      description: "Automatically deploy and maintain consistent configurations across all infrastructure"
-    },
-    {
       icon: <Shield className="w-6 h-6" />,
-      title: "Compliance Monitoring",
-      description: "Real-time compliance checking against industry standards and internal policies"
+      title: "Automated Policy Enforcement",
+      description: "Automatically apply and enforce compliance policies across systems and data."
     },
     {
-      icon: <TrendingUp className="w-6 h-6" />,
-      title: "Drift Detection",
-      description: "Identify and remediate configuration drift before it causes issues"
+      icon: <FileText className="w-6 h-6" />,
+      title: "Real-time Compliance Monitoring",
+      description: "Continuously monitor systems and activities for compliance deviations."
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Version Control",
-      description: "Track all configuration changes with full audit trails and rollback capabilities"
+      icon: <BarChart className="w-6 h-6" />,
+      title: "Centralized Audit & Reporting",
+      description: "Generate comprehensive audit trails and reports for regulatory bodies and internal stakeholders."
+    },
+    {
+      icon: <Lightbulb className="w-6 h-6" />,
+      title: "Risk Assessment & Mitigation",
+      description: "Identify, assess, and mitigate compliance-related risks proactively."
     }
   ]
 
   const benefits = [
-    { metric: "70%", description: "Reduction in configuration errors" },
-    { metric: "80%", description: "Improvement in compliance rates" },
-    { metric: "60%", description: "Faster deployment times" },
-    { metric: "50%", description: "Decrease in security incidents" }
+    { metric: "60%", description: "Reduction in Audit Preparation Time" },
+    { metric: "85%", description: "Improvement in Regulatory Adherence" },
+    { metric: "40%", description: "Decrease in Compliance-Related Fines" },
+    { metric: "75%", description: "Faster Identification of Compliance Gaps" }
   ]
 
   const technologies = [
-    { category: "Orchestration", tools: ["ServiceNow", "Ansible", "Puppet", "Chef"] },
-    { category: "Cloud Platforms", tools: ["AWS Config", "Azure Policy", "Google Cloud Config"] },
-    { category: "Monitoring", tools: ["Datadog", "Splunk", "New Relic"] },
-    { category: "Security", tools: ["CyberArk", "HashiCorp Vault"] }
+    { category: "Regulatory Intelligence", tools: ["Thomson Reuters Regulatory Intelligence", "Wolters Kluwer"] },
+    { category: "GRC Platforms", tools: ["ServiceNow GRC", "Archer", "MetricStream"] },
+    { category: "Cloud Compliance", tools: ["AWS Audit Manager", "Azure Compliance Manager", "Google Cloud Security Command Center"] },
+    { category: "Data Privacy", tools: ["OneTrust", "TrustArc"] }
   ]
 
   const integrations = [
-    { solution: "Systems Management", benefit: "Unified infrastructure visibility" },
-    { solution: "Security Governance", benefit: "Automated security policy enforcement" },
-    { solution: "IT Service Management", benefit: "Change management integration" },
-    { solution: "Observability & Dashboarding", benefit: "Real-time configuration monitoring" }
+    { solution: "Security Governance", benefit: "Automated security policy enforcement and risk management." },
+    { solution: "IT Service Management", benefit: "Streamlined incident and change management for compliance-related issues." },
+    { solution: "Data Governance", benefit: "Ensure data privacy and protection standards are met across all data assets." },
+    { solution: "Audit & Assurance", benefit: "Provide real-time data and reports for internal and external audits." }
   ]
 
   const deliverables = [
-    "Configuration management strategy and roadmap",
-    "Automated configuration deployment pipelines",
-    "Compliance monitoring dashboards",
-    "Configuration drift detection and remediation",
-    "Version control and audit trail system",
-    "Documentation and runbooks",
-    "Team training and knowledge transfer"
+    "Comprehensive compliance strategy and roadmap",
+    "Automated compliance workflows and controls implementation",
+    "Real-time compliance dashboards and alerts",
+    "Regular risk assessments and mitigation plans",
+    "Training and support for compliance teams",
+    "Integration with existing GRC and IT systems",
+    "Documentation of policies, procedures, and evidence"
   ]
 
   return (
@@ -74,13 +74,13 @@ const ConfigurationManagementPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block px-4 py-2 bg-[#1DB4D8]/20 rounded-full text-[#1DB4D8] text-sm font-medium mb-6">
-                Infrastructure & Operations
+                Governance, Risk & Compliance
               </div>
               <h1 className="text-5xl font-bold mb-6 font-display">
-                Configuration Management
+                Compliance Management
               </h1>
               <p className="text-xl text-gray-300 mb-8">
-                Automate and standardize configuration across your entire infrastructure with real-time compliance monitoring and drift detection.
+                Automate, monitor, and enforce regulatory compliance across your organization with Verto Wave's comprehensive Compliance Management solution.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button className="px-8 py-3 bg-[#1DB4D8] text-white rounded-lg font-medium hover:bg-[#1DB4D8]/90 transition-colors">
@@ -93,8 +93,8 @@ const ConfigurationManagementPage = () => {
             </div>
             <div className="relative">
               <img 
-                src={solutionInfrastructure} 
-                alt="Configuration Management" 
+                src={solutionCompliance} 
+                alt="Compliance Management" 
                 className="rounded-lg shadow-2xl"
               />
             </div>
@@ -108,13 +108,10 @@ const ConfigurationManagementPage = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-6 font-display">Solution Overview</h2>
           <div className="prose prose-lg max-w-none text-gray-600">
             <p>
-              Verto Wave's Configuration Management solution provides comprehensive automation and governance for your IT infrastructure configuration. Our platform enables organizations to maintain consistent, compliant, and secure configurations across on-premises, cloud, and hybrid environments.
+              Verto Wave's Compliance Management solution provides a robust framework for organizations to navigate the complex landscape of regulatory requirements, internal policies, and industry standards. Our platform centralizes compliance efforts, automates monitoring, and streamlines reporting, significantly reducing the burden of manual compliance tasks.
             </p>
             <p>
-              By implementing infrastructure as code (IaC) principles and automated compliance checking, we help you eliminate configuration drift, reduce human error, and accelerate deployment cycles while maintaining security and compliance standards.
-            </p>
-            <p>
-              Our solution integrates seamlessly with your existing tools and workflows, providing a unified platform for configuration management across your entire technology stack.
+              By leveraging advanced analytics and real-time data, we empower businesses to proactively identify and mitigate compliance risks, ensure adherence to evolving regulations like GDPR, HIPAA, and ISO 27001, and foster a culture of continuous compliance. This leads to enhanced operational efficiency, reduced legal exposure, and strengthened stakeholder trust.
             </p>
           </div>
         </div>
@@ -181,6 +178,9 @@ const ConfigurationManagementPage = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-12 font-display text-center">
             Integration with Verto Wave Portfolio
           </h2>
+          <div className="prose prose-lg max-w-none text-gray-600 text-center mb-8">
+            <p>Verto Wave's Compliance Management solution seamlessly integrates with other Verto Wave offerings to provide a holistic approach to your enterprise needs:</p>
+          </div>
           <div className="grid md:grid-cols-2 gap-6">
             {integrations.map((integration, index) => (
               <div key={index} className="bg-gray-50 p-6 rounded-lg border-l-4 border-[#1DB4D8]">
@@ -212,17 +212,17 @@ const ConfigurationManagementPage = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-[#1DB4D8] to-[#1DB4D8]/80 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6 font-display">Ready to Transform Your Configuration Management?</h2>
+          <h2 className="text-4xl font-bold mb-6 font-display">Achieve Unwavering Compliance with Verto Wave</h2>
           <p className="text-xl mb-8 text-white/90">
-            Let's discuss how our Configuration Management solution can help you achieve your infrastructure goals.
+            Protect your organization from regulatory penalties and reputational damage. Discover how our Compliance Management solution can simplify your compliance journey.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button className="px-8 py-3 bg-white text-[#1DB4D8] rounded-lg font-medium hover:bg-gray-100 transition-colors inline-flex items-center">
-              Schedule Consultation
+              Schedule a Compliance Consultation
               <ArrowRight className="w-5 h-5 ml-2" />
             </button>
             <button className="px-8 py-3 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors">
-              View Case Studies
+              Explore Compliance Case Studies
             </button>
           </div>
         </div>
@@ -238,4 +238,5 @@ const ConfigurationManagementPage = () => {
   )
 }
 
-export default ConfigurationManagementPage
+export default ComplianceManagementPage
+

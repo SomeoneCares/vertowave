@@ -1,59 +1,59 @@
-import { ArrowLeft, CheckCircle, TrendingUp, Shield, Zap, Users, ArrowRight } from 'lucide-react'
-import solutionInfrastructure from '../assets/solution-infrastructure.png'
+import { ArrowLeft, ShieldCheck, CloudUpload, RefreshCcw, HardDrive, Database, Clock, Server, CheckCircle, ArrowRight } from 'lucide-react'
+import solutionBDR from '../assets/solution-infrastructure.png' // Assuming a new image for BDR
 
-const ConfigurationManagementPage = () => {
+const BackupDisasterRecoveryPage = () => {
   const keyFeatures = [
     {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Automated Configuration",
-      description: "Automatically deploy and maintain consistent configurations across all infrastructure"
+      icon: <CloudUpload className="w-6 h-6" />,
+      title: "Automated Data Backup",
+      description: "Regular, automated backups of critical data across all environments to secure, offsite locations."
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Compliance Monitoring",
-      description: "Real-time compliance checking against industry standards and internal policies"
+      icon: <RefreshCcw className="w-6 h-6" />,
+      title: "Rapid Recovery & Restoration",
+      description: "Minimize downtime with swift data recovery and system restoration capabilities, ensuring business continuity."
     },
     {
-      icon: <TrendingUp className="w-6 h-6" />,
-      title: "Drift Detection",
-      description: "Identify and remediate configuration drift before it causes issues"
+      icon: <ShieldCheck className="w-6 h-6" />,
+      title: "Immutable Storage & Security",
+      description: "Protect backups from ransomware and accidental deletion with immutable storage and advanced security protocols."
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Version Control",
-      description: "Track all configuration changes with full audit trails and rollback capabilities"
+      icon: <Database className="w-6 h-6" />,
+      title: "Comprehensive Disaster Recovery Planning",
+      description: "Develop and implement robust disaster recovery plans tailored to your specific business needs and RTO/RPO objectives."
     }
   ]
 
   const benefits = [
-    { metric: "70%", description: "Reduction in configuration errors" },
-    { metric: "80%", description: "Improvement in compliance rates" },
-    { metric: "60%", description: "Faster deployment times" },
-    { metric: "50%", description: "Decrease in security incidents" }
+    { metric: "99.9%", description: "Data availability during outages" },
+    { metric: "80%", description: "Faster recovery times post-disaster" },
+    { metric: "60%", description: "Reduction in data loss incidents" },
+    { metric: "40%", description: "Lower operational costs for data protection" }
   ]
 
   const technologies = [
-    { category: "Orchestration", tools: ["ServiceNow", "Ansible", "Puppet", "Chef"] },
-    { category: "Cloud Platforms", tools: ["AWS Config", "Azure Policy", "Google Cloud Config"] },
-    { category: "Monitoring", tools: ["Datadog", "Splunk", "New Relic"] },
-    { category: "Security", tools: ["CyberArk", "HashiCorp Vault"] }
+    { category: "Backup Solutions", tools: ["Veeam", "Commvault", "Rubrik", "Cohesity"] },
+    { category: "Cloud Storage", tools: ["AWS S3", "Azure Blob Storage", "Google Cloud Storage"] },
+    { category: "DR Orchestration", tools: ["Zerto", "VMware SRM", "Azure Site Recovery"] },
+    { category: "Security & Compliance", tools: ["Immutable Storage", "Encryption", "Data Governance Tools"] }
   ]
 
   const integrations = [
-    { solution: "Systems Management", benefit: "Unified infrastructure visibility" },
-    { solution: "Security Governance", benefit: "Automated security policy enforcement" },
-    { solution: "IT Service Management", benefit: "Change management integration" },
-    { solution: "Observability & Dashboarding", benefit: "Real-time configuration monitoring" }
+    { solution: "Cloud Infrastructure Management", benefit: "Seamless backup of cloud-native applications and data." },
+    { solution: "Cybersecurity Services", benefit: "Enhanced protection against cyber threats with integrated security measures." },
+    { solution: "IT Service Management", benefit: "Streamlined incident response and recovery workflows." },
+    { solution: "Data Analytics & Reporting", benefit: "Comprehensive insights into backup status and recovery performance." }
   ]
 
   const deliverables = [
-    "Configuration management strategy and roadmap",
-    "Automated configuration deployment pipelines",
-    "Compliance monitoring dashboards",
-    "Configuration drift detection and remediation",
-    "Version control and audit trail system",
-    "Documentation and runbooks",
-    "Team training and knowledge transfer"
+    "Tailored Backup & DR Strategy and Playbook",
+    "Automated Backup Configuration and Monitoring",
+    "Disaster Recovery Site Setup and Testing",
+    "Data Recovery and Restoration Procedures",
+    "Immutable Storage Implementation",
+    "Regular DR Drills and Performance Reports",
+    "Team Training and Knowledge Transfer"
   ]
 
   return (
@@ -74,13 +74,13 @@ const ConfigurationManagementPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block px-4 py-2 bg-[#1DB4D8]/20 rounded-full text-[#1DB4D8] text-sm font-medium mb-6">
-                Infrastructure & Operations
+                Data Protection
               </div>
               <h1 className="text-5xl font-bold mb-6 font-display">
-                Configuration Management
+                Backup & Disaster Recovery
               </h1>
               <p className="text-xl text-gray-300 mb-8">
-                Automate and standardize configuration across your entire infrastructure with real-time compliance monitoring and drift detection.
+                Safeguard your critical data and ensure business continuity with robust backup solutions and rapid disaster recovery capabilities.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button className="px-8 py-3 bg-[#1DB4D8] text-white rounded-lg font-medium hover:bg-[#1DB4D8]/90 transition-colors">
@@ -93,8 +93,8 @@ const ConfigurationManagementPage = () => {
             </div>
             <div className="relative">
               <img 
-                src={solutionInfrastructure} 
-                alt="Configuration Management" 
+                src={solutionBDR} 
+                alt="Backup & Disaster Recovery" 
                 className="rounded-lg shadow-2xl"
               />
             </div>
@@ -108,13 +108,13 @@ const ConfigurationManagementPage = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-6 font-display">Solution Overview</h2>
           <div className="prose prose-lg max-w-none text-gray-600">
             <p>
-              Verto Wave's Configuration Management solution provides comprehensive automation and governance for your IT infrastructure configuration. Our platform enables organizations to maintain consistent, compliant, and secure configurations across on-premises, cloud, and hybrid environments.
+              Verto Wave's Backup & Disaster Recovery (BDR) solution provides a comprehensive strategy to protect your organization's critical data and systems from unforeseen events. From natural disasters to cyberattacks, our BDR services ensure that your business operations can quickly resume with minimal data loss and downtime.
             </p>
             <p>
-              By implementing infrastructure as code (IaC) principles and automated compliance checking, we help you eliminate configuration drift, reduce human error, and accelerate deployment cycles while maintaining security and compliance standards.
+              We implement a multi-layered approach, combining automated, secure data backups with meticulously planned disaster recovery procedures. This includes immutable storage for ransomware protection, rapid recovery options, and continuous monitoring to ensure your data is always protected and recoverable.
             </p>
             <p>
-              Our solution integrates seamlessly with your existing tools and workflows, providing a unified platform for configuration management across your entire technology stack.
+              Our solution is designed to integrate seamlessly with your existing infrastructure, offering flexibility for on-premises, cloud, and hybrid environments, and aligning with your specific Recovery Time Objective (RTO) and Recovery Point Objective (RPO) requirements.
             </p>
           </div>
         </div>
@@ -212,9 +212,9 @@ const ConfigurationManagementPage = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-[#1DB4D8] to-[#1DB4D8]/80 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6 font-display">Ready to Transform Your Configuration Management?</h2>
+          <h2 className="text-4xl font-bold mb-6 font-display">Ready to Secure Your Business Future?</h2>
           <p className="text-xl mb-8 text-white/90">
-            Let's discuss how our Configuration Management solution can help you achieve your infrastructure goals.
+            Let's discuss how Verto Wave's Backup & Disaster Recovery solution can protect your assets and ensure uninterrupted operations.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button className="px-8 py-3 bg-white text-[#1DB4D8] rounded-lg font-medium hover:bg-gray-100 transition-colors inline-flex items-center">
@@ -238,4 +238,5 @@ const ConfigurationManagementPage = () => {
   )
 }
 
-export default ConfigurationManagementPage
+export default BackupDisasterRecoveryPage
+

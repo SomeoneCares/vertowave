@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { ChevronDown, ArrowRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import solutionInfrastructure from '../assets/solution-infrastructure.webp'
 import solutionSecurity from '../assets/solution-security.webp'
 import solutionAutomation from '../assets/solution-automation.webp'
@@ -17,17 +18,17 @@ const Solutions = () => {
     'IT Asset Management': '/solutions/it-asset-management',
     'Identity & Access Management': '/solutions/identity-access-management',
     'Security Governance': '/solutions/security-governance',
-    'Resilience & Backup': '/solutions/resilience-backup',
-    'Zero Trust Frameworks': '/solutions/zero-trust-frameworks',
-    'Data Protection & Privacy': '/solutions/data-protection-privacy',
+    'Backup & Disaster Recovery': '/solutions/backup-disaster-recovery',
+    'Zero Trust Security': '/solutions/zero-trust-security',
+    'Compliance Management': '/solutions/compliance-management',
     'IT Service Management': '/solutions/it-service-management',
-    'Automation & Orchestration': '/solutions/automation-orchestration',
+    'Workflow Automation': '/solutions/workflow-automation',
     'DevOps & CI/CD': '/solutions/devops-cicd',
     'Cloud Migration & Optimization': '/solutions/cloud-migration-optimization',
-    'Business Service Mapping': '/solutions/business-service-mapping',
-    'Observability & Dashboarding': '/solutions/observability-dashboarding',
-    'Productivity Analytics': '/solutions/productivity-analytics',
-    'AIOps Platform': '/solutions/aiops-platform'
+    'Application Modernization': '/solutions/application-modernization',
+    'AIOps Platform': '/solutions/aiops-platform',
+    'IT Service Intelligence': '/solutions/it-service-intelligence',
+    'Digital Employee Experience': '/solutions/digital-employee-experience'
   }
 
   const categories = [
@@ -52,9 +53,9 @@ const Solutions = () => {
       solutions: [
         'Identity & Access Management',
         'Security Governance',
-        'Resilience & Backup',
-        'Zero Trust Frameworks',
-        'Data Protection & Privacy'
+        'Backup & Disaster Recovery',
+        'Zero Trust Security',
+        'Compliance Management'
       ],
       color: 'from-red-500 to-red-600'
     },
@@ -65,7 +66,7 @@ const Solutions = () => {
       description: 'Accelerate service delivery and automate workflows for maximum efficiency.',
       solutions: [
         'IT Service Management',
-        'Automation & Orchestration',
+        'Workflow Automation',
         'DevOps & CI/CD'
       ],
       color: 'from-yellow-500 to-yellow-600'
@@ -77,7 +78,7 @@ const Solutions = () => {
       description: 'Transform your IT with cloud-native solutions and modern architectures.',
       solutions: [
         'Cloud Migration & Optimization',
-        'Business Service Mapping'
+        'Application Modernization'
       ],
       color: 'from-purple-500 to-purple-600'
     },
@@ -87,9 +88,9 @@ const Solutions = () => {
       count: 3,
       description: 'Gain actionable insights with advanced analytics and AI-powered intelligence.',
       solutions: [
-        'Observability & Dashboarding',
-        'Productivity Analytics',
-        'AIOps Platform'
+        'AIOps Platform',
+        'IT Service Intelligence',
+        'Digital Employee Experience'
       ],
       color: 'from-green-500 to-green-600'
     }
@@ -149,12 +150,12 @@ const Solutions = () => {
                       {category.solutions.map((solution, sIdx) => (
                         <li key={sIdx} className="flex items-center text-sm">
                           <div className="w-1.5 h-1.5 rounded-full bg-verto-blue mr-2 flex-shrink-0"></div>
-                          <a 
-                            href={solutionLinks[solution]} 
+                          <Link 
+                            to={solutionLinks[solution]} 
                             className="text-gray-700 hover:text-verto-blue hover:underline transition-colors"
                           >
                             {solution}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>

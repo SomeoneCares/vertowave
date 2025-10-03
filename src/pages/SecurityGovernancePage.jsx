@@ -1,59 +1,59 @@
-import { ArrowLeft, CheckCircle, TrendingUp, Shield, Zap, Users, ArrowRight } from 'lucide-react'
-import solutionInfrastructure from '../assets/solution-infrastructure.png'
+import { ArrowLeft, ShieldCheck, Lock, Sliders, BarChart2, Users, HardDrive, GitBranch, Briefcase, ArrowRight } from 'lucide-react'
+import solutionSecurityGovernance from '../assets/solution-infrastructure.png'
 
-const ConfigurationManagementPage = () => {
+const SecurityGovernancePage = () => {
   const keyFeatures = [
     {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Automated Configuration",
-      description: "Automatically deploy and maintain consistent configurations across all infrastructure"
+      icon: <ShieldCheck className="w-6 h-6" />,
+      title: "Policy & Compliance Management",
+      description: "Establish, enforce, and monitor security policies to ensure regulatory compliance and internal standards."
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Compliance Monitoring",
-      description: "Real-time compliance checking against industry standards and internal policies"
+      icon: <Lock className="w-6 h-6" />,
+      title: "Risk Assessment & Management",
+      description: "Identify, assess, and mitigate security risks across your organization with a structured approach."
     },
     {
-      icon: <TrendingUp className="w-6 h-6" />,
-      title: "Drift Detection",
-      description: "Identify and remediate configuration drift before it causes issues"
+      icon: <Sliders className="w-6 h-6" />,
+      title: "Security Controls Implementation",
+      description: "Design and implement robust security controls to protect critical assets and data."
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Version Control",
-      description: "Track all configuration changes with full audit trails and rollback capabilities"
+      icon: <BarChart2 className="w-6 h-6" />,
+      title: "Continuous Monitoring & Reporting",
+      description: "Gain real-time visibility into your security posture with continuous monitoring and comprehensive reporting."
     }
   ]
 
   const benefits = [
-    { metric: "70%", description: "Reduction in configuration errors" },
-    { metric: "80%", description: "Improvement in compliance rates" },
-    { metric: "60%", description: "Faster deployment times" },
-    { metric: "50%", description: "Decrease in security incidents" }
+    { metric: "40%", description: "Reduction in security incidents" },
+    { metric: "95%", description: "Improvement in compliance adherence" },
+    { metric: "30%", description: "Faster audit preparation time" },
+    { metric: "25%", description: "Lower operational security costs" }
   ]
 
   const technologies = [
-    { category: "Orchestration", tools: ["ServiceNow", "Ansible", "Puppet", "Chef"] },
-    { category: "Cloud Platforms", tools: ["AWS Config", "Azure Policy", "Google Cloud Config"] },
-    { category: "Monitoring", tools: ["Datadog", "Splunk", "New Relic"] },
-    { category: "Security", tools: ["CyberArk", "HashiCorp Vault"] }
+    { category: "GRC Platforms", tools: ["ServiceNow GRC", "Archer", "MetricStream"] },
+    { category: "Risk Management", tools: ["LogicManager", "RiskRecon"] },
+    { category: "Compliance Tools", tools: ["OneTrust", "TrustArc"] },
+    { category: "Security Analytics", tools: ["Splunk ES", "IBM QRadar", "Exabeam"] }
   ]
 
   const integrations = [
-    { solution: "Systems Management", benefit: "Unified infrastructure visibility" },
-    { solution: "Security Governance", benefit: "Automated security policy enforcement" },
-    { solution: "IT Service Management", benefit: "Change management integration" },
-    { solution: "Observability & Dashboarding", benefit: "Real-time configuration monitoring" }
+    { solution: "Identity & Access Management", benefit: "Streamlined user access and privilege management" },
+    { solution: "Configuration Management", benefit: "Automated security policy enforcement on configurations" },
+    { solution: "Incident Response", benefit: "Faster detection and resolution of security incidents" },
+    { solution: "Data Protection", benefit: "Enhanced data privacy and integrity controls" }
   ]
 
   const deliverables = [
-    "Configuration management strategy and roadmap",
-    "Automated configuration deployment pipelines",
-    "Compliance monitoring dashboards",
-    "Configuration drift detection and remediation",
-    "Version control and audit trail system",
-    "Documentation and runbooks",
-    "Team training and knowledge transfer"
+    "Security Governance framework and strategy",
+    "Comprehensive security policy documentation",
+    "Risk assessment and mitigation plans",
+    "Implementation of security controls",
+    "Compliance reporting and audit support",
+    "Security awareness training programs",
+    "Continuous security monitoring dashboards"
   ]
 
   return (
@@ -74,13 +74,13 @@ const ConfigurationManagementPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block px-4 py-2 bg-[#1DB4D8]/20 rounded-full text-[#1DB4D8] text-sm font-medium mb-6">
-                Infrastructure & Operations
+                Security & Compliance
               </div>
               <h1 className="text-5xl font-bold mb-6 font-display">
-                Configuration Management
+                Security Governance
               </h1>
               <p className="text-xl text-gray-300 mb-8">
-                Automate and standardize configuration across your entire infrastructure with real-time compliance monitoring and drift detection.
+                Establish a robust framework for managing security policies, risks, and compliance across your enterprise.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button className="px-8 py-3 bg-[#1DB4D8] text-white rounded-lg font-medium hover:bg-[#1DB4D8]/90 transition-colors">
@@ -93,8 +93,8 @@ const ConfigurationManagementPage = () => {
             </div>
             <div className="relative">
               <img 
-                src={solutionInfrastructure} 
-                alt="Configuration Management" 
+                src={solutionSecurityGovernance} 
+                alt="Security Governance" 
                 className="rounded-lg shadow-2xl"
               />
             </div>
@@ -108,13 +108,13 @@ const ConfigurationManagementPage = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-6 font-display">Solution Overview</h2>
           <div className="prose prose-lg max-w-none text-gray-600">
             <p>
-              Verto Wave's Configuration Management solution provides comprehensive automation and governance for your IT infrastructure configuration. Our platform enables organizations to maintain consistent, compliant, and secure configurations across on-premises, cloud, and hybrid environments.
+              Verto Wave's Security Governance solution provides a comprehensive approach to managing your organization's information security. We help you define, implement, and monitor security policies, ensuring alignment with business objectives and regulatory requirements.
             </p>
             <p>
-              By implementing infrastructure as code (IaC) principles and automated compliance checking, we help you eliminate configuration drift, reduce human error, and accelerate deployment cycles while maintaining security and compliance standards.
+              Our framework enables effective risk management, robust control implementation, and continuous oversight of your security posture. This leads to reduced vulnerabilities, improved compliance, and a stronger defense against cyber threats.
             </p>
             <p>
-              Our solution integrates seamlessly with your existing tools and workflows, providing a unified platform for configuration management across your entire technology stack.
+              By integrating security governance into your operational processes, Verto Wave empowers your organization to make informed security decisions, foster a culture of security, and protect your valuable assets.
             </p>
           </div>
         </div>
@@ -164,7 +164,7 @@ const ConfigurationManagementPage = () => {
                 <ul className="space-y-2">
                   {tech.tools.map((tool, toolIndex) => (
                     <li key={toolIndex} className="flex items-center text-gray-600">
-                      <CheckCircle className="w-4 h-4 text-[#1DB4D8] mr-2 flex-shrink-0" />
+                      <ShieldCheck className="w-4 h-4 text-[#1DB4D8] mr-2 flex-shrink-0" />
                       {tool}
                     </li>
                   ))}
@@ -200,7 +200,7 @@ const ConfigurationManagementPage = () => {
             <ul className="grid md:grid-cols-2 gap-4">
               {deliverables.map((deliverable, index) => (
                 <li key={index} className="flex items-start">
-                  <CheckCircle className="w-6 h-6 text-[#1DB4D8] mr-3 flex-shrink-0 mt-0.5" />
+                  <Briefcase className="w-6 h-6 text-[#1DB4D8] mr-3 flex-shrink-0 mt-0.5" />
                   <span className="text-gray-700">{deliverable}</span>
                 </li>
               ))}
@@ -212,9 +212,9 @@ const ConfigurationManagementPage = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-[#1DB4D8] to-[#1DB4D8]/80 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6 font-display">Ready to Transform Your Configuration Management?</h2>
+          <h2 className="text-4xl font-bold mb-6 font-display">Ready to Strengthen Your Security Posture?</h2>
           <p className="text-xl mb-8 text-white/90">
-            Let's discuss how our Configuration Management solution can help you achieve your infrastructure goals.
+            Let's discuss how our Security Governance solution can help you achieve robust security and compliance.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button className="px-8 py-3 bg-white text-[#1DB4D8] rounded-lg font-medium hover:bg-gray-100 transition-colors inline-flex items-center">
@@ -238,4 +238,5 @@ const ConfigurationManagementPage = () => {
   )
 }
 
-export default ConfigurationManagementPage
+export default SecurityGovernancePage
+

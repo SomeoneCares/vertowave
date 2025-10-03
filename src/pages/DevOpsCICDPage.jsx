@@ -1,59 +1,59 @@
-import { ArrowLeft, CheckCircle, TrendingUp, Shield, Zap, Users, ArrowRight } from 'lucide-react'
-import solutionInfrastructure from '../assets/solution-infrastructure.png'
+import { ArrowLeft, GitBranch, Rocket, ShieldCheck, Gauge, Users, Cloud, Code, Settings, CheckCircle, ArrowRight } from 'lucide-react'
+import solutionDevOps from '../assets/solution-infrastructure.png' // Placeholder for a relevant image
 
-const ConfigurationManagementPage = () => {
+const DevOpsCICDPage = () => {
   const keyFeatures = [
     {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Automated Configuration",
-      description: "Automatically deploy and maintain consistent configurations across all infrastructure"
+      icon: <GitBranch className="w-6 h-6" />,
+      title: "Automated Code Integration",
+      description: "Continuously integrate code changes from multiple developers into a shared repository, reducing conflicts and ensuring code quality."
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Compliance Monitoring",
-      description: "Real-time compliance checking against industry standards and internal policies"
+      icon: <Rocket className="w-6 h-6" />,
+      title: "Accelerated Deployment Pipelines",
+      description: "Automate the build, test, and deployment processes to deliver software faster and more reliably to production."
     },
     {
-      icon: <TrendingUp className="w-6 h-6" />,
-      title: "Drift Detection",
-      description: "Identify and remediate configuration drift before it causes issues"
+      icon: <ShieldCheck className="w-6 h-6" />,
+      title: "Continuous Testing & Quality Gates",
+      description: "Implement automated testing at every stage of the pipeline, ensuring high-quality releases and early defect detection."
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Version Control",
-      description: "Track all configuration changes with full audit trails and rollback capabilities"
+      icon: <Gauge className="w-6 h-6" />,
+      title: "Performance Monitoring & Feedback",
+      description: "Integrate real-time monitoring and feedback loops to continuously optimize application performance and user experience."
     }
   ]
 
   const benefits = [
-    { metric: "70%", description: "Reduction in configuration errors" },
-    { metric: "80%", description: "Improvement in compliance rates" },
-    { metric: "60%", description: "Faster deployment times" },
-    { metric: "50%", description: "Decrease in security incidents" }
+    { metric: "50%", description: "Faster time-to-market for new features and updates" },
+    { metric: "70%", description: "Reduction in deployment failures and rollbacks" },
+    { metric: "60%", description: "Improvement in developer productivity and collaboration" },
+    { metric: "40%", description: "Decrease in operational costs through automation" }
   ]
 
   const technologies = [
-    { category: "Orchestration", tools: ["ServiceNow", "Ansible", "Puppet", "Chef"] },
-    { category: "Cloud Platforms", tools: ["AWS Config", "Azure Policy", "Google Cloud Config"] },
-    { category: "Monitoring", tools: ["Datadog", "Splunk", "New Relic"] },
-    { category: "Security", tools: ["CyberArk", "HashiCorp Vault"] }
+    { category: "CI/CD Platforms", tools: ["Jenkins", "GitLab CI/CD", "GitHub Actions", "Azure DevOps"] },
+    { category: "Containerization", tools: ["Docker", "Kubernetes"] },
+    { category: "Version Control", tools: ["Git", "SVN"] },
+    { category: "Cloud Providers", tools: ["AWS", "Azure", "Google Cloud"] }
   ]
 
   const integrations = [
-    { solution: "Systems Management", benefit: "Unified infrastructure visibility" },
-    { solution: "Security Governance", benefit: "Automated security policy enforcement" },
-    { solution: "IT Service Management", benefit: "Change management integration" },
-    { solution: "Observability & Dashboarding", benefit: "Real-time configuration monitoring" }
+    { solution: "Cloud Infrastructure Management", benefit: "Seamless deployment to scalable cloud environments" },
+    { solution: "Application Performance Monitoring", benefit: "End-to-end visibility into application health and performance" },
+    { solution: "Security Governance", benefit: "Automated security scanning and policy enforcement within pipelines" },
+    { solution: "IT Service Management", benefit: "Automated incident creation and change management for deployments" }
   ]
 
   const deliverables = [
-    "Configuration management strategy and roadmap",
-    "Automated configuration deployment pipelines",
-    "Compliance monitoring dashboards",
-    "Configuration drift detection and remediation",
-    "Version control and audit trail system",
-    "Documentation and runbooks",
-    "Team training and knowledge transfer"
+    "Customized CI/CD pipeline design and implementation",
+    "Automated build, test, and deployment scripts",
+    "Containerization strategies and Dockerfile optimization",
+    "Infrastructure as Code (IaC) templates for environment provisioning",
+    "Continuous monitoring and alerting configurations",
+    "DevOps best practices training and workshops",
+    "Documentation for pipeline operations and maintenance"
   ]
 
   return (
@@ -74,13 +74,13 @@ const ConfigurationManagementPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block px-4 py-2 bg-[#1DB4D8]/20 rounded-full text-[#1DB4D8] text-sm font-medium mb-6">
-                Infrastructure & Operations
+                Software Delivery
               </div>
               <h1 className="text-5xl font-bold mb-6 font-display">
-                Configuration Management
+                DevOps & CI/CD
               </h1>
               <p className="text-xl text-gray-300 mb-8">
-                Automate and standardize configuration across your entire infrastructure with real-time compliance monitoring and drift detection.
+                Automate and streamline your software development lifecycle from code commit to production deployment, ensuring rapid, reliable, and high-quality releases.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button className="px-8 py-3 bg-[#1DB4D8] text-white rounded-lg font-medium hover:bg-[#1DB4D8]/90 transition-colors">
@@ -93,8 +93,8 @@ const ConfigurationManagementPage = () => {
             </div>
             <div className="relative">
               <img 
-                src={solutionInfrastructure} 
-                alt="Configuration Management" 
+                src={solutionDevOps} 
+                alt="DevOps & CI/CD" 
                 className="rounded-lg shadow-2xl"
               />
             </div>
@@ -108,13 +108,13 @@ const ConfigurationManagementPage = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-6 font-display">Solution Overview</h2>
           <div className="prose prose-lg max-w-none text-gray-600">
             <p>
-              Verto Wave's Configuration Management solution provides comprehensive automation and governance for your IT infrastructure configuration. Our platform enables organizations to maintain consistent, compliant, and secure configurations across on-premises, cloud, and hybrid environments.
+              Verto Wave's DevOps & CI/CD solution empowers organizations to achieve unparalleled agility and efficiency in software delivery. By integrating development and operations teams and automating the entire software release process, we help you accelerate innovation and maintain a competitive edge.
             </p>
             <p>
-              By implementing infrastructure as code (IaC) principles and automated compliance checking, we help you eliminate configuration drift, reduce human error, and accelerate deployment cycles while maintaining security and compliance standards.
+              Our approach focuses on continuous integration, continuous delivery, and continuous deployment, enabling frequent, small, and reliable code changes. This minimizes risks, improves collaboration, and ensures that your applications are always ready for production.
             </p>
             <p>
-              Our solution integrates seamlessly with your existing tools and workflows, providing a unified platform for configuration management across your entire technology stack.
+              We provide the tools, processes, and expertise to transform your software delivery pipeline, from initial code commit to monitoring in production, fostering a culture of continuous improvement and operational excellence.
             </p>
           </div>
         </div>
@@ -212,9 +212,9 @@ const ConfigurationManagementPage = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-[#1DB4D8] to-[#1DB4D8]/80 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6 font-display">Ready to Transform Your Configuration Management?</h2>
+          <h2 className="text-4xl font-bold mb-6 font-display">Ready to Accelerate Your Software Delivery?</h2>
           <p className="text-xl mb-8 text-white/90">
-            Let's discuss how our Configuration Management solution can help you achieve your infrastructure goals.
+            Let's discuss how our DevOps & CI/CD solution can transform your development and operations workflows.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button className="px-8 py-3 bg-white text-[#1DB4D8] rounded-lg font-medium hover:bg-gray-100 transition-colors inline-flex items-center">
@@ -238,4 +238,5 @@ const ConfigurationManagementPage = () => {
   )
 }
 
-export default ConfigurationManagementPage
+export default DevOpsCICDPage
+

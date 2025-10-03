@@ -1,59 +1,59 @@
-import { ArrowLeft, CheckCircle, TrendingUp, Shield, Zap, Users, ArrowRight } from 'lucide-react'
-import solutionInfrastructure from '../assets/solution-infrastructure.png'
+import { ArrowLeft, CheckCircle, Users, Key, ShieldCheck, Fingerprint, ArrowRight } from 'lucide-react'
+import solutionIam from '../assets/solution-infrastructure.png'
 
-const ConfigurationManagementPage = () => {
+const IdentityAccessManagementPage = () => {
   const keyFeatures = [
     {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Automated Configuration",
-      description: "Automatically deploy and maintain consistent configurations across all infrastructure"
-    },
-    {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Compliance Monitoring",
-      description: "Real-time compliance checking against industry standards and internal policies"
-    },
-    {
-      icon: <TrendingUp className="w-6 h-6" />,
-      title: "Drift Detection",
-      description: "Identify and remediate configuration drift before it causes issues"
-    },
-    {
       icon: <Users className="w-6 h-6" />,
-      title: "Version Control",
-      description: "Track all configuration changes with full audit trails and rollback capabilities"
+      title: "Centralized User Management",
+      description: "Manage all user identities from a single console, simplifying provisioning, de-provisioning, and lifecycle management."
+    },
+    {
+      icon: <Key className="w-6 h-6" />,
+      title: "Single Sign-On (SSO)",
+      description: "Provide seamless and secure access to multiple applications with a single set of credentials, enhancing user experience and productivity."
+    },
+    {
+      icon: <ShieldCheck className="w-6 h-6" />,
+      title: "Multi-Factor Authentication (MFA)",
+      description: "Strengthen security with multiple authentication factors, protecting against credential theft and unauthorized access."
+    },
+    {
+      icon: <Fingerprint className="w-6 h-6" />,
+      title: "Access Governance & Compliance",
+      description: "Define, enforce, and audit access policies to ensure compliance with regulatory requirements and internal security standards."
     }
   ]
 
   const benefits = [
-    { metric: "70%", description: "Reduction in configuration errors" },
-    { metric: "80%", description: "Improvement in compliance rates" },
-    { metric: "60%", description: "Faster deployment times" },
-    { metric: "50%", description: "Decrease in security incidents" }
+    { metric: "40%", description: "Reduction in identity-related security breaches" },
+    { metric: "60%", description: "Faster user onboarding and offboarding processes" },
+    { metric: "75%", description: "Improvement in audit readiness and compliance adherence" },
+    { metric: "30%", description: "Decrease in help desk calls for password resets" }
   ]
 
   const technologies = [
-    { category: "Orchestration", tools: ["ServiceNow", "Ansible", "Puppet", "Chef"] },
-    { category: "Cloud Platforms", tools: ["AWS Config", "Azure Policy", "Google Cloud Config"] },
-    { category: "Monitoring", tools: ["Datadog", "Splunk", "New Relic"] },
-    { category: "Security", tools: ["CyberArk", "HashiCorp Vault"] }
+    { category: "Identity Providers", tools: ["Okta", "Azure AD", "Ping Identity", "Auth0"] },
+    { category: "Access Management", tools: ["CyberArk", "SailPoint", "ForgeRock"] },
+    { category: "Privileged Access Management", tools: ["BeyondTrust", "Thycotic"] },
+    { category: "Directory Services", tools: ["Active Directory", "LDAP"] }
   ]
 
   const integrations = [
-    { solution: "Systems Management", benefit: "Unified infrastructure visibility" },
-    { solution: "Security Governance", benefit: "Automated security policy enforcement" },
-    { solution: "IT Service Management", benefit: "Change management integration" },
-    { solution: "Observability & Dashboarding", benefit: "Real-time configuration monitoring" }
+    { solution: "Security Governance", benefit: "Automated policy enforcement and risk management based on identity context." },
+    { solution: "Data Protection", benefit: "Enhanced data security by controlling access to sensitive information." },
+    { solution: "Cloud Security", benefit: "Consistent identity and access policies across multi-cloud environments." },
+    { solution: "IT Service Management", benefit: "Streamlined user provisioning and access request workflows." }
   ]
 
   const deliverables = [
-    "Configuration management strategy and roadmap",
-    "Automated configuration deployment pipelines",
-    "Compliance monitoring dashboards",
-    "Configuration drift detection and remediation",
-    "Version control and audit trail system",
-    "Documentation and runbooks",
-    "Team training and knowledge transfer"
+    "Comprehensive IAM strategy and roadmap",
+    "Implementation of Single Sign-On (SSO) and Multi-Factor Authentication (MFA)",
+    "Role-Based Access Control (RBAC) and Attribute-Based Access Control (ABAC) frameworks",
+    "Automated user provisioning and de-provisioning workflows",
+    "Identity governance and administration (IGA) solutions",
+    "Regular access reviews and compliance reporting",
+    "Documentation, training, and ongoing support"
   ]
 
   return (
@@ -74,13 +74,13 @@ const ConfigurationManagementPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block px-4 py-2 bg-[#1DB4D8]/20 rounded-full text-[#1DB4D8] text-sm font-medium mb-6">
-                Infrastructure & Operations
+                Security & Compliance
               </div>
               <h1 className="text-5xl font-bold mb-6 font-display">
-                Configuration Management
+                Identity & Access Management
               </h1>
               <p className="text-xl text-gray-300 mb-8">
-                Automate and standardize configuration across your entire infrastructure with real-time compliance monitoring and drift detection.
+                Securely manage digital identities and control access to resources across your enterprise with Verto Wave's Identity & Access Management solution.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button className="px-8 py-3 bg-[#1DB4D8] text-white rounded-lg font-medium hover:bg-[#1DB4D8]/90 transition-colors">
@@ -93,8 +93,8 @@ const ConfigurationManagementPage = () => {
             </div>
             <div className="relative">
               <img 
-                src={solutionInfrastructure} 
-                alt="Configuration Management" 
+                src={solutionIam} 
+                alt="Identity & Access Management" 
                 className="rounded-lg shadow-2xl"
               />
             </div>
@@ -108,13 +108,13 @@ const ConfigurationManagementPage = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-6 font-display">Solution Overview</h2>
           <div className="prose prose-lg max-w-none text-gray-600">
             <p>
-              Verto Wave's Configuration Management solution provides comprehensive automation and governance for your IT infrastructure configuration. Our platform enables organizations to maintain consistent, compliant, and secure configurations across on-premises, cloud, and hybrid environments.
+              Verto Wave's Identity & Access Management (IAM) solution provides a unified and robust framework for managing digital identities and controlling access to critical resources. In today's complex IT environments, ensuring that the right users have the right access to the right resources at the right time is paramount for security and operational efficiency.
             </p>
             <p>
-              By implementing infrastructure as code (IaC) principles and automated compliance checking, we help you eliminate configuration drift, reduce human error, and accelerate deployment cycles while maintaining security and compliance standards.
+              Our IAM platform helps organizations enforce granular access policies, streamline user provisioning and de-provisioning, and enhance security posture by reducing the risk of unauthorized access. We integrate seamlessly with your existing infrastructure, offering a comprehensive approach to identity governance, authentication, and authorization.
             </p>
             <p>
-              Our solution integrates seamlessly with your existing tools and workflows, providing a unified platform for configuration management across your entire technology stack.
+              By centralizing identity management, Verto Wave enables businesses to meet compliance requirements, improve user experience through single sign-on (SSO), and gain real-time visibility into access activities across hybrid and multi-cloud environments.
             </p>
           </div>
         </div>
@@ -183,7 +183,7 @@ const ConfigurationManagementPage = () => {
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             {integrations.map((integration, index) => (
-              <div key={index} className="bg-gray-50 p-6 rounded-lg border-l-4 border-[#1DB4D8]">
+              <div key={index} className="bg-gray-50 p-6 rounded-lg border-l-4 border-[#1DB4D8]\">
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{integration.solution}</h3>
                 <p className="text-gray-600">{integration.benefit}</p>
               </div>
@@ -212,9 +212,9 @@ const ConfigurationManagementPage = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-[#1DB4D8] to-[#1DB4D8]/80 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6 font-display">Ready to Transform Your Configuration Management?</h2>
+          <h2 className="text-4xl font-bold mb-6 font-display">Ready to Strengthen Your Identity & Access Security?</h2>
           <p className="text-xl mb-8 text-white/90">
-            Let's discuss how our Configuration Management solution can help you achieve your infrastructure goals.
+            Discover how Verto Wave's IAM solution can protect your organization from evolving identity threats and streamline access management.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button className="px-8 py-3 bg-white text-[#1DB4D8] rounded-lg font-medium hover:bg-gray-100 transition-colors inline-flex items-center">
@@ -238,4 +238,5 @@ const ConfigurationManagementPage = () => {
   )
 }
 
-export default ConfigurationManagementPage
+export default IdentityAccessManagementPage
+

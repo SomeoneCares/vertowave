@@ -1,59 +1,58 @@
-import { ArrowLeft, CheckCircle, TrendingUp, Shield, Zap, Users, ArrowRight } from 'lucide-react'
-import solutionInfrastructure from '../assets/solution-infrastructure.png'
+import { ArrowLeft, BellRing, SearchCheck, TrendingUp, Filter, ArrowRight, CheckCircle } from 'lucide-react'
+import solutionAIOps from '../assets/solution-infrastructure.png' // Placeholder for AIOps specific image
 
-const ConfigurationManagementPage = () => {
+const AIOpsPlatformPage = () => {
   const keyFeatures = [
     {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Automated Configuration",
-      description: "Automatically deploy and maintain consistent configurations across all infrastructure"
+      icon: <BellRing className="w-6 h-6" />,
+      title: "Intelligent Anomaly Detection",
+      description: "Proactively identify unusual patterns and deviations in system behavior using machine learning, preventing incidents before they impact services."
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Compliance Monitoring",
-      description: "Real-time compliance checking against industry standards and internal policies"
+      icon: <SearchCheck className="w-6 h-6" />,
+      title: "Automated Root Cause Analysis",
+      description: "Accelerate problem resolution by automatically correlating events and logs across complex systems to precisely identify the underlying cause of issues."
     },
     {
       icon: <TrendingUp className="w-6 h-6" />,
-      title: "Drift Detection",
-      description: "Identify and remediate configuration drift before it causes issues"
+      title: "Predictive Insights & Capacity Planning",
+      description: "Utilize AI-driven forecasts to anticipate future resource needs and potential performance bottlenecks, enabling proactive optimization and scaling."
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Version Control",
-      description: "Track all configuration changes with full audit trails and rollback capabilities"
+      icon: <Filter className="w-6 h-6" />,
+      title: "Event Correlation & Noise Reduction",
+      description: "Consolidate and prioritize alerts from disparate monitoring tools, significantly reducing alert fatigue and allowing IT teams to focus on critical issues."
     }
   ]
 
   const benefits = [
-    { metric: "70%", description: "Reduction in configuration errors" },
-    { metric: "80%", description: "Improvement in compliance rates" },
-    { metric: "60%", description: "Faster deployment times" },
-    { metric: "50%", description: "Decrease in security incidents" }
+    { metric: "60%", description: "Reduction in Mean Time To Resolution (MTTR)" },
+    { metric: "40%", description: "Decrease in Operational Costs" },
+    { metric: "80%", description: "Reduction in Alert Fatigue" },
+    { metric: "99.9%", description: "Service Availability" }
   ]
 
   const technologies = [
-    { category: "Orchestration", tools: ["ServiceNow", "Ansible", "Puppet", "Chef"] },
-    { category: "Cloud Platforms", tools: ["AWS Config", "Azure Policy", "Google Cloud Config"] },
-    { category: "Monitoring", tools: ["Datadog", "Splunk", "New Relic"] },
-    { category: "Security", tools: ["CyberArk", "HashiCorp Vault"] }
+    { category: "Data Ingestion & Processing", tools: ["Apache Kafka", "Elasticsearch", "Splunk"] },
+    { category: "Machine Learning Frameworks", tools: ["TensorFlow", "PyTorch", "Scikit-learn"] },
+    { category: "Monitoring & Observability", tools: ["Prometheus", "Grafana", "Datadog", "Dynatrace"] },
+    { category: "Automation & Orchestration", tools: ["Ansible", "Kubernetes", "ServiceNow"] }
   ]
 
   const integrations = [
-    { solution: "Systems Management", benefit: "Unified infrastructure visibility" },
-    { solution: "Security Governance", benefit: "Automated security policy enforcement" },
-    { solution: "IT Service Management", benefit: "Change management integration" },
-    { solution: "Observability & Dashboarding", benefit: "Real-time configuration monitoring" }
+    { solution: "IT Service Management (ITSM)", benefit: "Seamlessly integrate with ITSM platforms like ServiceNow and Jira for automated incident creation, change management, and workflow orchestration." },
+    { solution: "Observability & Monitoring", benefit: "Connects with leading monitoring tools (e.g., Datadog, Prometheus, Splunk) to ingest comprehensive telemetry data for AI-driven analysis." },
+    { solution: "Cloud Platforms", benefit: "Integrates with AWS, Azure, and Google Cloud to provide unified AIOps capabilities across hybrid and multi-cloud environments." },
+    { solution: "Security Operations (SecOps)", benefit: "Enhances security posture by correlating security events with operational data, enabling faster detection and response to threats." }
   ]
 
   const deliverables = [
-    "Configuration management strategy and roadmap",
-    "Automated configuration deployment pipelines",
-    "Compliance monitoring dashboards",
-    "Configuration drift detection and remediation",
-    "Version control and audit trail system",
-    "Documentation and runbooks",
-    "Team training and knowledge transfer"
+    "AIOps strategy and implementation roadmap",
+    "Customized AI/ML models for anomaly detection and root cause analysis",
+    "Integrated AIOps platform deployment and configuration",
+    "Real-time operational dashboards and reporting",
+    "Automated incident response playbooks",
+    "Training and knowledge transfer for IT operations teams"
   ]
 
   return (
@@ -74,13 +73,13 @@ const ConfigurationManagementPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block px-4 py-2 bg-[#1DB4D8]/20 rounded-full text-[#1DB4D8] text-sm font-medium mb-6">
-                Infrastructure & Operations
+                Operations & Automation
               </div>
               <h1 className="text-5xl font-bold mb-6 font-display">
-                Configuration Management
+                AIOps Platform
               </h1>
               <p className="text-xl text-gray-300 mb-8">
-                Automate and standardize configuration across your entire infrastructure with real-time compliance monitoring and drift detection.
+                Leverage artificial intelligence and machine learning to automate IT operations, predict issues, and optimize performance across your entire digital landscape.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button className="px-8 py-3 bg-[#1DB4D8] text-white rounded-lg font-medium hover:bg-[#1DB4D8]/90 transition-colors">
@@ -93,8 +92,8 @@ const ConfigurationManagementPage = () => {
             </div>
             <div className="relative">
               <img 
-                src={solutionInfrastructure} 
-                alt="Configuration Management" 
+                src={solutionAIOps} 
+                alt="AIOps Platform" 
                 className="rounded-lg shadow-2xl"
               />
             </div>
@@ -108,13 +107,7 @@ const ConfigurationManagementPage = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-6 font-display">Solution Overview</h2>
           <div className="prose prose-lg max-w-none text-gray-600">
             <p>
-              Verto Wave's Configuration Management solution provides comprehensive automation and governance for your IT infrastructure configuration. Our platform enables organizations to maintain consistent, compliant, and secure configurations across on-premises, cloud, and hybrid environments.
-            </p>
-            <p>
-              By implementing infrastructure as code (IaC) principles and automated compliance checking, we help you eliminate configuration drift, reduce human error, and accelerate deployment cycles while maintaining security and compliance standards.
-            </p>
-            <p>
-              Our solution integrates seamlessly with your existing tools and workflows, providing a unified platform for configuration management across your entire technology stack.
+              Verto Wave's AIOps Platform revolutionizes IT operations by integrating artificial intelligence and machine learning to automate, optimize, and secure your digital infrastructure. Our platform ingests vast streams of operational data—including logs, metrics, and events—from diverse sources, applying advanced analytics to detect anomalies, predict outages, and pinpoint root causes with unprecedented speed and accuracy. By transforming reactive IT into a proactive, intelligent system, we empower organizations to reduce alert fatigue, enhance operational efficiency, and ensure superior service delivery across hybrid and multi-cloud environments.
             </p>
           </div>
         </div>
@@ -212,9 +205,9 @@ const ConfigurationManagementPage = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-[#1DB4D8] to-[#1DB4D8]/80 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6 font-display">Ready to Transform Your Configuration Management?</h2>
+          <h2 className="text-4xl font-bold mb-6 font-display">Unlock the Power of Intelligent IT Operations with Verto Wave AIOps</h2>
           <p className="text-xl mb-8 text-white/90">
-            Let's discuss how our Configuration Management solution can help you achieve your infrastructure goals.
+            Let's discuss how our AIOps Platform can help you achieve your IT operations goals.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button className="px-8 py-3 bg-white text-[#1DB4D8] rounded-lg font-medium hover:bg-gray-100 transition-colors inline-flex items-center">
@@ -222,7 +215,7 @@ const ConfigurationManagementPage = () => {
               <ArrowRight className="w-5 h-5 ml-2" />
             </button>
             <button className="px-8 py-3 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors">
-              View Case Studies
+              Request a Demo
             </button>
           </div>
         </div>
@@ -238,4 +231,5 @@ const ConfigurationManagementPage = () => {
   )
 }
 
-export default ConfigurationManagementPage
+export default AIOpsPlatformPage
+
