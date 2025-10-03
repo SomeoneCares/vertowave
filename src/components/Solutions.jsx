@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ChevronDown, ArrowRight } from 'lucide-react'
+import { ChevronDown, ArrowRight, X, CheckCircle, TrendingUp, Users, Shield, Cloud, Zap, Activity, BarChart } from 'lucide-react'
 import solutionInfrastructure from '../assets/solution-infrastructure.webp'
 import solutionSecurity from '../assets/solution-security.webp'
 import solutionAutomation from '../assets/solution-automation.webp'
@@ -8,26 +8,333 @@ import solutionInsights from '../assets/solution-insights.webp'
 
 const Solutions = () => {
   const [expandedCategory, setExpandedCategory] = useState(null)
+  const [selectedSolution, setSelectedSolution] = useState(null)
 
-  // Mapping of solution names to their URL slugs
-  const solutionLinks = {
-    'Configuration Management': '/solutions/configuration-management',
-    'Systems Management': '/solutions/systems-management',
-    'Network Management': '/solutions/network-management',
-    'IT Asset Management': '/solutions/it-asset-management',
-    'Identity & Access Management': '/solutions/identity-access-management',
-    'Security Governance': '/solutions/security-governance',
-    'Resilience & Backup': '/solutions/resilience-backup',
-    'Zero Trust Frameworks': '/solutions/zero-trust-frameworks',
-    'Data Protection & Privacy': '/solutions/data-protection-privacy',
-    'IT Service Management': '/solutions/it-service-management',
-    'Automation & Orchestration': '/solutions/automation-orchestration',
-    'DevOps & CI/CD': '/solutions/devops-cicd',
-    'Cloud Migration & Optimization': '/solutions/cloud-migration-optimization',
-    'Business Service Mapping': '/solutions/business-service-mapping',
-    'Observability & Dashboarding': '/solutions/observability-dashboarding',
-    'Productivity Analytics': '/solutions/productivity-analytics',
-    'AIOps Platform': '/solutions/aiops-platform'
+  // Comprehensive solution data
+  const solutionData = {
+    'Configuration Management': {
+      icon: Activity,
+      tagline: 'Automate and standardize configuration across your infrastructure',
+      overview: 'Maintain consistent, compliant configurations across your entire IT infrastructure with automated discovery, change tracking, and real-time compliance monitoring.',
+      features: [
+        { title: 'Automated Discovery', description: 'Automatically discover and catalog all configuration items across your infrastructure' },
+        { title: 'Change Tracking', description: 'Track all configuration changes with complete audit trails and rollback capabilities' },
+        { title: 'Compliance Monitoring', description: 'Continuous compliance checking against industry standards and internal policies' },
+        { title: 'Version Control', description: 'Maintain configuration versions with Git-like version control and branching' }
+      ],
+      benefits: [
+        { metric: '70%', description: 'Reduction in configuration errors' },
+        { metric: '50%', description: 'Faster change implementation' },
+        { metric: '90%', description: 'Compliance adherence rate' },
+        { metric: '60%', description: 'Reduction in security vulnerabilities' }
+      ],
+      technologies: ['ServiceNow', 'Ansible', 'Puppet', 'Chef'],
+      integrations: ['Systems Management', 'IT Service Management', 'Security Governance']
+    },
+    'Systems Management': {
+      icon: Cloud,
+      tagline: 'Comprehensive server and endpoint management',
+      overview: 'Centrally manage, monitor, and maintain all servers and endpoints with automated patch management, performance optimization, and proactive monitoring.',
+      features: [
+        { title: 'Patch Management', description: 'Automated patching across all systems with scheduling and rollback capabilities' },
+        { title: 'Performance Monitoring', description: 'Real-time monitoring of system performance with predictive analytics' },
+        { title: 'Remote Management', description: 'Secure remote access and management of all systems from a single console' },
+        { title: 'Inventory Tracking', description: 'Complete hardware and software inventory with automatic updates' }
+      ],
+      benefits: [
+        { metric: '80%', description: 'Reduction in manual patching time' },
+        { metric: '65%', description: 'Faster issue resolution' },
+        { metric: '95%', description: 'System uptime' },
+        { metric: '40%', description: 'Reduction in security incidents' }
+      ],
+      technologies: ['Microsoft SCCM', 'VMware', 'Red Hat Satellite', 'SolarWinds'],
+      integrations: ['Configuration Management', 'Network Management', 'AIOps Platform']
+    },
+    'Network Management': {
+      icon: Activity,
+      tagline: 'Optimize network performance and reliability',
+      overview: 'Monitor, manage, and optimize your network infrastructure with real-time visibility, automated troubleshooting, and capacity planning.',
+      features: [
+        { title: 'Network Monitoring', description: 'Real-time monitoring of network devices, bandwidth, and performance' },
+        { title: 'Topology Mapping', description: 'Automatic discovery and visualization of network topology' },
+        { title: 'Traffic Analysis', description: 'Deep packet inspection and traffic pattern analysis' },
+        { title: 'Capacity Planning', description: 'Predictive analytics for network capacity and growth planning' }
+      ],
+      benefits: [
+        { metric: '75%', description: 'Reduction in network downtime' },
+        { metric: '60%', description: 'Faster problem resolution' },
+        { metric: '50%', description: 'Improvement in network performance' },
+        { metric: '45%', description: 'Reduction in bandwidth costs' }
+      ],
+      technologies: ['Cisco', 'SolarWinds', 'PRTG', 'Wireshark'],
+      integrations: ['Systems Management', 'IT Service Intelligence', 'AIOps Platform']
+    },
+    'IT Asset Management': {
+      icon: BarChart,
+      tagline: 'Track and optimize your IT assets',
+      overview: 'Gain complete visibility into all IT assets with automated discovery, lifecycle management, and cost optimization across hardware, software, and cloud resources.',
+      features: [
+        { title: 'Asset Discovery', description: 'Automatic discovery of all hardware, software, and cloud assets' },
+        { title: 'Lifecycle Management', description: 'Track assets from procurement through retirement with automated workflows' },
+        { title: 'License Compliance', description: 'Monitor software licenses and ensure compliance with vendor agreements' },
+        { title: 'Cost Optimization', description: 'Identify underutilized assets and optimize spending' }
+      ],
+      benefits: [
+        { metric: '35%', description: 'Reduction in IT asset costs' },
+        { metric: '90%', description: 'License compliance rate' },
+        { metric: '50%', description: 'Faster asset procurement' },
+        { metric: '60%', description: 'Reduction in unused licenses' }
+      ],
+      technologies: ['ServiceNow', 'Snow Software', 'Flexera', 'BMC'],
+      integrations: ['Configuration Management', 'Systems Management', 'IT Service Management']
+    },
+    'Identity & Access Management': {
+      icon: Shield,
+      tagline: 'Secure identity and access control',
+      overview: 'Implement zero-trust security with comprehensive identity governance, single sign-on, multi-factor authentication, and role-based access controls.',
+      features: [
+        { title: 'Single Sign-On (SSO)', description: 'Unified authentication across all applications and services' },
+        { title: 'Multi-Factor Authentication', description: 'Enhanced security with multiple authentication factors' },
+        { title: 'Role-Based Access Control', description: 'Granular access controls based on user roles and responsibilities' },
+        { title: 'Identity Governance', description: 'Automated access reviews and compliance reporting' }
+      ],
+      benefits: [
+        { metric: '50%', description: 'Reduction in data breach risk' },
+        { metric: '70%', description: 'Faster user provisioning' },
+        { metric: '85%', description: 'Compliance adherence' },
+        { metric: '60%', description: 'Reduction in helpdesk tickets' }
+      ],
+      technologies: ['Okta', 'Azure AD', 'CyberArk', 'Ping Identity'],
+      integrations: ['Security Governance', 'Zero Trust Security', 'IT Service Management']
+    },
+    'Security Governance': {
+      icon: Shield,
+      tagline: 'Comprehensive security policy management',
+      overview: 'Establish and maintain robust security governance with policy management, risk assessment, vulnerability management, and compliance automation.',
+      features: [
+        { title: 'Policy Management', description: 'Centralized creation, distribution, and enforcement of security policies' },
+        { title: 'Risk Assessment', description: 'Continuous risk assessment and threat modeling' },
+        { title: 'Vulnerability Management', description: 'Automated vulnerability scanning and remediation tracking' },
+        { title: 'Compliance Automation', description: 'Automated compliance checking and reporting for multiple frameworks' }
+      ],
+      benefits: [
+        { metric: '65%', description: 'Reduction in security incidents' },
+        { metric: '80%', description: 'Faster compliance reporting' },
+        { metric: '55%', description: 'Reduction in vulnerabilities' },
+        { metric: '90%', description: 'Policy compliance rate' }
+      ],
+      technologies: ['ServiceNow', 'Qualys', 'Tenable', 'Rapid7'],
+      integrations: ['Identity & Access Management', 'Compliance Management', 'Zero Trust Security']
+    },
+    'Resilience & Backup': {
+      icon: Shield,
+      tagline: 'Protect your data and ensure business continuity',
+      overview: 'Implement comprehensive backup and disaster recovery solutions with automated backups, rapid recovery, and business continuity planning.',
+      features: [
+        { title: 'Automated Backups', description: 'Scheduled backups with retention policies and deduplication' },
+        { title: 'Disaster Recovery', description: 'Comprehensive DR planning and testing with automated failover' },
+        { title: 'Rapid Recovery', description: 'Fast recovery with granular restore capabilities' },
+        { title: 'Business Continuity', description: 'Business impact analysis and continuity planning' }
+      ],
+      benefits: [
+        { metric: '95%', description: 'Data recovery success rate' },
+        { metric: '75%', description: 'Faster recovery time' },
+        { metric: '60%', description: 'Reduction in storage costs' },
+        { metric: '99.9%', description: 'Data availability' }
+      ],
+      technologies: ['Veeam', 'Commvault', 'Rubrik', 'Zerto'],
+      integrations: ['Systems Management', 'Cloud Migration & Optimization', 'Security Governance']
+    },
+    'Zero Trust Frameworks': {
+      icon: Shield,
+      tagline: 'Implement zero-trust security architecture',
+      overview: 'Deploy zero-trust security principles with microsegmentation, continuous verification, least privilege access, and assume breach mentality.',
+      features: [
+        { title: 'Microsegmentation', description: 'Network segmentation to limit lateral movement' },
+        { title: 'Continuous Verification', description: 'Continuous authentication and authorization for all access' },
+        { title: 'Least Privilege Access', description: 'Minimal access rights for users and applications' },
+        { title: 'Threat Detection', description: 'Real-time threat detection and automated response' }
+      ],
+      benefits: [
+        { metric: '70%', description: 'Reduction in breach impact' },
+        { metric: '80%', description: 'Faster threat detection' },
+        { metric: '60%', description: 'Reduction in attack surface' },
+        { metric: '85%', description: 'Improved security posture' }
+      ],
+      technologies: ['Palo Alto', 'Zscaler', 'Cisco', 'Illumio'],
+      integrations: ['Identity & Access Management', 'Security Governance', 'Network Management']
+    },
+    'Data Protection & Privacy': {
+      icon: Shield,
+      tagline: 'Ensure data privacy and regulatory compliance',
+      overview: 'Protect sensitive data with encryption, data loss prevention, privacy management, and compliance with GDPR, CCPA, and other regulations.',
+      features: [
+        { title: 'Data Encryption', description: 'End-to-end encryption for data at rest and in transit' },
+        { title: 'Data Loss Prevention', description: 'Prevent unauthorized data exfiltration and leakage' },
+        { title: 'Privacy Management', description: 'Manage data subject requests and privacy compliance' },
+        { title: 'Compliance Reporting', description: 'Automated compliance reporting for multiple regulations' }
+      ],
+      benefits: [
+        { metric: '90%', description: 'Reduction in data breaches' },
+        { metric: '75%', description: 'Faster compliance response' },
+        { metric: '85%', description: 'Data privacy compliance' },
+        { metric: '60%', description: 'Reduction in compliance costs' }
+      ],
+      technologies: ['Symantec', 'McAfee', 'Varonis', 'OneTrust'],
+      integrations: ['Security Governance', 'Compliance Management', 'Identity & Access Management']
+    },
+    'IT Service Management': {
+      icon: Users,
+      tagline: 'ITIL-aligned service management',
+      overview: 'Streamline IT service delivery with ITIL-aligned incident, problem, change, and service request management with self-service portals and automation.',
+      features: [
+        { title: 'Incident Management', description: 'Rapid incident detection, triage, and resolution with SLA tracking' },
+        { title: 'Problem Management', description: 'Root cause analysis and permanent problem resolution' },
+        { title: 'Change Management', description: 'Controlled change processes with approval workflows and rollback' },
+        { title: 'Self-Service Portal', description: 'User-friendly portal for service requests and knowledge base' }
+      ],
+      benefits: [
+        { metric: '65%', description: 'Faster incident resolution' },
+        { metric: '50%', description: 'Reduction in repeat incidents' },
+        { metric: '70%', description: 'Improved user satisfaction' },
+        { metric: '45%', description: 'Reduction in support costs' }
+      ],
+      technologies: ['ServiceNow', 'BMC Remedy', 'Jira Service Management', 'Ivanti'],
+      integrations: ['Workflow Automation', 'IT Service Intelligence', 'Configuration Management']
+    },
+    'Automation & Orchestration': {
+      icon: Zap,
+      tagline: 'Automate repetitive IT tasks',
+      overview: 'Eliminate manual work with intelligent automation and orchestration across infrastructure, applications, and business processes.',
+      features: [
+        { title: 'Process Automation', description: 'Automate repetitive tasks and workflows with no-code/low-code tools' },
+        { title: 'Orchestration', description: 'Coordinate complex multi-system processes and workflows' },
+        { title: 'Integration Hub', description: 'Pre-built integrations with 500+ applications and services' },
+        { title: 'RPA Integration', description: 'Robotic process automation for legacy system integration' }
+      ],
+      benefits: [
+        { metric: '80%', description: 'Reduction in manual tasks' },
+        { metric: '70%', description: 'Faster process execution' },
+        { metric: '90%', description: 'Reduction in human errors' },
+        { metric: '55%', description: 'Improvement in productivity' }
+      ],
+      technologies: ['ServiceNow', 'UiPath', 'Automation Anywhere', 'Ansible'],
+      integrations: ['IT Service Management', 'DevOps & CI/CD', 'AIOps Platform']
+    },
+    'DevOps & CI/CD': {
+      icon: Zap,
+      tagline: 'Accelerate software delivery',
+      overview: 'Implement DevOps practices with continuous integration, continuous deployment, infrastructure as code, and automated testing.',
+      features: [
+        { title: 'CI/CD Pipelines', description: 'Automated build, test, and deployment pipelines' },
+        { title: 'Infrastructure as Code', description: 'Version-controlled infrastructure provisioning and management' },
+        { title: 'Automated Testing', description: 'Comprehensive automated testing including unit, integration, and security tests' },
+        { title: 'Release Management', description: 'Controlled release processes with blue-green and canary deployments' }
+      ],
+      benefits: [
+        { metric: '75%', description: 'Faster deployment frequency' },
+        { metric: '60%', description: 'Reduction in deployment failures' },
+        { metric: '70%', description: 'Faster mean time to recovery' },
+        { metric: '50%', description: 'Improvement in code quality' }
+      ],
+      technologies: ['Jenkins', 'GitLab', 'Azure DevOps', 'GitHub Actions'],
+      integrations: ['Automation & Orchestration', 'Cloud Migration & Optimization', 'AIOps Platform']
+    },
+    'Cloud Migration & Optimization': {
+      icon: Cloud,
+      tagline: 'Seamless cloud transformation',
+      overview: 'Plan and execute cloud migration with assessment, migration, optimization, and ongoing management of multi-cloud environments.',
+      features: [
+        { title: 'Cloud Assessment', description: 'Comprehensive assessment of applications for cloud readiness' },
+        { title: 'Migration Planning', description: 'Detailed migration strategy and execution planning' },
+        { title: 'Cost Optimization', description: 'Continuous cost optimization with rightsizing and reserved instances' },
+        { title: 'Multi-Cloud Management', description: 'Unified management across AWS, Azure, and Google Cloud' }
+      ],
+      benefits: [
+        { metric: '40%', description: 'Reduction in IT costs' },
+        { metric: '3x', description: 'Faster deployment speed' },
+        { metric: '50%', description: 'Improvement in scalability' },
+        { metric: '35%', description: 'Reduction in cloud waste' }
+      ],
+      technologies: ['AWS', 'Azure', 'Google Cloud', 'VMware'],
+      integrations: ['Application Modernization', 'DevOps & CI/CD', 'Resilience & Backup']
+    },
+    'Business Service Mapping': {
+      icon: Activity,
+      tagline: 'Map IT services to business impact',
+      overview: 'Discover and map relationships between IT infrastructure, applications, and business services to understand business impact of IT changes.',
+      features: [
+        { title: 'Service Discovery', description: 'Automatic discovery of services and dependencies' },
+        { title: 'Dependency Mapping', description: 'Visual mapping of service dependencies and relationships' },
+        { title: 'Impact Analysis', description: 'Understand business impact of IT changes and incidents' },
+        { title: 'Service Health', description: 'Real-time service health monitoring and alerting' }
+      ],
+      benefits: [
+        { metric: '70%', description: 'Faster impact assessment' },
+        { metric: '60%', description: 'Reduction in change-related incidents' },
+        { metric: '80%', description: 'Improved change planning' },
+        { metric: '55%', description: 'Faster problem resolution' }
+      ],
+      technologies: ['ServiceNow', 'BMC', 'Device42', 'Dynatrace'],
+      integrations: ['IT Service Intelligence', 'Configuration Management', 'AIOps Platform']
+    },
+    'Observability & Dashboarding': {
+      icon: BarChart,
+      tagline: 'Gain complete IT visibility',
+      overview: 'Achieve full-stack observability with metrics, logs, traces, and custom dashboards for real-time insights into IT performance.',
+      features: [
+        { title: 'Metrics Collection', description: 'Collect and aggregate metrics from all infrastructure and applications' },
+        { title: 'Log Management', description: 'Centralized log collection, search, and analysis' },
+        { title: 'Distributed Tracing', description: 'End-to-end transaction tracing across microservices' },
+        { title: 'Custom Dashboards', description: 'Build custom dashboards for different stakeholders' }
+      ],
+      benefits: [
+        { metric: '75%', description: 'Faster problem identification' },
+        { metric: '60%', description: 'Reduction in MTTR' },
+        { metric: '85%', description: 'Improvement in visibility' },
+        { metric: '50%', description: 'Reduction in alert fatigue' }
+      ],
+      technologies: ['Datadog', 'Splunk', 'Grafana', 'ELK Stack'],
+      integrations: ['AIOps Platform', 'IT Service Intelligence', 'Systems Management']
+    },
+    'Productivity Analytics': {
+      icon: TrendingUp,
+      tagline: 'Measure and improve employee productivity',
+      overview: 'Gain insights into employee productivity with digital experience monitoring, application usage analytics, and productivity scoring.',
+      features: [
+        { title: 'Digital Experience Monitoring', description: 'Monitor end-user experience across all applications and devices' },
+        { title: 'Application Analytics', description: 'Track application usage patterns and adoption rates' },
+        { title: 'Productivity Scoring', description: 'Calculate productivity scores based on multiple factors' },
+        { title: 'Insights & Recommendations', description: 'AI-powered recommendations to improve productivity' }
+      ],
+      benefits: [
+        { metric: '35%', description: 'Improvement in productivity' },
+        { metric: '50%', description: 'Reduction in application issues' },
+        { metric: '70%', description: 'Better resource allocation' },
+        { metric: '60%', description: 'Improved user satisfaction' }
+      ],
+      technologies: ['Microsoft Viva', 'Nexthink', 'ControlUp', 'Lakeside Software'],
+      integrations: ['Digital Employee Experience', 'IT Service Intelligence', 'AIOps Platform']
+    },
+    'AIOps Platform': {
+      icon: Zap,
+      tagline: 'AI-powered IT operations',
+      overview: 'Leverage artificial intelligence and machine learning for predictive analytics, anomaly detection, automated remediation, and intelligent insights.',
+      features: [
+        { title: 'Predictive Analytics', description: 'Predict incidents before they occur with ML-powered analytics' },
+        { title: 'Anomaly Detection', description: 'Automatically detect anomalies and unusual patterns' },
+        { title: 'Automated Remediation', description: 'Self-healing systems with automated incident remediation' },
+        { title: 'Intelligent Insights', description: 'AI-powered insights and recommendations for optimization' }
+      ],
+      benefits: [
+        { metric: '60%', description: 'Reduction in MTTR' },
+        { metric: '75%', description: 'Reduction in false alerts' },
+        { metric: '80%', description: 'Faster root cause analysis' },
+        { metric: '50%', description: 'Reduction in incidents' }
+      ],
+      technologies: ['Datadog', 'Dynatrace', 'Splunk', 'New Relic'],
+      integrations: ['Observability & Dashboarding', 'IT Service Intelligence', 'Automation & Orchestration']
+    }
   }
 
   const categories = [
@@ -68,7 +375,7 @@ const Solutions = () => {
         'Automation & Orchestration',
         'DevOps & CI/CD'
       ],
-      color: 'from-yellow-500 to-yellow-600'
+      color: 'from-green-500 to-green-600'
     },
     {
       image: solutionCloud,
@@ -91,103 +398,194 @@ const Solutions = () => {
         'Productivity Analytics',
         'AIOps Platform'
       ],
-      color: 'from-green-500 to-green-600'
+      color: 'from-cyan-500 to-cyan-600'
     }
   ]
 
+  const handleSolutionClick = (solutionName) => {
+    setSelectedSolution(solutionName)
+    document.body.style.overflow = 'hidden'
+  }
+
+  const closeModal = () => {
+    setSelectedSolution(null)
+    document.body.style.overflow = 'unset'
+  }
+
+  const solution = selectedSolution ? solutionData[selectedSolution] : null
+  const SolutionIcon = solution?.icon
+
   return (
-    <section id="solutions" className="py-20 lg:py-28 bg-white">
-      <div className="container-custom">
+    <section id="solutions" className="py-20 bg-gradient-to-b from-white to-gray-50">
+      <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-display font-bold text-4xl lg:text-5xl text-verto-dark-gray mb-4">
-            Comprehensive Solutions for Every IT Need
-          </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold mb-4">Comprehensive Solutions for Every IT Need</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             17 solutions organized across 5 strategic categories to transform your IT infrastructure
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {categories.map((category, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl border-2 border-gray-100 hover:border-verto-blue transition-all duration-300 overflow-hidden group"
+              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer relative group"
               onMouseEnter={() => setExpandedCategory(index)}
               onMouseLeave={() => setExpandedCategory(null)}
             >
-              <div className="p-8">
-                {/* Icon and Badge */}
-                <div className="flex items-start justify-between mb-6">
-                  <div className="w-20 h-20 rounded-xl bg-white shadow-sm flex items-center justify-center group-hover:scale-110 transition-transform p-2">
-                    <img 
-                      src={category.image} 
-                      alt={category.name} 
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
-                  <div className="bg-verto-blue/10 text-verto-blue px-3 py-1 rounded-full text-sm font-display font-semibold">
-                    {category.count} Solutions
-                  </div>
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={category.image} 
+                  alt={category.name}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className={`absolute inset-0 bg-gradient-to-t ${category.color} opacity-60`}></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <div className="text-sm font-semibold mb-1">{category.count} Solutions</div>
+                  <h3 className="text-xl font-bold">{category.name}</h3>
                 </div>
-
-                {/* Category Name */}
-                <h3 className="font-display font-bold text-2xl text-verto-dark-gray mb-3 group-hover:text-verto-blue transition-colors">
-                  {category.name}
-                </h3>
-
-                {/* Description */}
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  {category.description}
-                </p>
-
-                {/* Solutions List */}
-                <div className={`transition-all duration-300 overflow-hidden ${
-                  expandedCategory === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                }`}>
-                  <div className="border-t border-gray-100 pt-4 mb-4">
+              </div>
+              
+              <div className="p-6">
+                <p className="text-gray-600 mb-4">{category.description}</p>
+                
+                <div className={`transition-all duration-300 ${expandedCategory === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+                  <div className="border-t pt-4 mb-4">
+                    <h4 className="font-semibold mb-3 text-gray-800">Solutions:</h4>
                     <ul className="space-y-2">
-                      {category.solutions.map((solution, sIdx) => (
-                        <li key={sIdx} className="flex items-center text-sm">
-                          <div className="w-1.5 h-1.5 rounded-full bg-verto-blue mr-2 flex-shrink-0"></div>
-                          <a 
-                            href={solutionLinks[solution]} 
-                            className="text-gray-700 hover:text-verto-blue hover:underline transition-colors"
+                      {category.solutions.map((solution, idx) => (
+                        <li key={idx}>
+                          <button
+                            onClick={() => handleSolutionClick(solution)}
+                            className="text-verto-blue hover:text-verto-blue-dark hover:underline text-left w-full"
                           >
-                            {solution}
-                          </a>
+                            • {solution}
+                          </button>
                         </li>
                       ))}
                     </ul>
                   </div>
                 </div>
 
-                {/* CTA */}
-                <a
-                  href={`#${category.name.toLowerCase().replace(/\s+/g, '-')}`}
-                  className="inline-flex items-center text-verto-blue hover:text-verto-blue-dark font-display font-medium group-hover:translate-x-2 transition-transform"
+                <a 
+                  href="#solutions"
+                  className="inline-flex items-center text-verto-blue hover:text-verto-blue-dark font-semibold mt-4"
                 >
                   Explore Category
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <ArrowRight className="ml-2 w-4 h-4" />
                 </a>
               </div>
-
-              {/* Hover Accent Line */}
-              <div className={`h-1 bg-gradient-to-r ${category.color} transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left`}></div>
             </div>
           ))}
         </div>
-
-        {/* View All Solutions CTA */}
-        <div className="text-center mt-12">
-          <a
-            href="#all-solutions"
-            className="inline-flex items-center text-verto-blue hover:text-verto-blue-dark font-display font-semibold text-lg group"
-          >
-            View All 17 Solutions
-            <ChevronDown className="ml-2 h-5 w-5 group-hover:translate-y-1 transition-transform" />
-          </a>
-        </div>
       </div>
+
+      {/* Solution Modal */}
+      {selectedSolution && solution && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 backdrop-blur-sm" onClick={closeModal}>
+          <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
+            {/* Modal Header */}
+            <div className="sticky top-0 bg-gradient-to-r from-verto-blue to-verto-blue-dark text-white p-6 rounded-t-2xl z-10">
+              <button
+                onClick={closeModal}
+                className="absolute top-4 right-4 text-white hover:bg-white hover:bg-opacity-20 rounded-full p-2 transition-colors"
+              >
+                <X className="w-6 h-6" />
+              </button>
+              <div className="flex items-center gap-4">
+                {SolutionIcon && (
+                  <div className="bg-white bg-opacity-20 p-3 rounded-lg">
+                    <SolutionIcon className="w-8 h-8" />
+                  </div>
+                )}
+                <div>
+                  <h2 className="text-3xl font-bold mb-2">{selectedSolution}</h2>
+                  <p className="text-white text-opacity-90">{solution.tagline}</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Modal Content */}
+            <div className="p-8">
+              {/* Overview */}
+              <div className="mb-8">
+                <h3 className="text-2xl font-bold mb-4 text-gray-800">Overview</h3>
+                <p className="text-gray-600 text-lg leading-relaxed">{solution.overview}</p>
+              </div>
+
+              {/* Key Features */}
+              <div className="mb-8">
+                <h3 className="text-2xl font-bold mb-4 text-gray-800">Key Features</h3>
+                <div className="grid md:grid-cols-2 gap-4">
+                  {solution.features.map((feature, idx) => (
+                    <div key={idx} className="bg-gray-50 p-4 rounded-lg">
+                      <div className="flex items-start gap-3">
+                        <CheckCircle className="w-5 h-5 text-verto-blue flex-shrink-0 mt-1" />
+                        <div>
+                          <h4 className="font-semibold text-gray-800 mb-1">{feature.title}</h4>
+                          <p className="text-gray-600 text-sm">{feature.description}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Benefits */}
+              <div className="mb-8">
+                <h3 className="text-2xl font-bold mb-4 text-gray-800">Quantified Benefits</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  {solution.benefits.map((benefit, idx) => (
+                    <div key={idx} className="bg-gradient-to-br from-verto-blue to-verto-blue-dark text-white p-4 rounded-lg text-center">
+                      <div className="text-3xl font-bold mb-2">{benefit.metric}</div>
+                      <div className="text-sm">{benefit.description}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Technologies */}
+              <div className="mb-8">
+                <h3 className="text-2xl font-bold mb-4 text-gray-800">Technologies & Partners</h3>
+                <div className="flex flex-wrap gap-3">
+                  {solution.technologies.map((tech, idx) => (
+                    <span key={idx} className="bg-gray-100 px-4 py-2 rounded-full text-gray-700 font-medium">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Integrations */}
+              <div className="mb-8">
+                <h3 className="text-2xl font-bold mb-4 text-gray-800">Integrates With</h3>
+                <div className="flex flex-wrap gap-3">
+                  {solution.integrations.map((integration, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => {
+                        setSelectedSolution(integration)
+                      }}
+                      className="bg-verto-blue bg-opacity-10 text-verto-blue px-4 py-2 rounded-full font-medium hover:bg-opacity-20 transition-colors"
+                    >
+                      {integration}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* CTA */}
+              <div className="bg-gradient-to-r from-verto-blue to-verto-teal text-white p-6 rounded-xl text-center">
+                <h3 className="text-2xl font-bold mb-2">Ready to Transform Your IT?</h3>
+                <p className="mb-4">Let's discuss how {selectedSolution} can help your organization</p>
+                <button className="bg-white text-verto-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                  Schedule a Consultation
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   )
 }

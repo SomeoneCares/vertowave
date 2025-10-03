@@ -47,6 +47,7 @@
   /* Verto Wave Brand Colors */
   --verto-blue: #1DB4D8;
   --verto-blue-dark: #1899B8;
+  --verto-blue-accessible: #0D7A94; /* Darker blue for better contrast with white text */
   --verto-teal: #17A2B8;
   --verto-dark-gray: #4A4A4A;
   --verto-light-gray: #F5F5F5;
@@ -157,7 +158,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-verto-blue {
+  background-color: var(--verto-blue-accessible);
+}
+
+.bg-verto-blue-light {
   background-color: var(--verto-blue);
+}
+
+.hover\:bg-verto-blue-dark:hover {
+  background-color: var(--verto-blue-dark);
 }
 
 .text-verto-teal {
