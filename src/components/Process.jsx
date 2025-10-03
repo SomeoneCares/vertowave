@@ -674,16 +674,16 @@ const Process = () => {
         >
           <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
             {/* Header */}
-            <div className={`${selectedMaturity.color} p-8 ${selectedMaturity.level === 3 ? 'text-gray-900' : 'text-white'} relative`}>
+            <div className={`${selectedMaturity.color} p-8 text-white relative`}>
               <button
                 onClick={() => setSelectedMaturity(null)}
-                className={`absolute top-4 right-4 p-2 ${selectedMaturity.level === 3 ? 'hover:bg-black/10' : 'hover:bg-white/20'} rounded-full transition-colors`}
+                className="absolute top-4 right-4 p-2 hover:bg-white/20 rounded-full transition-colors"
                 aria-label="Close modal"
               >
                 <X className="h-6 w-6" />
               </button>
               <div className="flex items-center gap-6">
-                <div className={`w-20 h-20 ${selectedMaturity.level === 3 ? 'bg-black/10' : 'bg-white/20'} backdrop-blur rounded-full flex items-center justify-center ${selectedMaturity.level === 3 ? 'text-gray-900' : 'text-white'} font-bold text-3xl`}>
+                <div className="w-20 h-20 bg-white/20 backdrop-blur rounded-full flex items-center justify-center text-white font-bold text-3xl">
                   {selectedMaturity.level}
                 </div>
                 <div>
