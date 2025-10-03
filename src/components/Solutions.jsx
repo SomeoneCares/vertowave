@@ -1,10 +1,11 @@
 import { useState } from 'react'
-import { ChevronDown, ArrowRight, X, CheckCircle, TrendingUp, Users, Shield, Cloud, Zap, Activity, BarChart } from 'lucide-react'
+import { ChevronDown, ArrowRight, X, CheckCircle, TrendingUp, Users, Shield, Cloud, Zap, Activity, BarChart, Target, Building } from 'lucide-react'
 import solutionInfrastructure from '../assets/solution-infrastructure.webp'
 import solutionSecurity from '../assets/solution-security.webp'
 import solutionAutomation from '../assets/solution-automation.webp'
 import solutionCloud from '../assets/solution-cloud.webp'
 import solutionInsights from '../assets/solution-insights.webp'
+import solutionStrategy from '../assets/solution-strategy.webp'
 
 // Import partner logos
 import stackxLogo from '../assets/partners/stackx.webp'
@@ -366,6 +367,63 @@ const Solutions = () => {
       ],
       technologies: ['StackX', 'Elastic', 'OpenText', 'DeviceX'],
       integrations: ['Observability & Dashboarding', 'IT Service Intelligence', 'Automation & Orchestration']
+    },
+    'Build a Multi-Year IT Strategy': {
+      icon: Target,
+      tagline: 'Strategic IT planning and roadmap development',
+      overview: 'Develop comprehensive multi-year IT strategies aligned with business objectives, including technology roadmaps, investment planning, and transformation initiatives.',
+      features: [
+        { title: 'Strategic Assessment', description: 'Comprehensive evaluation of current IT landscape and business alignment' },
+        { title: 'Technology Roadmap', description: 'Detailed multi-year technology adoption and modernization roadmap' },
+        { title: 'Investment Planning', description: 'Strategic budget allocation and ROI analysis for IT initiatives' },
+        { title: 'Transformation Planning', description: 'Phased approach to digital transformation and organizational change' }
+      ],
+      benefits: [
+        { metric: '40%', description: 'Reduction in IT costs through strategic planning' },
+        { metric: '60%', description: 'Faster time to market for new initiatives' },
+        { metric: '85%', description: 'Improved business-IT alignment' },
+        { metric: '50%', description: 'Reduction in technology debt' }
+      ],
+      technologies: ['StackX', 'Microsoft', 'OpenText', 'Elastic'],
+      integrations: ['Business Service Mapping', 'IT Service Management', 'AIOps Platform']
+    },
+    'Infrastructure and Datacenter Enterprise Reference Architecture': {
+      icon: Building,
+      tagline: 'Enterprise-grade infrastructure architecture design',
+      overview: 'Design and implement comprehensive enterprise reference architectures for infrastructure and datacenter environments, ensuring scalability, security, and operational excellence.',
+      features: [
+        { title: 'Architecture Design', description: 'Comprehensive infrastructure and datacenter architecture blueprints' },
+        { title: 'Scalability Planning', description: 'Design for growth with horizontal and vertical scaling strategies' },
+        { title: 'Security Integration', description: 'Built-in security controls and compliance frameworks' },
+        { title: 'Operational Excellence', description: 'Standardized processes and automation for consistent operations' }
+      ],
+      benefits: [
+        { metric: '70%', description: 'Faster infrastructure deployment' },
+        { metric: '50%', description: 'Reduction in operational complexity' },
+        { metric: '90%', description: 'Improved system reliability' },
+        { metric: '60%', description: 'Reduction in security vulnerabilities' }
+      ],
+      technologies: ['StackX', 'Microsoft', 'OpenText', 'DeviceX'],
+      integrations: ['Configuration Management', 'Systems Management', 'Security Governance']
+    },
+    'Digital Transformation': {
+      icon: Zap,
+      tagline: 'Comprehensive digital transformation enablement',
+      overview: 'Lead organization-wide digital transformation initiatives with modern technologies, processes, and cultural change to drive innovation and competitive advantage.',
+      features: [
+        { title: 'Transformation Strategy', description: 'Holistic approach to digital transformation across people, processes, and technology' },
+        { title: 'Technology Modernization', description: 'Legacy system modernization and cloud-native architecture adoption' },
+        { title: 'Process Optimization', description: 'Business process reengineering and automation implementation' },
+        { title: 'Change Management', description: 'Organizational change management and digital culture development' }
+      ],
+      benefits: [
+        { metric: '45%', description: 'Improvement in operational efficiency' },
+        { metric: '3x', description: 'Faster innovation cycles' },
+        { metric: '65%', description: 'Reduction in time to market' },
+        { metric: '80%', description: 'Improved customer experience' }
+      ],
+      technologies: ['StackX', 'Microsoft', 'OpenText', 'Elastic'],
+      integrations: ['Cloud Migration & Optimization', 'Automation & Orchestration', 'AIOps Platform']
     }
   }
 
@@ -431,6 +489,18 @@ const Solutions = () => {
         'AIOps Platform'
       ],
       color: 'from-cyan-500 to-cyan-600'
+    },
+    {
+      image: solutionStrategy,
+      name: 'Strategy and Architecture',
+      count: 3,
+      description: 'Strategic IT planning and enterprise architecture design for long-term success.',
+      solutions: [
+        'Build a Multi-Year IT Strategy',
+        'Infrastructure and Datacenter Enterprise Reference Architecture',
+        'Digital Transformation'
+      ],
+      color: 'from-orange-500 to-orange-600'
     }
   ]
 
