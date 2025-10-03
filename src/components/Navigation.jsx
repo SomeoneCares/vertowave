@@ -1,35 +1,11 @@
 import { useState } from 'react'
-import { Menu, X, ChevronDown } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import logo from '../assets/verto_wave_logo.webp'
-import { getSolutionUrl } from '../utils/solutionLinks'
 
 const Navigation = ({ isScrolled }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [solutionsOpen, setSolutionsOpen] = useState(false)
 
-  const solutionCategories = [
-    {
-      name: 'Infrastructure & Operations',
-      solutions: ['Configuration Management', 'Systems Management', 'Network Management', 'IT Asset Management']
-    },
-    {
-      name: 'Security & Compliance',
-      solutions: ['Identity & Access Management', 'Security Governance', 'Resilience & Backup', 'Zero Trust Frameworks', 'Data Protection & Privacy']
-    },
-    {
-      name: 'Service Delivery & Automation',
-      solutions: ['IT Service Management', 'Automation & Orchestration', 'DevOps & CI/CD']
-    },
-    {
-      name: 'Cloud & Modernization',
-      solutions: ['Cloud Migration & Optimization', 'Business Service Mapping']
-    },
-    {
-      name: 'Insights & Intelligence',
-      solutions: ['Observability & Dashboarding', 'Productivity Analytics', 'AIOps Platform']
-    }
-  ]
 
   return (
     <nav
@@ -52,50 +28,9 @@ const Navigation = ({ isScrolled }) => {
               Home
             </a>
             
-            {/* Solutions Dropdown */}
-            <div 
-              className="relative"
-              onMouseEnter={() => setSolutionsOpen(true)}
-              onMouseLeave={() => setSolutionsOpen(false)}
-            >
-              <button className="font-display text-verto-dark-gray hover:text-verto-blue transition-colors flex items-center">
-                Solutions
-                <ChevronDown className="ml-1 h-4 w-4" />
-              </button>
-              
-              {solutionsOpen && (
-                <div className="absolute top-full left-1/2 transform -translate-x-1/2 pt-2 w-screen max-w-5xl">
-                  <div className="bg-white shadow-xl rounded-lg p-8 border border-gray-100">
-                  <div className="grid grid-cols-5 gap-6">
-                    {solutionCategories.map((category, idx) => (
-                      <div key={idx}>
-                        <h3 className="font-display font-semibold text-sm text-verto-blue mb-3">
-                          {category.name}
-                        </h3>
-                        <ul className="space-y-2">
-                          {category.solutions.map((solution, sIdx) => (
-                            <li key={sIdx}>
-                              <a
-                                href={getSolutionUrl(solution)}
-                                className="text-sm text-gray-600 hover:text-verto-blue transition-colors block"
-                              >
-                                {solution}
-                              </a>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="mt-6 pt-6 border-t border-gray-100">
-                    <a href="#all-solutions" className="text-verto-blue hover:underline font-display font-medium">
-                      View All Solutions →
-                    </a>
-                  </div>
-                  </div>
-                </div>
-              )}
-            </div>
+            <a href="#solutions" className="font-display text-verto-dark-gray hover:text-verto-blue transition-colors">
+              Solutions
+            </a>
 
             <a href="#industries" className="font-display text-verto-dark-gray hover:text-verto-blue transition-colors">
               Industries
