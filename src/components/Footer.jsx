@@ -1,5 +1,5 @@
 import { Linkedin, Twitter, Youtube } from 'lucide-react'
-import logo from '../assets/verto_wave_logo.webp'
+import logo from '../assets/vw white.png'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
