@@ -22,7 +22,10 @@ const Industries = () => {
         'Cybersecurity threats and fraud prevention',
         'Legacy system modernization',
         'Digital banking transformation',
-        'Data privacy and protection'
+        'Data privacy and protection',
+        'Risk management and advanced analytics',
+        'Anti-Money Laundering (AML) and fraud detection',
+        'Customer analytics and personalization'
       ],
       solutions: [
         'Identity & Access Management',

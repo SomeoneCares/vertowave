@@ -424,6 +424,63 @@ const Solutions = () => {
       ],
       technologies: ['StackX', 'Microsoft', 'OpenText', 'Elastic'],
       integrations: ['Cloud Migration & Optimization', 'Automation & Orchestration', 'AIOps Platform']
+    },
+    'Risk Management and Advanced Analytics': {
+      icon: BarChart,
+      tagline: 'Comprehensive risk assessment and analytics platform',
+      overview: 'Advanced risk management solutions using SAS analytics to provide real-time risk assessment, stress testing, and regulatory compliance for financial institutions.',
+      features: [
+        { title: 'Credit Risk Modeling', description: 'Advanced statistical models for credit scoring, default prediction, and portfolio risk assessment' },
+        { title: 'Market Risk Analysis', description: 'Real-time market risk monitoring with VaR calculations and stress testing scenarios' },
+        { title: 'Operational Risk Management', description: 'Comprehensive operational risk assessment and loss event tracking' },
+        { title: 'Regulatory Reporting', description: 'Automated regulatory reporting for Basel III, IFRS 9, and other compliance requirements' }
+      ],
+      benefits: [
+        { metric: '40%', description: 'Reduction in risk assessment time' },
+        { metric: '85%', description: 'Improvement in risk prediction accuracy' },
+        { metric: '60%', description: 'Faster regulatory compliance' },
+        { metric: '50%', description: 'Reduction in capital requirements' }
+      ],
+      technologies: ['StackX', 'SAS', 'Microsoft', 'Elastic'],
+      integrations: ['Security Governance', 'Data Protection & Privacy', 'AIOps Platform']
+    },
+    'Anti-Money Laundering (AML) and Fraud Detection': {
+      icon: Shield,
+      tagline: 'Advanced fraud detection and AML compliance',
+      overview: 'Comprehensive AML and fraud detection platform using SAS analytics to identify suspicious transactions, prevent financial crimes, and ensure regulatory compliance.',
+      features: [
+        { title: 'Transaction Monitoring', description: 'Real-time monitoring of transactions with advanced pattern recognition and anomaly detection' },
+        { title: 'Suspicious Activity Reporting', description: 'Automated SAR generation and case management for regulatory reporting' },
+        { title: 'Customer Due Diligence', description: 'Enhanced due diligence processes with risk scoring and ongoing monitoring' },
+        { title: 'Sanctions Screening', description: 'Real-time screening against global sanctions lists and watch lists' }
+      ],
+      benefits: [
+        { metric: '70%', description: 'Reduction in false positive alerts' },
+        { metric: '90%', description: 'Improvement in detection accuracy' },
+        { metric: '50%', description: 'Faster investigation time' },
+        { metric: '95%', description: 'Regulatory compliance rate' }
+      ],
+      technologies: ['StackX', 'SAS', 'Microsoft', 'Elastic'],
+      integrations: ['Security Governance', 'Identity & Access Management', 'Data Protection & Privacy']
+    },
+    'Customer Analytics and Personalization': {
+      icon: Users,
+      tagline: 'Data-driven customer insights and personalization',
+      overview: 'Advanced customer analytics platform using SAS to understand customer behavior, predict needs, and deliver personalized banking experiences.',
+      features: [
+        { title: 'Customer Segmentation', description: 'Advanced segmentation models to identify customer groups and their unique characteristics' },
+        { title: 'Predictive Analytics', description: 'Churn prediction, cross-selling opportunities, and lifetime value modeling' },
+        { title: 'Personalization Engine', description: 'Real-time personalization of products, services, and communications' },
+        { title: 'Customer Journey Analytics', description: 'End-to-end customer journey mapping and optimization' }
+      ],
+      benefits: [
+        { metric: '35%', description: 'Increase in customer retention' },
+        { metric: '45%', description: 'Improvement in cross-selling success' },
+        { metric: '60%', description: 'Faster customer onboarding' },
+        { metric: '25%', description: 'Increase in customer satisfaction' }
+      ],
+      technologies: ['StackX', 'SAS', 'Microsoft', 'Elastic'],
+      integrations: ['AIOps Platform', 'IT Service Management', 'Data Protection & Privacy']
     }
   }
 
@@ -481,12 +538,15 @@ const Solutions = () => {
     {
       image: solutionInsights,
       name: 'Insights & Intelligence',
-      count: 3,
+      count: 6,
       description: 'Gain actionable insights with advanced analytics and AI-powered intelligence.',
       solutions: [
         'Observability & Dashboarding',
         'Productivity Analytics',
-        'AIOps Platform'
+        'AIOps Platform',
+        'Risk Management and Advanced Analytics',
+        'Anti-Money Laundering (AML) and Fraud Detection',
+        'Customer Analytics and Personalization'
       ],
       color: 'from-cyan-500 to-cyan-600'
     },
