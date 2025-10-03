@@ -1,59 +1,59 @@
-import { ArrowLeft, CheckCircle, TrendingUp, Shield, Zap, Users, ArrowRight } from 'lucide-react'
-import solutionInfrastructure from '../assets/solution-infrastructure.png'
+import { ArrowLeft, CheckCircle, Scan, LifeBuoy, Scale, ShieldCheck, ArrowRight } from 'lucide-react'
+import solutionItam from '../assets/solution-infrastructure.png'
 
-const ConfigurationManagementPage = () => {
+const ITAssetManagementPage = () => {
   const keyFeatures = [
     {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Automated Configuration",
-      description: "Automatically deploy and maintain consistent configurations across all infrastructure"
+      icon: <Scan className="w-6 h-6" />,
+      title: "Automated Asset Discovery",
+      description: "Automatically discover and inventory all hardware, software, and cloud assets across your network, ensuring a complete and accurate asset register."
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Compliance Monitoring",
-      description: "Real-time compliance checking against industry standards and internal policies"
+      icon: <LifeBuoy className="w-6 h-6" />,
+      title: "Full Lifecycle Management",
+      description: "Manage assets from procurement and deployment through maintenance, upgrades, and eventual retirement, optimizing their value at every stage."
     },
     {
-      icon: <TrendingUp className="w-6 h-6" />,
-      title: "Drift Detection",
-      description: "Identify and remediate configuration drift before it causes issues"
+      icon: <Scale className="w-6 h-6" />,
+      title: "Software License Optimization",
+      description: "Track software usage, manage licenses, and ensure compliance to avoid costly penalties and optimize software spend."
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Version Control",
-      description: "Track all configuration changes with full audit trails and rollback capabilities"
+      icon: <ShieldCheck className="w-6 h-6" />,
+      title: "Compliance & Risk Management",
+      description: "Monitor asset configurations against regulatory standards and internal policies, identifying vulnerabilities and reducing security risks."
     }
   ]
 
   const benefits = [
-    { metric: "70%", description: "Reduction in configuration errors" },
-    { metric: "80%", description: "Improvement in compliance rates" },
-    { metric: "60%", description: "Faster deployment times" },
-    { metric: "50%", description: "Decrease in security incidents" }
+    { metric: "25%", description: "Reduction in IT operational costs through optimized asset utilization and streamlined processes." },
+    { metric: "90%", description: "Improvement in software license compliance, avoiding penalties and unexpected expenses." },
+    { metric: "40%", description: "Faster incident resolution and problem diagnosis due to accurate asset data." },
+    { metric: "30%", description: "Enhanced security posture by identifying and remediating unauthorized or vulnerable assets." }
   ]
 
   const technologies = [
-    { category: "Orchestration", tools: ["ServiceNow", "Ansible", "Puppet", "Chef"] },
-    { category: "Cloud Platforms", tools: ["AWS Config", "Azure Policy", "Google Cloud Config"] },
-    { category: "Monitoring", tools: ["Datadog", "Splunk", "New Relic"] },
-    { category: "Security", tools: ["CyberArk", "HashiCorp Vault"] }
+    { category: "Asset Discovery", tools: ["Tanium", "ServiceNow Discovery", "SCCM"] },
+    { category: "ITAM Platforms", tools: ["Flexera", "Snow Software", "Ivanti", "ServiceNow ITAM"] },
+    { category: "Cloud Asset Management", tools: ["AWS Config", "Azure Cost Management", "Google Cloud Asset Inventory"] },
+    { category: "Security & Compliance", tools: ["Qualys", "Tenable", "Splunk"] }
   ]
 
   const integrations = [
-    { solution: "Systems Management", benefit: "Unified infrastructure visibility" },
-    { solution: "Security Governance", benefit: "Automated security policy enforcement" },
-    { solution: "IT Service Management", benefit: "Change management integration" },
-    { solution: "Observability & Dashboarding", benefit: "Real-time configuration monitoring" }
+    { solution: "Systems Management", benefit: "Unified visibility and control over asset health and performance." },
+    { solution: "Security Governance", benefit: "Automated enforcement of security policies based on asset data." },
+    { solution: "IT Service Management", benefit: "Seamless integration with incident, problem, and change management processes." },
+    { solution: "Financial Management", benefit: "Accurate cost allocation and budgeting based on asset depreciation and usage." }
   ]
 
   const deliverables = [
-    "Configuration management strategy and roadmap",
-    "Automated configuration deployment pipelines",
-    "Compliance monitoring dashboards",
-    "Configuration drift detection and remediation",
-    "Version control and audit trail system",
-    "Documentation and runbooks",
-    "Team training and knowledge transfer"
+    "Comprehensive ITAM strategy and implementation roadmap",
+    "Automated asset discovery and inventory solutions",
+    "Software license management and optimization programs",
+    "Compliance reporting and audit readiness frameworks",
+    "Asset lifecycle management workflows and policies",
+    "Customized dashboards and analytics for asset insights",
+    "Training and support for ITAM best practices"
   ]
 
   return (
@@ -77,10 +77,10 @@ const ConfigurationManagementPage = () => {
                 Infrastructure & Operations
               </div>
               <h1 className="text-5xl font-bold mb-6 font-display">
-                Configuration Management
+                IT Asset Management
               </h1>
               <p className="text-xl text-gray-300 mb-8">
-                Automate and standardize configuration across your entire infrastructure with real-time compliance monitoring and drift detection.
+                Gain complete visibility and control over your IT assets, optimizing their lifecycle from procurement to disposal for enhanced efficiency, cost savings, and compliance.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button className="px-8 py-3 bg-[#1DB4D8] text-white rounded-lg font-medium hover:bg-[#1DB4D8]/90 transition-colors">
@@ -93,8 +93,8 @@ const ConfigurationManagementPage = () => {
             </div>
             <div className="relative">
               <img 
-                src={solutionInfrastructure} 
-                alt="Configuration Management" 
+                src={solutionItam} 
+                alt="IT Asset Management" 
                 className="rounded-lg shadow-2xl"
               />
             </div>
@@ -108,13 +108,7 @@ const ConfigurationManagementPage = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-6 font-display">Solution Overview</h2>
           <div className="prose prose-lg max-w-none text-gray-600">
             <p>
-              Verto Wave's Configuration Management solution provides comprehensive automation and governance for your IT infrastructure configuration. Our platform enables organizations to maintain consistent, compliant, and secure configurations across on-premises, cloud, and hybrid environments.
-            </p>
-            <p>
-              By implementing infrastructure as code (IaC) principles and automated compliance checking, we help you eliminate configuration drift, reduce human error, and accelerate deployment cycles while maintaining security and compliance standards.
-            </p>
-            <p>
-              Our solution integrates seamlessly with your existing tools and workflows, providing a unified platform for configuration management across your entire technology stack.
+              Verto Wave's IT Asset Management (ITAM) solution provides a comprehensive framework for managing your organization's hardware, software, and cloud assets throughout their entire lifecycle. Our platform enables you to track, monitor, and optimize every asset, ensuring accountability, maximizing value, and minimizing risks. By centralizing asset data and automating key processes, we help you make informed strategic decisions, reduce operational costs, improve compliance, and bolster security across your diverse IT landscape.
             </p>
           </div>
         </div>
@@ -212,17 +206,17 @@ const ConfigurationManagementPage = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-[#1DB4D8] to-[#1DB4D8]/80 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6 font-display">Ready to Transform Your Configuration Management?</h2>
+          <h2 className="text-4xl font-bold mb-6 font-display">Take Control of Your IT Assets Today</h2>
           <p className="text-xl mb-8 text-white/90">
-            Let's discuss how our Configuration Management solution can help you achieve your infrastructure goals.
+            Discover how Verto Wave's IT Asset Management solution can transform your asset visibility, optimize costs, and strengthen your security posture.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button className="px-8 py-3 bg-white text-[#1DB4D8] rounded-lg font-medium hover:bg-gray-100 transition-colors inline-flex items-center">
-              Schedule Consultation
+              Schedule a Free Consultation
               <ArrowRight className="w-5 h-5 ml-2" />
             </button>
             <button className="px-8 py-3 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors">
-              View Case Studies
+              Download Our ITAM Whitepaper
             </button>
           </div>
         </div>
@@ -238,4 +232,5 @@ const ConfigurationManagementPage = () => {
   )
 }
 
-export default ConfigurationManagementPage
+export default ITAssetManagementPage
+

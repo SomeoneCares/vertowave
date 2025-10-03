@@ -1,59 +1,59 @@
-import { ArrowLeft, CheckCircle, TrendingUp, Shield, Zap, Users, ArrowRight } from 'lucide-react'
-import solutionInfrastructure from '../assets/solution-infrastructure.png'
+import { ArrowLeft, CheckCircle, Zap, GitFork, Eye, Repeat, ArrowRight } from 'lucide-react'
+import solutionWorkflowAutomation from '../assets/solution-infrastructure.png'
 
-const ConfigurationManagementPage = () => {
+const WorkflowAutomationPage = () => {
   const keyFeatures = [
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Automated Configuration",
-      description: "Automatically deploy and maintain consistent configurations across all infrastructure"
+      title: "Intelligent Process Orchestration",
+      description: "Automate complex, multi-step workflows across various departments and systems with smart routing and decision logic."
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Compliance Monitoring",
-      description: "Real-time compliance checking against industry standards and internal policies"
+      icon: <GitFork className="w-6 h-6" />,
+      title: "Seamless System Integration",
+      description: "Connect and synchronize data across your existing applications, databases, and cloud services without custom coding."
     },
     {
-      icon: <TrendingUp className="w-6 h-6" />,
-      title: "Drift Detection",
-      description: "Identify and remediate configuration drift before it causes issues"
+      icon: <Eye className="w-6 h-6" />,
+      title: "Real-time Monitoring & Analytics",
+      description: "Gain complete visibility into workflow performance with dashboards, alerts, and actionable insights to identify bottlenecks."
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Version Control",
-      description: "Track all configuration changes with full audit trails and rollback capabilities"
+      icon: <Repeat className="w-6 h-6" />,
+      title: "Adaptive Workflow Design",
+      description: "Easily design, modify, and deploy workflows using intuitive drag-and-drop interfaces and pre-built templates."
     }
   ]
 
   const benefits = [
-    { metric: "70%", description: "Reduction in configuration errors" },
-    { metric: "80%", description: "Improvement in compliance rates" },
-    { metric: "60%", description: "Faster deployment times" },
-    { metric: "50%", description: "Decrease in security incidents" }
+    { metric: "60%", description: "Reduction in manual effort and operational costs" },
+    { metric: "85%", description: "Improvement in process completion speed" },
+    { metric: "40%", description: "Decrease in human errors and rework" },
+    { metric: "75%", description: "Increase in employee productivity and satisfaction" }
   ]
 
   const technologies = [
-    { category: "Orchestration", tools: ["ServiceNow", "Ansible", "Puppet", "Chef"] },
-    { category: "Cloud Platforms", tools: ["AWS Config", "Azure Policy", "Google Cloud Config"] },
-    { category: "Monitoring", tools: ["Datadog", "Splunk", "New Relic"] },
-    { category: "Security", tools: ["CyberArk", "HashiCorp Vault"] }
+    { category: "BPM Suites", tools: ["Appian", "Pega Systems", "Bonitasoft"] },
+    { category: "RPA Platforms", tools: ["UiPath", "Automation Anywhere", "Blue Prism"] },
+    { category: "Integration Platforms", tools: ["MuleSoft", "Dell Boomi", "Zapier"] },
+    { category: "AI/ML Services", tools: ["Google AI Platform", "AWS SageMaker", "Azure Machine Learning"] }
   ]
 
   const integrations = [
-    { solution: "Systems Management", benefit: "Unified infrastructure visibility" },
-    { solution: "Security Governance", benefit: "Automated security policy enforcement" },
-    { solution: "IT Service Management", benefit: "Change management integration" },
-    { solution: "Observability & Dashboarding", benefit: "Real-time configuration monitoring" }
+    { solution: "Configuration Management", benefit: "Automate configuration changes triggered by workflow events." },
+    { solution: "IT Service Management", benefit: "Streamline service request fulfillment and incident resolution." },
+    { solution: "Data Analytics & Reporting", benefit: "Feed automated process data for deeper insights and compliance." },
+    { solution: "Security Governance", benefit: "Enforce security policies and access controls within automated workflows." }
   ]
 
   const deliverables = [
-    "Configuration management strategy and roadmap",
-    "Automated configuration deployment pipelines",
-    "Compliance monitoring dashboards",
-    "Configuration drift detection and remediation",
-    "Version control and audit trail system",
-    "Documentation and runbooks",
-    "Team training and knowledge transfer"
+    "Workflow assessment and optimization strategy",
+    "Custom workflow design and implementation",
+    "Integration with existing enterprise systems",
+    "Automated process monitoring and alerting",
+    "Performance analytics and reporting dashboards",
+    "User training and documentation",
+    "Ongoing support and maintenance"
   ]
 
   return (
@@ -74,13 +74,13 @@ const ConfigurationManagementPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block px-4 py-2 bg-[#1DB4D8]/20 rounded-full text-[#1DB4D8] text-sm font-medium mb-6">
-                Infrastructure & Operations
+                Operations & Efficiency
               </div>
               <h1 className="text-5xl font-bold mb-6 font-display">
-                Configuration Management
+                Workflow Automation
               </h1>
               <p className="text-xl text-gray-300 mb-8">
-                Automate and standardize configuration across your entire infrastructure with real-time compliance monitoring and drift detection.
+                Streamline repetitive tasks, improve operational efficiency, and accelerate business processes with intelligent workflow automation.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button className="px-8 py-3 bg-[#1DB4D8] text-white rounded-lg font-medium hover:bg-[#1DB4D8]/90 transition-colors">
@@ -93,8 +93,8 @@ const ConfigurationManagementPage = () => {
             </div>
             <div className="relative">
               <img 
-                src={solutionInfrastructure} 
-                alt="Configuration Management" 
+                src={solutionWorkflowAutomation} 
+                alt="Workflow Automation" 
                 className="rounded-lg shadow-2xl"
               />
             </div>
@@ -108,13 +108,13 @@ const ConfigurationManagementPage = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-6 font-display">Solution Overview</h2>
           <div className="prose prose-lg max-w-none text-gray-600">
             <p>
-              Verto Wave's Configuration Management solution provides comprehensive automation and governance for your IT infrastructure configuration. Our platform enables organizations to maintain consistent, compliant, and secure configurations across on-premises, cloud, and hybrid environments.
+              Verto Wave's Workflow Automation solution empowers organizations to design, automate, and optimize their critical business processes. By eliminating manual bottlenecks and orchestrating tasks across systems and teams, we help you achieve significant gains in efficiency, accuracy, and speed.
             </p>
             <p>
-              By implementing infrastructure as code (IaC) principles and automated compliance checking, we help you eliminate configuration drift, reduce human error, and accelerate deployment cycles while maintaining security and compliance standards.
+              Our platform leverages advanced automation technologies to connect disparate applications, manage data flows, and ensure compliance, allowing your workforce to focus on strategic initiatives rather than repetitive administrative duties.
             </p>
             <p>
-              Our solution integrates seamlessly with your existing tools and workflows, providing a unified platform for configuration management across your entire technology stack.
+              From IT operations to customer service and HR, our solution adapts to your unique needs, providing a scalable and flexible approach to digital transformation.
             </p>
           </div>
         </div>
@@ -212,9 +212,9 @@ const ConfigurationManagementPage = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-[#1DB4D8] to-[#1DB4D8]/80 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6 font-display">Ready to Transform Your Configuration Management?</h2>
+          <h2 className="text-4xl font-bold mb-6 font-display">Ready to Automate Your Business Workflows?</h2>
           <p className="text-xl mb-8 text-white/90">
-            Let's discuss how our Configuration Management solution can help you achieve your infrastructure goals.
+            Discover how Verto Wave's Workflow Automation can transform your operations and drive efficiency.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button className="px-8 py-3 bg-white text-[#1DB4D8] rounded-lg font-medium hover:bg-gray-100 transition-colors inline-flex items-center">
@@ -238,4 +238,5 @@ const ConfigurationManagementPage = () => {
   )
 }
 
-export default ConfigurationManagementPage
+export default WorkflowAutomationPage
+

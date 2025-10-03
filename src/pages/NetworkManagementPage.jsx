@@ -1,59 +1,59 @@
-import { ArrowLeft, CheckCircle, TrendingUp, Shield, Zap, Users, ArrowRight } from 'lucide-react'
-import solutionInfrastructure from '../assets/solution-infrastructure.png'
+import { ArrowLeft, Activity, ShieldCheck, Settings, BarChart2, CheckCircle, ArrowRight } from 'lucide-react'
+import solutionNetwork from '../assets/solution-infrastructure.png' // Assuming a relevant image for network management
 
-const ConfigurationManagementPage = () => {
+const NetworkManagementPage = () => {
   const keyFeatures = [
     {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Automated Configuration",
-      description: "Automatically deploy and maintain consistent configurations across all infrastructure"
+      icon: <Activity className="w-6 h-6" />,
+      title: "Real-time Network Monitoring",
+      description: "Continuous monitoring of network devices, traffic, and application performance across all environments."
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Compliance Monitoring",
-      description: "Real-time compliance checking against industry standards and internal policies"
+      icon: <ShieldCheck className="w-6 h-6" />,
+      title: "Advanced Security Analytics",
+      description: "Detect and respond to network threats with AI-powered anomaly detection and behavioral analysis."
     },
     {
-      icon: <TrendingUp className="w-6 h-6" />,
-      title: "Drift Detection",
-      description: "Identify and remediate configuration drift before it causes issues"
+      icon: <Settings className="w-6 h-6" />,
+      title: "Automated Configuration & Provisioning",
+      description: "Streamline network device configuration, updates, and policy enforcement with intelligent automation."
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Version Control",
-      description: "Track all configuration changes with full audit trails and rollback capabilities"
+      icon: <BarChart2 className="w-6 h-6" />,
+      title: "Performance Optimization",
+      description: "Identify bottlenecks, optimize traffic flow, and ensure high availability for critical business applications."
     }
   ]
 
   const benefits = [
-    { metric: "70%", description: "Reduction in configuration errors" },
-    { metric: "80%", description: "Improvement in compliance rates" },
-    { metric: "60%", description: "Faster deployment times" },
-    { metric: "50%", description: "Decrease in security incidents" }
+    { metric: "30%", description: "Reduction in network downtime" },
+    { metric: "40%", description: "Faster incident resolution" },
+    { metric: "25%", description: "Improvement in network security posture" },
+    { metric: "20%", description: "Lower operational costs" }
   ]
 
   const technologies = [
-    { category: "Orchestration", tools: ["ServiceNow", "Ansible", "Puppet", "Chef"] },
-    { category: "Cloud Platforms", tools: ["AWS Config", "Azure Policy", "Google Cloud Config"] },
-    { category: "Monitoring", tools: ["Datadog", "Splunk", "New Relic"] },
-    { category: "Security", tools: ["CyberArk", "HashiCorp Vault"] }
+    { category: "Network Monitoring", tools: ["Cisco DNA Center", "SolarWinds", "PRTG Network Monitor"] },
+    { category: "Security & Analytics", tools: ["Palo Alto Networks", "Fortinet", "Splunk Enterprise Security"] },
+    { category: "Cloud Networking", tools: ["AWS Transit Gateway", "Azure Virtual WAN", "Google Cloud VPC"] },
+    { category: "Automation & Orchestration", tools: ["Ansible Network", "Puppet Enterprise", "Chef Infra"] }
   ]
 
   const integrations = [
-    { solution: "Systems Management", benefit: "Unified infrastructure visibility" },
-    { solution: "Security Governance", benefit: "Automated security policy enforcement" },
-    { solution: "IT Service Management", benefit: "Change management integration" },
-    { solution: "Observability & Dashboarding", benefit: "Real-time configuration monitoring" }
+    { solution: "Configuration Management", benefit: "Synchronized network device configurations and policies" },
+    { solution: "IT Service Management", benefit: "Automated incident creation and change requests based on network events" },
+    { solution: "Observability & Dashboarding", benefit: "Unified view of network health alongside application and infrastructure metrics" },
+    { solution: "Security Governance", benefit: "Consistent application of network security policies and compliance checks" }
   ]
 
   const deliverables = [
-    "Configuration management strategy and roadmap",
-    "Automated configuration deployment pipelines",
-    "Compliance monitoring dashboards",
-    "Configuration drift detection and remediation",
-    "Version control and audit trail system",
-    "Documentation and runbooks",
-    "Team training and knowledge transfer"
+    "Comprehensive network assessment and strategy report",
+    "Deployment and configuration of network monitoring tools",
+    "Implementation of automated network provisioning workflows",
+    "Customized network security policies and threat detection rules",
+    "Performance optimization recommendations and traffic shaping configurations",
+    "Training and knowledge transfer for network operations teams",
+    "Ongoing support and maintenance services"
   ]
 
   return (
@@ -74,13 +74,13 @@ const ConfigurationManagementPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block px-4 py-2 bg-[#1DB4D8]/20 rounded-full text-[#1DB4D8] text-sm font-medium mb-6">
-                Infrastructure & Operations
+                Network & Connectivity
               </div>
               <h1 className="text-5xl font-bold mb-6 font-display">
-                Configuration Management
+                Network Management
               </h1>
               <p className="text-xl text-gray-300 mb-8">
-                Automate and standardize configuration across your entire infrastructure with real-time compliance monitoring and drift detection.
+                Gain complete visibility and control over your network infrastructure with Verto Wave's advanced Network Management solution, ensuring optimal performance, security, and reliability.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button className="px-8 py-3 bg-[#1DB4D8] text-white rounded-lg font-medium hover:bg-[#1DB4D8]/90 transition-colors">
@@ -93,8 +93,8 @@ const ConfigurationManagementPage = () => {
             </div>
             <div className="relative">
               <img 
-                src={solutionInfrastructure} 
-                alt="Configuration Management" 
+                src={solutionNetwork} 
+                alt="Network Management Dashboard" 
                 className="rounded-lg shadow-2xl"
               />
             </div>
@@ -108,13 +108,13 @@ const ConfigurationManagementPage = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-6 font-display">Solution Overview</h2>
           <div className="prose prose-lg max-w-none text-gray-600">
             <p>
-              Verto Wave's Configuration Management solution provides comprehensive automation and governance for your IT infrastructure configuration. Our platform enables organizations to maintain consistent, compliant, and secure configurations across on-premises, cloud, and hybrid environments.
+              Verto Wave's Network Management solution provides a unified platform for monitoring, managing, and optimizing your entire network infrastructure. From on-premises data centers to multi-cloud environments, our solution offers real-time insights into network performance, security posture, and device health.
             </p>
             <p>
-              By implementing infrastructure as code (IaC) principles and automated compliance checking, we help you eliminate configuration drift, reduce human error, and accelerate deployment cycles while maintaining security and compliance standards.
+              Leveraging AI-driven analytics and automation, we help organizations proactively identify and resolve network issues, reduce downtime, and enhance user experience. Our comprehensive approach covers everything from device configuration and traffic analysis to security policy enforcement and compliance reporting.
             </p>
             <p>
-              Our solution integrates seamlessly with your existing tools and workflows, providing a unified platform for configuration management across your entire technology stack.
+              By integrating with your existing IT ecosystem, Verto Wave enables seamless orchestration of network operations, empowering your teams to manage complex networks with greater efficiency and precision.
             </p>
           </div>
         </div>
@@ -212,9 +212,9 @@ const ConfigurationManagementPage = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-[#1DB4D8] to-[#1DB4D8]/80 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6 font-display">Ready to Transform Your Configuration Management?</h2>
+          <h2 className="text-4xl font-bold mb-6 font-display">Ready to Master Your Network Infrastructure?</h2>
           <p className="text-xl mb-8 text-white/90">
-            Let's discuss how our Configuration Management solution can help you achieve your infrastructure goals.
+            Discover how Verto Wave's Network Management solution can bring clarity, control, and efficiency to your complex network environment.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button className="px-8 py-3 bg-white text-[#1DB4D8] rounded-lg font-medium hover:bg-gray-100 transition-colors inline-flex items-center">
@@ -238,4 +238,5 @@ const ConfigurationManagementPage = () => {
   )
 }
 
-export default ConfigurationManagementPage
+export default NetworkManagementPage
+

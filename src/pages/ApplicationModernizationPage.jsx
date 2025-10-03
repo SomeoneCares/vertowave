@@ -1,59 +1,59 @@
-import { ArrowLeft, CheckCircle, TrendingUp, Shield, Zap, Users, ArrowRight } from 'lucide-react'
-import solutionInfrastructure from '../assets/solution-infrastructure.png'
+import { ArrowLeft, CheckCircle, Cloud, Code, RefreshCw, Rocket, Zap, Users, ArrowRight, Shield, TrendingUp } from 'lucide-react'
+import solutionModernization from '../assets/solution-infrastructure.png' // Placeholder for a relevant image
 
-const ConfigurationManagementPage = () => {
+const ApplicationModernizationPage = () => {
   const keyFeatures = [
     {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Automated Configuration",
-      description: "Automatically deploy and maintain consistent configurations across all infrastructure"
+      icon: <RefreshCw className="w-6 h-6" />,
+      title: "Legacy System Assessment",
+      description: "Comprehensive analysis of existing applications to identify modernization opportunities and risks."
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Compliance Monitoring",
-      description: "Real-time compliance checking against industry standards and internal policies"
+      icon: <Cloud className="w-6 h-6" />,
+      title: "Cloud-Native Transformation",
+      description: "Re-architecting and re-platforming applications for optimal performance and scalability in cloud environments."
     },
     {
-      icon: <TrendingUp className="w-6 h-6" />,
-      title: "Drift Detection",
-      description: "Identify and remediate configuration drift before it causes issues"
+      icon: <Code className="w-6 h-6" />,
+      title: "Microservices & API Development",
+      description: "Breaking down monolithic applications into agile microservices and exposing functionality via robust APIs."
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Version Control",
-      description: "Track all configuration changes with full audit trails and rollback capabilities"
+      icon: <Rocket className="w-6 h-6" />,
+      title: "DevOps & CI/CD Integration",
+      description: "Implementing automated pipelines for continuous integration, delivery, and deployment to accelerate innovation."
     }
   ]
 
   const benefits = [
-    { metric: "70%", description: "Reduction in configuration errors" },
-    { metric: "80%", description: "Improvement in compliance rates" },
-    { metric: "60%", description: "Faster deployment times" },
-    { metric: "50%", description: "Decrease in security incidents" }
+    { metric: "30%", description: "Reduction in operational costs" },
+    { metric: "50%", description: "Faster time-to-market for new features" },
+    { metric: "70%", description: "Improvement in application scalability and resilience" },
+    { metric: "40%", description: "Increase in developer productivity" }
   ]
 
   const technologies = [
-    { category: "Orchestration", tools: ["ServiceNow", "Ansible", "Puppet", "Chef"] },
-    { category: "Cloud Platforms", tools: ["AWS Config", "Azure Policy", "Google Cloud Config"] },
-    { category: "Monitoring", tools: ["Datadog", "Splunk", "New Relic"] },
-    { category: "Security", tools: ["CyberArk", "HashiCorp Vault"] }
+    { category: "Cloud Platforms", tools: ["AWS", "Azure", "Google Cloud Platform"] },
+    { category: "Containerization", tools: ["Docker", "Kubernetes", "OpenShift"] },
+    { category: "Microservices Frameworks", tools: ["Spring Boot", "Node.js", "Quarkus"] },
+    { category: "DevOps Tools", tools: ["Jenkins", "GitLab CI", "Argo CD", "Terraform"] }
   ]
 
   const integrations = [
-    { solution: "Systems Management", benefit: "Unified infrastructure visibility" },
-    { solution: "Security Governance", benefit: "Automated security policy enforcement" },
-    { solution: "IT Service Management", benefit: "Change management integration" },
-    { solution: "Observability & Dashboarding", benefit: "Real-time configuration monitoring" }
+    { solution: "Cloud Migration", benefit: "Seamless transition of modernized applications to cloud infrastructure" },
+    { solution: "Data Analytics", benefit: "Leveraging modern data platforms for enhanced insights from modernized apps" },
+    { solution: "Cybersecurity", benefit: "Embedding advanced security measures into re-architected applications" },
+    { solution: "Managed Services", benefit: "Ongoing support and optimization for modernized application portfolios" }
   ]
 
   const deliverables = [
-    "Configuration management strategy and roadmap",
-    "Automated configuration deployment pipelines",
-    "Compliance monitoring dashboards",
-    "Configuration drift detection and remediation",
-    "Version control and audit trail system",
-    "Documentation and runbooks",
-    "Team training and knowledge transfer"
+    "Application modernization strategy and roadmap",
+    "Cloud-native application architecture designs",
+    "Microservices development and API integration",
+    "DevOps and CI/CD pipeline implementation",
+    "Legacy application re-platforming and re-hosting",
+    "Performance optimization and scalability testing",
+    "Team training and knowledge transfer for new technologies"
   ]
 
   return (
@@ -74,27 +74,27 @@ const ConfigurationManagementPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block px-4 py-2 bg-[#1DB4D8]/20 rounded-full text-[#1DB4D8] text-sm font-medium mb-6">
-                Infrastructure & Operations
+                Software Development
               </div>
               <h1 className="text-5xl font-bold mb-6 font-display">
-                Configuration Management
+                Application Modernization
               </h1>
               <p className="text-xl text-gray-300 mb-8">
-                Automate and standardize configuration across your entire infrastructure with real-time compliance monitoring and drift detection.
+                Transform your legacy applications into agile, scalable, and cloud-native solutions to drive innovation and business growth.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button className="px-8 py-3 bg-[#1DB4D8] text-white rounded-lg font-medium hover:bg-[#1DB4D8]/90 transition-colors">
-                  Request Demo
+                  Request Consultation
                 </button>
                 <button className="px-8 py-3 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors">
-                  Download Datasheet
+                  Explore Case Studies
                 </button>
               </div>
             </div>
             <div className="relative">
               <img 
-                src={solutionInfrastructure} 
-                alt="Configuration Management" 
+                src={solutionModernization} 
+                alt="Application Modernization" 
                 className="rounded-lg shadow-2xl"
               />
             </div>
@@ -108,13 +108,13 @@ const ConfigurationManagementPage = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-6 font-display">Solution Overview</h2>
           <div className="prose prose-lg max-w-none text-gray-600">
             <p>
-              Verto Wave's Configuration Management solution provides comprehensive automation and governance for your IT infrastructure configuration. Our platform enables organizations to maintain consistent, compliant, and secure configurations across on-premises, cloud, and hybrid environments.
+              Verto Wave's Application Modernization solution helps organizations unlock the full potential of their existing software assets by transforming them into modern, resilient, and high-performing applications. We guide you through the journey of migrating from monolithic architectures to cloud-native microservices, leveraging the latest technologies and best practices.
             </p>
             <p>
-              By implementing infrastructure as code (IaC) principles and automated compliance checking, we help you eliminate configuration drift, reduce human error, and accelerate deployment cycles while maintaining security and compliance standards.
+              Our approach focuses on minimizing disruption while maximizing business value, enabling faster innovation, improved scalability, enhanced security, and reduced operational costs. We ensure your applications are future-proof and aligned with your strategic digital transformation goals.
             </p>
             <p>
-              Our solution integrates seamlessly with your existing tools and workflows, providing a unified platform for configuration management across your entire technology stack.
+              By adopting modern development methodologies like DevOps and integrating advanced cloud services, we empower your teams to deliver features more rapidly and respond to market demands with unprecedented agility.
             </p>
           </div>
         </div>
@@ -153,10 +153,10 @@ const ConfigurationManagementPage = () => {
         </div>
       </section>
 
-      {/* Technologies & Vendors */}
+      {/* Technologies & Tools */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 font-display text-center">Technologies & Vendors Used</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 font-display text-center">Technologies & Tools</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {technologies.map((tech, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
@@ -212,17 +212,17 @@ const ConfigurationManagementPage = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-[#1DB4D8] to-[#1DB4D8]/80 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6 font-display">Ready to Transform Your Configuration Management?</h2>
+          <h2 className="text-4xl font-bold mb-6 font-display">Ready to Modernize Your Applications?</h2>
           <p className="text-xl mb-8 text-white/90">
-            Let's discuss how our Configuration Management solution can help you achieve your infrastructure goals.
+            Let's discuss how Verto Wave's Application Modernization solution can accelerate your digital transformation.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button className="px-8 py-3 bg-white text-[#1DB4D8] rounded-lg font-medium hover:bg-gray-100 transition-colors inline-flex items-center">
-              Schedule Consultation
+              Schedule a Free Consultation
               <ArrowRight className="w-5 h-5 ml-2" />
             </button>
             <button className="px-8 py-3 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors">
-              View Case Studies
+              Download Solution Brief
             </button>
           </div>
         </div>
@@ -238,4 +238,5 @@ const ConfigurationManagementPage = () => {
   )
 }
 
-export default ConfigurationManagementPage
+export default ApplicationModernizationPage
+

@@ -1,59 +1,60 @@
-import { ArrowLeft, CheckCircle, TrendingUp, Shield, Zap, Users, ArrowRight } from 'lucide-react'
-import solutionInfrastructure from '../assets/solution-infrastructure.png'
+import { ArrowLeft, Ticket, BookText, Package, TriangleAlert, Bug, GitPullRequest, ArrowRight, CheckCircle, Users, TrendingUp, Shield } from 'lucide-react'
+import solutionITSM from '../assets/solution-infrastructure.png' // Placeholder for hero image
 
-const ConfigurationManagementPage = () => {
+const ITServiceManagementPage = () => {
   const keyFeatures = [
     {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Automated Configuration",
-      description: "Automatically deploy and maintain consistent configurations across all infrastructure"
+      icon: <Ticket className="w-6 h-6" />,
+      title: "Service Request Management",
+      description: "Streamline the handling of user requests for IT services, software, and hardware."
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Compliance Monitoring",
-      description: "Real-time compliance checking against industry standards and internal policies"
+      icon: <BookText className="w-6 h-6" />,
+      title: "Knowledge Management",
+      description: "Centralize and share IT knowledge to empower users and improve issue resolution."
     },
     {
-      icon: <TrendingUp className="w-6 h-6" />,
-      title: "Drift Detection",
-      description: "Identify and remediate configuration drift before it causes issues"
+      icon: <Package className="w-6 h-6" />,
+      title: "IT Asset Management",
+      description: "Track and manage the lifecycle of all IT assets, from procurement to disposal."
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Version Control",
-      description: "Track all configuration changes with full audit trails and rollback capabilities"
+      icon: <TriangleAlert className="w-6 h-6" />,
+      title: "Incident Management",
+      description: "Rapidly detect, diagnose, and resolve IT incidents to minimize disruption."
     }
   ]
 
   const benefits = [
-    { metric: "70%", description: "Reduction in configuration errors" },
-    { metric: "80%", description: "Improvement in compliance rates" },
-    { metric: "60%", description: "Faster deployment times" },
-    { metric: "50%", description: "Decrease in security incidents" }
+    { metric: "30%", description: "Reduction in operational costs" },
+    { metric: "40%", description: "Faster incident resolution times" },
+    { metric: "25%", description: "Improvement in user satisfaction" },
+    { metric: "20%", description: "Increase in IT service availability" }
   ]
 
   const technologies = [
-    { category: "Orchestration", tools: ["ServiceNow", "Ansible", "Puppet", "Chef"] },
-    { category: "Cloud Platforms", tools: ["AWS Config", "Azure Policy", "Google Cloud Config"] },
-    { category: "Monitoring", tools: ["Datadog", "Splunk", "New Relic"] },
-    { category: "Security", tools: ["CyberArk", "HashiCorp Vault"] }
+    { category: "ITSM Platforms", tools: ["ServiceNow", "Jira Service Management", "BMC Helix ITSM"] },
+    { category: "Automation & Orchestration", tools: ["Ansible", "Puppet", "Chef"] },
+    { category: "Monitoring & Analytics", tools: ["Splunk", "Datadog", "New Relic"] },
+    { category: "Knowledge Bases", tools: ["Confluence", "SharePoint"] }
   ]
 
   const integrations = [
-    { solution: "Systems Management", benefit: "Unified infrastructure visibility" },
-    { solution: "Security Governance", benefit: "Automated security policy enforcement" },
-    { solution: "IT Service Management", benefit: "Change management integration" },
-    { solution: "Observability & Dashboarding", benefit: "Real-time configuration monitoring" }
+    { solution: "Configuration Management", benefit: "Synchronized IT asset and configuration data" },
+    { solution: "Security Operations", benefit: "Automated incident response and threat remediation" },
+    { solution: "Cloud Management", benefit: "Unified service delivery across hybrid cloud environments" },
+    { solution: "DevOps & Agile", benefit: "Seamless collaboration between development and operations" }
   ]
 
   const deliverables = [
-    "Configuration management strategy and roadmap",
-    "Automated configuration deployment pipelines",
-    "Compliance monitoring dashboards",
-    "Configuration drift detection and remediation",
-    "Version control and audit trail system",
-    "Documentation and runbooks",
-    "Team training and knowledge transfer"
+    "ITSM strategy and roadmap development",
+    "Service catalog design and implementation",
+    "Incident, Problem, and Change Management process optimization",
+    "Knowledge base creation and content management",
+    "IT asset discovery and inventory solutions",
+    "Performance monitoring and reporting dashboards",
+    "User portal and self-service enablement",
+    "Training and adoption programs"
   ]
 
   return (
@@ -74,13 +75,13 @@ const ConfigurationManagementPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block px-4 py-2 bg-[#1DB4D8]/20 rounded-full text-[#1DB4D8] text-sm font-medium mb-6">
-                Infrastructure & Operations
+                IT Operations
               </div>
               <h1 className="text-5xl font-bold mb-6 font-display">
-                Configuration Management
+                IT Service Management
               </h1>
               <p className="text-xl text-gray-300 mb-8">
-                Automate and standardize configuration across your entire infrastructure with real-time compliance monitoring and drift detection.
+                Streamline IT service delivery, enhance user experience, and optimize operational efficiency with comprehensive IT Service Management solutions.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button className="px-8 py-3 bg-[#1DB4D8] text-white rounded-lg font-medium hover:bg-[#1DB4D8]/90 transition-colors">
@@ -93,8 +94,8 @@ const ConfigurationManagementPage = () => {
             </div>
             <div className="relative">
               <img 
-                src={solutionInfrastructure} 
-                alt="Configuration Management" 
+                src={solutionITSM} 
+                alt="IT Service Management" 
                 className="rounded-lg shadow-2xl"
               />
             </div>
@@ -108,13 +109,13 @@ const ConfigurationManagementPage = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-6 font-display">Solution Overview</h2>
           <div className="prose prose-lg max-w-none text-gray-600">
             <p>
-              Verto Wave's Configuration Management solution provides comprehensive automation and governance for your IT infrastructure configuration. Our platform enables organizations to maintain consistent, compliant, and secure configurations across on-premises, cloud, and hybrid environments.
+              Verto Wave's IT Service Management (ITSM) solution empowers organizations to deliver high-quality IT services efficiently and effectively. By adopting industry best practices and leveraging advanced automation, we help you transform your IT operations from reactive problem-solving to proactive service delivery.
             </p>
             <p>
-              By implementing infrastructure as code (IaC) principles and automated compliance checking, we help you eliminate configuration drift, reduce human error, and accelerate deployment cycles while maintaining security and compliance standards.
+              Our comprehensive platform covers the entire service lifecycle, from managing service requests and incidents to optimizing IT assets and knowledge. This ensures seamless IT experiences for your users while driving significant operational improvements and cost reductions.
             </p>
             <p>
-              Our solution integrates seamlessly with your existing tools and workflows, providing a unified platform for configuration management across your entire technology stack.
+              We integrate seamlessly with your existing infrastructure and other Verto Wave solutions, providing a unified approach to managing your complex IT environment.
             </p>
           </div>
         </div>
@@ -212,9 +213,9 @@ const ConfigurationManagementPage = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-[#1DB4D8] to-[#1DB4D8]/80 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6 font-display">Ready to Transform Your Configuration Management?</h2>
+          <h2 className="text-4xl font-bold mb-6 font-display">Ready to Transform Your IT Service Delivery?</h2>
           <p className="text-xl mb-8 text-white/90">
-            Let's discuss how our Configuration Management solution can help you achieve your infrastructure goals.
+            Let's discuss how our IT Service Management solution can help you achieve your operational excellence goals.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button className="px-8 py-3 bg-white text-[#1DB4D8] rounded-lg font-medium hover:bg-gray-100 transition-colors inline-flex items-center">
@@ -238,4 +239,5 @@ const ConfigurationManagementPage = () => {
   )
 }
 
-export default ConfigurationManagementPage
+export default ITServiceManagementPage
+
