@@ -221,6 +221,223 @@ const CareersPage = () => {
         </div>
       </section>
 
+      {/* The Vanguard Academy */}
+      <section className="relative py-20 bg-gradient-to-br from-verto-blue-dark via-verto-blue to-verto-teal-dark text-white overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+            backgroundSize: '60px 60px'
+          }}></div>
+        </div>
+
+        <div className="container-custom relative z-10">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full mb-6">
+              <span className="text-3xl">🚀</span>
+              <span className="font-display font-semibold text-lg">Exclusive Program</span>
+            </div>
+            <h2 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl mb-6">
+              The Vanguard Academy
+            </h2>
+            <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">
+              Forging the Future of IT: Transform from graduate to elite IT professional in just 6 months
+            </p>
+          </div>
+
+          {/* Main Description */}
+          <div className="max-w-5xl mx-auto mb-16">
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 md:p-12 border border-white/20">
+              <p className="text-lg md:text-xl text-white/95 leading-relaxed mb-6">
+                At Verto Wave, we don't just hire IT professionals—<strong>we forge them</strong>. The IT landscape is constantly evolving, and The Vanguard Academy is our intensive, 6-month program designed to transform ambitious graduates and junior professionals into elite, field-ready experts equipped with <strong>two years' worth of practical, cutting-edge experience</strong>.
+              </p>
+              <p className="text-lg md:text-xl text-white/95 leading-relaxed">
+                This is more than a bootcamp; it's a <strong>Quantum Leap</strong> for your career. We are building the next generation of Verto Wave leaders.
+              </p>
+            </div>
+          </div>
+
+          {/* Why Join Section */}
+          <div className="mb-16">
+            <h3 className="font-display font-bold text-3xl md:text-4xl text-center mb-12">
+              Why Join the Vanguard?
+            </h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* Feature 1 */}
+              <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all">
+                <div className="w-14 h-14 bg-white/20 rounded-lg flex items-center justify-center mb-4">
+                  <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z"/>
+                  </svg>
+                </div>
+                <h4 className="font-display font-bold text-xl mb-3">Accelerated Expertise</h4>
+                <p className="text-white/90 text-sm leading-relaxed mb-2">
+                  6 months of intense, full-time training that delivers the equivalent of 2 years of on-the-job experience.
+                </p>
+                <p className="text-white font-semibold text-sm">
+                  → Get ahead of your peers and start delivering value faster
+                </p>
+              </div>
+
+              {/* Feature 2 */}
+              <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all">
+                <div className="w-14 h-14 bg-white/20 rounded-lg flex items-center justify-center mb-4">
+                  <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z"/>
+                  </svg>
+                </div>
+                <h4 className="font-display font-bold text-xl mb-3">Cutting-Edge Technologies</h4>
+                <p className="text-white/90 text-sm leading-relaxed mb-2">
+                  Deep dives into the most in-demand platforms, tools, and methodologies.
+                </p>
+                <p className="text-white font-semibold text-sm">
+                  → Master cloud, DevOps, and emerging tech relevant to our clients
+                </p>
+              </div>
+
+              {/* Feature 3 */}
+              <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all">
+                <div className="w-14 h-14 bg-white/20 rounded-lg flex items-center justify-center mb-4">
+                  <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                    <path fillRule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clipRule="evenodd"/>
+                  </svg>
+                </div>
+                <h4 className="font-display font-bold text-xl mb-3">Hands-On Immersion</h4>
+                <p className="text-white/90 text-sm leading-relaxed mb-2">
+                  Extensive project-based learning, simulations, and real-world case studies mentored by senior leaders.
+                </p>
+                <p className="text-white font-semibold text-sm">
+                  → Develop unshakeable confidence and problem-solving skills
+                </p>
+              </div>
+
+              {/* Feature 4 */}
+              <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all">
+                <div className="w-14 h-14 bg-white/20 rounded-lg flex items-center justify-center mb-4">
+                  <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/>
+                  </svg>
+                </div>
+                <h4 className="font-display font-bold text-xl mb-3">Career Launchpad</h4>
+                <p className="text-white/90 text-sm leading-relaxed mb-2">
+                  Successful graduates are placed directly onto Verto Wave teams, ready to contribute immediately.
+                </p>
+                <p className="text-white font-semibold text-sm">
+                  → Guaranteed entry into a dynamic, fast-growing IT services leader
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Curriculum Highlights */}
+          <div className="max-w-5xl mx-auto mb-16">
+            <h3 className="font-display font-bold text-3xl md:text-4xl text-center mb-12">
+              The Academy Curriculum: Mastery in 6 Months
+            </h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-2xl">☁️</span>
+                  </div>
+                  <div>
+                    <h4 className="font-display font-bold text-lg mb-2">Cutting-Edge Technology</h4>
+                    <p className="text-white/90 text-sm">
+                      Focus on modern cloud infrastructure (AWS/Azure), containerization (Docker, Kubernetes), and CI/CD pipelines.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-2xl">🏗️</span>
+                  </div>
+                  <div>
+                    <h4 className="font-display font-bold text-lg mb-2">Architecture & Methodology</h4>
+                    <p className="text-white/90 text-sm">
+                      Intensive training in Agile, Scrum, ITIL principles, and designing scalable, resilient system architectures.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-2xl">✨</span>
+                  </div>
+                  <div>
+                    <h4 className="font-display font-bold text-lg mb-2">Best Practices</h4>
+                    <p className="text-white/90 text-sm">
+                      Mastering clean code, security protocols, performance optimization, and professional communication standards.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-2xl">🎯</span>
+                  </div>
+                  <div>
+                    <h4 className="font-display font-bold text-lg mb-2">Capstones & Deployment</h4>
+                    <p className="text-white/90 text-sm">
+                      Culminates in a major project where you design, build, and deploy a complete solution, simulating a full client engagement.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Recruitment Info */}
+          <div className="max-w-4xl mx-auto mb-12">
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 md:p-10 border border-white/20">
+              <h3 className="font-display font-bold text-2xl md:text-3xl mb-6 text-center">
+                Recruitment: Identifying Tomorrow's IT Vanguard
+              </h3>
+              <p className="text-lg text-white/95 leading-relaxed mb-6">
+                We believe the best talent emerges from the best institutions. That's why the selection phase for The Vanguard Academy runs primarily during the <strong>employment fairs of Egypt's top universities</strong>.
+              </p>
+              <p className="text-lg text-white/95 leading-relaxed">
+                If you are a promising fresh graduate or junior professional, this is your exclusive opportunity to fast-track your career. We are looking for individuals who demonstrate not just academic excellence, but the <strong>hunger, aptitude, and drive</strong> to master cutting-edge technologies.
+              </p>
+            </div>
+          </div>
+
+          {/* Quote */}
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10">
+              <svg className="w-12 h-12 text-white/40 mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+              <p className="text-xl md:text-2xl font-display italic text-white/95 leading-relaxed">
+                "We take raw talent and subject it to an intensive forging process, ensuring every Vanguard graduate is not just ready for the field, but ready to lead on it."
+              </p>
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="text-center mt-12">
+            <p className="text-lg text-white/90 mb-6">
+              <strong>Look for the Verto Wave booth at your university's next career fair to begin your journey.</strong>
+            </p>
+            <a
+              href="#open-positions"
+              className="inline-flex items-center gap-2 bg-white text-verto-blue hover:bg-gray-100 font-display font-semibold px-8 py-4 rounded-lg transition-colors"
+            >
+              View All Opportunities
+              <ArrowRight className="h-5 w-5" />
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Open Positions */}
       <section id="open-positions" className="py-20 bg-gray-50">
         <div className="container-custom">
