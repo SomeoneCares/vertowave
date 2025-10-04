@@ -148,8 +148,13 @@ const CareersPage = () => {
   return (
     <div className="pt-24">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-verto-blue-dark to-verto-teal-dark text-white">
-        <div className="container-custom">
+      <section className="relative py-20 text-white overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-verto-blue-dark to-verto-teal-dark opacity-80"></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${new URL('../assets/hero-careers.webp', import.meta.url).href})` }}
+        ></div>
+        <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl mb-6">
               Join Our Team
