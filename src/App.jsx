@@ -21,6 +21,7 @@ import ApplicationModernizationPage from './pages/ApplicationModernizationPage'
 import AIOPsPlatformPage from './pages/AIOPsPlatformPage'
 import ITServiceIntelligencePage from './pages/ITServiceIntelligencePage'
 import DigitalEmployeeExperiencePage from './pages/DigitalEmployeeExperiencePage'
+import AboutPage from './pages/AboutPage'
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -38,6 +39,7 @@ function App() {
       <Navigation isScrolled={isScrolled} />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/solutions/configuration-management" element={<ConfigurationManagementPage />} />
         <Route path="/solutions/systems-management" element={<SystemsManagementPage />} />
         <Route path="/solutions/network-management" element={<NetworkManagementPage />} />

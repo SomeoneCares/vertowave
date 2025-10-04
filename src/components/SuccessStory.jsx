@@ -2,7 +2,7 @@ import { Quote, TrendingUp, Clock, DollarSign } from 'lucide-react'
 
 const SuccessStory = () => {
   return (
-    <section className="relative py-20 lg:py-28 overflow-hidden">
+    <section className="relative py-12 lg:py-16 overflow-hidden">
       {/* Background with Overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-verto-dark-gray via-gray-700 to-verto-dark-gray"></div>
       <div className="absolute inset-0 wave-pattern opacity-10"></div>
@@ -59,16 +59,6 @@ const SuccessStory = () => {
             </span>
           </div>
 
-          {/* CTA */}
-          <div className="text-center mt-8">
-            <a
-              href="#case-studies"
-              className="text-verto-blue hover:text-white font-display font-medium inline-flex items-center group"
-            >
-              Read Full Case Study
-              <span className="ml-2 group-hover:translate-x-2 transition-transform">→</span>
-            </a>
-          </div>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import logo from '../assets/verto_wave_logo.webp'
@@ -17,16 +18,16 @@ const Navigation = ({ isScrolled }) => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="/" className="flex items-center">
+            <Link to="/" className="flex items-center">
               <img src={logo} alt="Verto Wave" className="h-10" />
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
-            <a href="/" className="font-display text-verto-dark-gray hover:text-verto-blue transition-colors">
+            <Link to="/" className="font-display text-verto-dark-gray hover:text-verto-blue transition-colors">
               Home
-            </a>
+            </Link>
             
             <a href="#solutions" className="font-display text-verto-dark-gray hover:text-verto-blue transition-colors">
               Solutions
@@ -38,9 +39,9 @@ const Navigation = ({ isScrolled }) => {
             <a href="#resources" className="font-display text-verto-dark-gray hover:text-verto-blue transition-colors">
               Resources
             </a>
-            <a href="#about" className="font-display text-verto-dark-gray hover:text-verto-blue transition-colors">
+            <Link to="/about" className="font-display text-verto-dark-gray hover:text-verto-blue transition-colors">
               About Us
-            </a>
+            </Link>
             <a href="#contact" className="font-display text-verto-dark-gray hover:text-verto-blue transition-colors">
               Contact
             </a>

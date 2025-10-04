@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Linkedin, Twitter, Youtube } from 'lucide-react'
 import logo from '../assets/vw white.png'
 
@@ -5,21 +6,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   const footerLinks = {
-    solutions: {
-      title: 'Solutions',
-      links: [
-        { name: 'Infrastructure & Operations', href: '#infrastructure' },
-        { name: 'Security & Compliance', href: '#security' },
-        { name: 'Service Delivery & Automation', href: '#service-delivery' },
-        { name: 'Cloud & Modernization', href: '#cloud' },
-        { name: 'Insights & Intelligence', href: '#insights' },
-        { name: 'View All Solutions', href: '#all-solutions' }
-      ]
-    },
     company: {
       title: 'Company',
       links: [
-        { name: 'About Us', href: '#about' },
+        { name: 'About Us', href: '/about' },
         { name: 'Our Team', href: '#team' },
         { name: 'Careers', href: '#careers' },
         { name: 'Partners', href: '#partners' },
@@ -43,7 +33,7 @@ const Footer = () => {
   return (
     <footer className="bg-verto-dark-gray text-white">
       <div className="container-custom py-8">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Logo and Tagline */}
           <div className="md:col-span-1">
             <img src={logo} alt="Verto Wave" className="h-8 mb-3" />
@@ -77,35 +67,27 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Solutions */}
-          <div>
-            <h3 className="font-display font-bold text-base mb-4">{footerLinks.solutions.title}</h3>
-            <ul className="space-y-2">
-              {footerLinks.solutions.links.slice(0, 4).map((link, index) => (
-                <li key={index}>
-                  <a
-                    href={link.href}
-                    className="text-gray-300 hover:text-verto-blue transition-colors text-sm"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Company */}
           <div>
             <h3 className="font-display font-bold text-base mb-4">{footerLinks.company.title}</h3>
             <ul className="space-y-2">
               {footerLinks.company.links.slice(0, 4).map((link, index) => (
                 <li key={index}>
-                  <a
-                    href={link.href}
-                    className="text-gray-300 hover:text-verto-blue transition-colors text-sm"
-                  >
-                    {link.name}
-                  </a>
+                  {link.name === 'About Us' ? (
+                    <Link
+                      to={link.href}
+                      className="text-gray-300 hover:text-verto-blue transition-colors text-sm"
+                    >
+                      {link.name}
+                    </Link>
+                  ) : (
+                    <a
+                      href={link.href}
+                      className="text-gray-300 hover:text-verto-blue transition-colors text-sm"
+                    >
+                      {link.name}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
