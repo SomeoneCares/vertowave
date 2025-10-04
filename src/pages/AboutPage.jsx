@@ -208,6 +208,227 @@ const AboutPage = () => {
         </div>
       </section>
 
+      {/* Our Team Section */}
+      <section id="team" className="py-20 bg-white">
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <h2 className="font-display font-bold text-3xl md:text-4xl text-verto-dark-gray mb-6">
+              Our Team
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Meet the experts behind Verto Wave's success. Our diverse team brings together decades of experience in IT transformation, security, and digital innovation.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Team Member 1 */}
+            <div className="bg-gray-50 p-8 rounded-xl text-center">
+              <div className="w-24 h-24 bg-gradient-to-br from-verto-blue to-verto-teal rounded-full mx-auto mb-6 flex items-center justify-center">
+                <span className="text-white font-display font-bold text-2xl">ME</span>
+              </div>
+              <h3 className="font-display font-bold text-xl text-verto-dark-gray mb-2">Mohamed Elsaid</h3>
+              <p className="text-verto-blue font-semibold mb-3">Chairman</p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Leading our strategic direction and governance, Mohamed brings extensive experience in business leadership and organizational development.
+              </p>
+            </div>
+
+            {/* Team Member 2 */}
+            <div className="bg-gray-50 p-8 rounded-xl text-center">
+              <div className="w-24 h-24 bg-gradient-to-br from-verto-blue to-verto-teal rounded-full mx-auto mb-6 flex items-center justify-center">
+                <span className="text-white font-display font-bold text-2xl">BA</span>
+              </div>
+              <h3 className="font-display font-bold text-xl text-verto-dark-gray mb-2">Basem Alsaeed</h3>
+              <p className="text-verto-blue font-semibold mb-3">Founder & CEO</p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                As founder and CEO, Basem drives our vision for IT transformation and ensures we deliver exceptional value to our clients worldwide.
+              </p>
+            </div>
+
+            {/* Team Member 3 */}
+            <div className="bg-gray-50 p-8 rounded-xl text-center">
+              <div className="w-24 h-24 bg-gradient-to-br from-verto-blue to-verto-teal rounded-full mx-auto mb-6 flex items-center justify-center">
+                <span className="text-white font-display font-bold text-2xl">TE</span>
+              </div>
+              <h3 className="font-display font-bold text-xl text-verto-dark-gray mb-2">Tarek Elsaid</h3>
+              <p className="text-verto-blue font-semibold mb-3">Chief Commercial Officer</p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Tarek leads our commercial strategy and client relationships, driving business growth and market expansion across key industries.
+              </p>
+            </div>
+
+            {/* Team Member 4 */}
+            <div className="bg-gray-50 p-8 rounded-xl text-center">
+              <div className="w-24 h-24 bg-gradient-to-br from-verto-blue to-verto-teal rounded-full mx-auto mb-6 flex items-center justify-center">
+                <span className="text-white font-display font-bold text-2xl">RR</span>
+              </div>
+              <h3 className="font-display font-bold text-xl text-verto-dark-gray mb-2">Rehab Ragaee</h3>
+              <p className="text-verto-blue font-semibold mb-3">President</p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Rehab oversees our operational excellence and strategic initiatives, ensuring seamless execution of our transformation programs.
+              </p>
+            </div>
+
+            {/* Team Member 5 */}
+            <div className="bg-gray-50 p-8 rounded-xl text-center">
+              <div className="w-24 h-24 bg-gradient-to-br from-verto-blue to-verto-teal rounded-full mx-auto mb-6 flex items-center justify-center">
+                <span className="text-white font-display font-bold text-2xl">MM</span>
+              </div>
+              <h3 className="font-display font-bold text-xl text-verto-dark-gray mb-2">Mahmoud Magdy</h3>
+              <p className="text-verto-blue font-semibold mb-3">Chief Technology Officer</p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Mahmoud leads our technical innovation and architecture, driving cutting-edge solutions in cloud, security, and digital transformation.
+              </p>
+            </div>
+
+            {/* Team Member 6 */}
+            <div className="bg-gray-50 p-8 rounded-xl text-center">
+              <div className="w-24 h-24 bg-gradient-to-br from-verto-blue to-verto-teal rounded-full mx-auto mb-6 flex items-center justify-center">
+                <span className="text-white font-display font-bold text-2xl">HM</span>
+              </div>
+              <h3 className="font-display font-bold text-xl text-verto-dark-gray mb-2">Hesham Mansour</h3>
+              <p className="text-verto-blue font-semibold mb-3">Chief Architect</p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Hesham designs comprehensive IT architectures and solutions that align with business objectives and drive operational excellence.
+              </p>
+            </div>
+          </div>
+
+          {/* Team Stats */}
+          <div className="mt-16 grid md:grid-cols-3 gap-8 text-center">
+            <div>
+              <div className="font-display font-bold text-3xl text-verto-blue mb-2">50+</div>
+              <div className="text-gray-600 font-medium">Expert Consultants</div>
+            </div>
+            <div>
+              <div className="font-display font-bold text-3xl text-verto-blue mb-2">15+</div>
+              <div className="text-gray-600 font-medium">Average Years Experience</div>
+            </div>
+            <div>
+              <div className="font-display font-bold text-3xl text-verto-blue mb-2">25+</div>
+              <div className="text-gray-600 font-medium">Industry Certifications</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Live @ Verto Wave Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <h2 className="font-display font-bold text-3xl md:text-4xl text-verto-dark-gray mb-6">
+              Live @ Verto Wave
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Experience the vibrant culture and dynamic environment that makes Verto Wave a great place to work and grow.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Culture Card 1 */}
+            <div className="bg-white p-8 rounded-xl shadow-lg">
+              <div className="w-16 h-16 bg-gradient-to-br from-verto-blue to-verto-teal rounded-lg flex items-center justify-center mb-6">
+                <Users className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="font-display font-bold text-xl text-verto-dark-gray mb-4">Collaborative Environment</h3>
+              <p className="text-gray-600 leading-relaxed">
+                We foster a culture of collaboration where every team member's voice is heard and valued. Our open communication and teamwork drive innovation.
+              </p>
+            </div>
+
+            {/* Culture Card 2 */}
+            <div className="bg-white p-8 rounded-xl shadow-lg">
+              <div className="w-16 h-16 bg-gradient-to-br from-verto-blue to-verto-teal rounded-lg flex items-center justify-center mb-6">
+                <Target className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="font-display font-bold text-xl text-verto-dark-gray mb-4">Growth Opportunities</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Continuous learning and professional development are at the heart of our culture. We invest in our team's growth and career advancement.
+              </p>
+            </div>
+
+            {/* Culture Card 3 */}
+            <div className="bg-white p-8 rounded-xl shadow-lg">
+              <div className="w-16 h-16 bg-gradient-to-br from-verto-blue to-verto-teal rounded-lg flex items-center justify-center mb-6">
+                <Award className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="font-display font-bold text-xl text-verto-dark-gray mb-4">Innovation Focus</h3>
+              <p className="text-gray-600 leading-relaxed">
+                We encourage creative thinking and embrace new technologies. Our team is always exploring cutting-edge solutions and best practices.
+              </p>
+            </div>
+
+            {/* Culture Card 4 */}
+            <div className="bg-white p-8 rounded-xl shadow-lg">
+              <div className="w-16 h-16 bg-gradient-to-br from-verto-blue to-verto-teal rounded-lg flex items-center justify-center mb-6">
+                <Globe className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="font-display font-bold text-xl text-verto-dark-gray mb-4">Global Impact</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Our work transforms organizations worldwide. We take pride in delivering solutions that make a real difference in our clients' success.
+              </p>
+            </div>
+
+            {/* Culture Card 5 */}
+            <div className="bg-white p-8 rounded-xl shadow-lg">
+              <div className="w-16 h-16 bg-gradient-to-br from-verto-blue to-verto-teal rounded-lg flex items-center justify-center mb-6">
+                <CheckCircle className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="font-display font-bold text-xl text-verto-dark-gray mb-4">Work-Life Balance</h3>
+              <p className="text-gray-600 leading-relaxed">
+                We believe in maintaining a healthy work-life balance. Our flexible policies and supportive environment help our team thrive both professionally and personally.
+              </p>
+            </div>
+
+            {/* Culture Card 6 */}
+            <div className="bg-white p-8 rounded-xl shadow-lg">
+              <div className="w-16 h-16 bg-gradient-to-br from-verto-blue to-verto-teal rounded-lg flex items-center justify-center mb-6">
+                <Users className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="font-display font-bold text-xl text-verto-dark-gray mb-4">Diverse & Inclusive</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Diversity and inclusion are fundamental to our success. We celebrate different perspectives and create an environment where everyone belongs.
+              </p>
+            </div>
+          </div>
+
+          {/* Company Values */}
+          <div className="mt-16 bg-white p-8 rounded-xl shadow-lg">
+            <h3 className="font-display font-bold text-2xl text-verto-dark-gray mb-8 text-center">Our Workplace Values</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <span className="text-verto-blue font-display font-bold text-lg">E</span>
+                </div>
+                <h4 className="font-display font-semibold text-verto-dark-gray mb-2">Excellence</h4>
+                <p className="text-gray-600 text-sm">Striving for the highest quality in everything we do</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <span className="text-verto-blue font-display font-bold text-lg">I</span>
+                </div>
+                <h4 className="font-display font-semibold text-verto-dark-gray mb-2">Integrity</h4>
+                <p className="text-gray-600 text-sm">Doing the right thing, always</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <span className="text-verto-blue font-display font-bold text-lg">T</span>
+                </div>
+                <h4 className="font-display font-semibold text-verto-dark-gray mb-2">Teamwork</h4>
+                <p className="text-gray-600 text-sm">Collaborating to achieve shared goals</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-verto-blue/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <span className="text-verto-blue font-display font-bold text-lg">I</span>
+                </div>
+                <h4 className="font-display font-semibold text-verto-dark-gray mb-2">Innovation</h4>
+                <p className="text-gray-600 text-sm">Embracing new ideas and technologies</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-verto-blue-dark to-verto-teal-dark text-white">
         <div className="container-custom">

@@ -10,8 +10,8 @@ const Footer = () => {
       title: 'Company',
       links: [
         { name: 'About Us', href: '/about' },
-        { name: 'Our Team', href: '#team' },
-        { name: 'Careers', href: '#careers' },
+        { name: 'Our Team', href: '/about#team' },
+        { name: 'Careers', href: '/careers' },
         { name: 'Partners', href: '#partners' },
         { name: 'News & Press', href: '#news' },
         { name: 'Contact Us', href: '#contact' }
@@ -73,7 +73,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {footerLinks.company.links.slice(0, 4).map((link, index) => (
                 <li key={index}>
-                  {link.name === 'About Us' ? (
+                  {link.name === 'About Us' || link.name === 'Our Team' || link.name === 'Careers' ? (
                     <Link
                       to={link.href}
                       className="text-gray-300 hover:text-verto-blue transition-colors text-sm"
