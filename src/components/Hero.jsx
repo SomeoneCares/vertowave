@@ -47,7 +47,7 @@ const Hero = () => {
             <div className="flex flex-wrap gap-4 items-center">
               <div className="flex items-center gap-2 bg-verto-light-gray px-4 py-2 rounded-full">
                 <CheckCircle2 className="h-5 w-5 text-verto-blue" />
-                <span className="font-display font-medium text-sm">17 Comprehensive Solutions</span>
+                <span className="font-display font-medium text-sm">23 Comprehensive Solutions</span>
               </div>
               <div className="flex items-center gap-2 bg-verto-light-gray px-4 py-2 rounded-full">
                 <CheckCircle2 className="h-5 w-5 text-verto-blue" />

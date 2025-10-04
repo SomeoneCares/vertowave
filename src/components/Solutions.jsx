@@ -601,7 +601,7 @@ const Solutions = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Comprehensive Solutions for Every IT Need</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            17 solutions organized across 5 strategic categories to transform your IT infrastructure
+            23 solutions organized across 6 strategic categories to transform your IT infrastructure
           </p>
         </div>
 

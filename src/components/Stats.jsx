@@ -4,9 +4,9 @@ const Stats = () => {
   const stats = [
     {
       icon: Layers,
-      number: '17',
+      number: '23',
       label: 'Comprehensive Solutions',
-      description: 'Across 5 strategic categories'
+      description: 'Across 6 strategic categories'
     },
     {
       icon: Building,
